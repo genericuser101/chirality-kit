@@ -1,0 +1,150 @@
+
+{
+    "metadata": {
+        "made-by": "chirality-kit",
+        "version": "0.6.1",
+        "creator": "Stef @ Warwick University",
+        "filename": "chirality_main.py"
+    },
+
+    "settings": {
+        "system_name": "auto",
+        "verbose": false,
+        "output_types": [".pdb", ".psf", ".xyz", ".data"],
+        "bonds": true,
+        "angles": true,
+        "dihedrals": true,
+        "impropers": true,
+        "lone-pairs": true,
+        "anisotropy": true
+    },
+
+    "system": {
+        "force-field": "CHARMM36m",
+        "size": "auto",
+        "size-padding-xy": 14.0,
+        "size-padding-z": 30.0,
+        "nanotube": true,
+        "functionalisation": true,
+        "solvation": true
+    },
+
+    "nanotube": {
+        "type": "CNT",
+        "n": 8,
+        "m": 4,
+        "repeats": 7
+    },
+
+    "functionalisation": {
+        "term": {
+            "term-hydrogenate": true,
+            "groups": [
+                {
+                    "type": "COO-",
+                    "count": 2
+                },
+                {
+                    "type": "OH-",
+                    "count": 4,
+                    "side": "-"
+                }
+            ]
+        },
+        "rings": [
+            {
+                "ring-phase-increment": 0.78539816339,
+                "ring-phase-start-offset": 0.0,
+                "ring-padding": true,
+                "ring-count": 7,
+                "ring-placement": "external",
+                "groups": [
+                    {
+                        "type": "C2H5",
+                        "count": 1
+                    },
+                    {
+                        "type": "OH-",
+                        "count": 1
+                    },
+                    {
+                        "type": "OH-",
+                        "count": 5
+                    }
+                ]
+            },
+            {
+                "ring-phase-increment": 0.78539816339,
+                "ring-phase-start-offset": 0.0,
+                "ring-padding": true,
+                "ring-count": 3,
+                "ring-placement": "internal",
+                "groups": [
+                    {
+                        "type": "H+",
+                        "count": 1
+                    },
+                    {
+                        "type": "OH-",
+                        "count": 1
+                    },
+                    {
+                        "type": "OH-",
+                        "count": 5
+                    }
+                ]
+            }
+        ],
+        "loose": {
+            "groups": [
+                {
+                    "loose-placement": "random",
+                    "type": "H+",
+                    "count": 2
+                },
+                {
+                    "loose-placement": "all-external",
+                    "type": "H+",
+                    "count": 2
+                },
+                {
+                    "loose-placement": "all-internal",
+                    "type": "H+",
+                    "count": 2
+                }
+            ]
+        }
+    },
+
+    "solvation": {
+        "groups": [
+            {
+                "type": "SPCE",
+                "placement": "packed",
+                "priority": 100,
+                "min_distance": 1.8,
+                "concentration": 55.5,
+                "molecules_per_unit": 1
+            },
+            {
+                "type": "KCl",
+                "placement": "ionic",
+                "charge-neutrality": true,
+                "priority": 50,
+                "count": 4,
+                "min_distance": 2.5
+            }
+        ],
+        "bridson_params": {
+            "k"              : 30,  
+            "r_floor"        : 1.0,  
+            "repeats"        : 2,    
+            "bracket_steps"  : 10,  
+            "bin_steps"      : 10, 
+            "final_repeats"  : 10,  
+            "tol_frac"       : 0.05,
+            "injection_limit": 1024  
+        }
+
+    }
+}

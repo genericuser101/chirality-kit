@@ -1,0 +1,82 @@
+{
+    "metadata": {
+        "made-by": "chirality-kit",
+        "version": "0.6.1",
+        "creator": "Stef @ Warwick University",
+        "filename": "chirality_kit.py"
+    },
+
+    "settings": {
+        "system_name": "auto",
+        "verbose": false,
+        "output_types": [".pdb", ".psf"],
+        "adjust-ion-partial-charge": true,
+        "bonds": true,
+        "angles": true,
+        "dihedrals": true,
+        "impropers": true,
+        "lone-pairs": true,
+        "anisotropy": true
+    },
+
+    "system": {
+        "force-field": "CHARMM36m-NDP",
+        "size": "auto",
+        "size-padding-xy": 14.0,
+        "size-padding-z": 30.0,
+        "nanotube": true,
+        "functionalisation": true,
+        "solvation": true
+    },
+
+    "nanotube": {
+        "type": "CNT-Drude",
+        "n": 8,
+        "m": 4,
+        "repeats": 4
+    },
+
+    "functionalisation": {
+        "term": {
+            "term-hydrogenate": true,
+            "groups": [
+                {
+                    "type": "COO-",
+                    "count": 3
+                }
+            ]
+        }
+    },
+
+    "solvation": {
+        "groups": [
+            {
+                "type": "SWM4",
+                "placement": "packed",
+                "priority": 100,
+                "min_distance": 1.8,
+                "concentration": 55.5,
+                "molecules_per_unit": 1
+            },
+            {
+                "type": "KCl",
+                "placement": "ionic",
+                "charge-neutrality": true,
+                "priority": 50,
+                "count": 4,
+                "min_distance": 2.0
+            }
+        ],
+        "bridson_params": {
+            "k"              : 30,
+            "r_floor"        : 1.0,
+            "repeats"        : 2,
+            "bracket_steps"  : 10,
+            "bin_steps"      : 10,
+            "final_repeats"  : 10,
+            "tol_frac"       : 0.05,
+            "injection_limit": 1024
+        }
+
+    }
+}

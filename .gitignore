@@ -1,0 +1,21 @@
+# Test
+.pytest_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.eggs/
+*.egg-info/
+
+# Build
+dist/
+build/
+
+# Environment
+.env_MD/
+.env/
+venv/
+
+# macOS
+.DS_Store

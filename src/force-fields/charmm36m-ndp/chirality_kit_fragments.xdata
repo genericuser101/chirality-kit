@@ -1,0 +1,242 @@
+Fragment Nanotube-Species CNT-Drude
+Masses 
+
+        1       11.6110 #      CD2R6A    C NONBOND (0.0700,1.9924) CHARGE  2.709 DRUDE (-2.43700,1.26200)
+        2       0.40000 # CD2R6A-DRUD   DP NONBOND (0.0000,0.0000) CHARGE -2.709 DRUDE (0.000000,0.00000)
+
+Atoms 
+
+        1       1       1       2.709   0.000   0.000   0.000 # CD2R6A
+        2       1       2      -2.709   0.000   0.000   0.000 # CD2R6A-DRUD
+
+PairIJ Coeffs
+ 
+
+Bond Coeffs 
+
+        1       305.000   1.3750  # CD2R6A CD2R6A
+        2       500.000   0.0000  # CD2R6A CD2R6A-DRUD
+
+Angle Coeffs
+
+        1       40.0000  120.0000  35.0000  2.4162  # CD2R6A CD2R6A CD2R6A
+
+Dihedral Coeffs
+
+        1       2.800    2   180.00 # CD2R6A CD2R6A CD2R6A CD2R6A
+
+Improper Coeffs
+
+Lone Pairs
+
+Anisotropy
+
+END
+
+
+Fragment H-term
+Masses
+
+       1        1.008   # HDR6A  H  NONBOND (0.0300,1.0500)  CHARGE 0.0222222 DRUDE (0.000,0.000)
+
+Atoms
+
+       1       1      1   0.0222222    0.0000     0.0000    0.0000  #      HDR6A 
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+       1    340.000   1.0800 # CD2R6A HDR6A   
+
+Bonds 
+
+        1  1  c-idx  1  #  CD2R6A HDR6A 
+
+Angle Coeffs
+
+        1   30.00000    120.00000    22.0000    2.15250 # CD2R6A CD2R6A HDR6A
+
+Dihedral Coeffs
+
+        1   2.4000  2   180.00 # HDR6A  CD2R6A CD2R6A HDR6A
+        2   4.2000  2   180.00 # CD2R6A CD2R6A CD2R6A HDR6A
+
+Improper Coeffs
+
+Lone Pairs
+
+Anisotropy
+
+END
+
+
+Fragment H+
+Masses
+
+       1        1.008   # HDR6A  H  NONBOND (0.0300,1.0500)  CHARGE 0.0222222 DRUDE (0.000,0.000)
+
+Atoms
+
+       1       1      1   0.0222222    0.0000     0.0000    0.0000  #      HDR6A 
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+       1    340.000   1.0800 # CD2R6A HDR6A   
+
+Bonds 
+
+        1  1  c-idx  1  #  CD2R6A HDR6A 
+
+Angle Coeffs
+
+        1   30.00000    120.00000    22.0000    2.15250 # CD2R6A CD2R6A HDR6A
+
+Dihedral Coeffs
+
+        1   2.4000  2   180.00 # HDR6A  CD2R6A CD2R6A HDR6A
+        2   4.2000  2   180.00 # CD2R6A CD2R6A CD2R6A HDR6A
+
+Improper Coeffs
+
+Lone Pairs
+
+Anisotropy
+
+END
+
+Fragment COO-
+Masses
+
+       1        11.6110 # CD2O2A       C NONBOND (0.43000,1.4700)    CHARGE     3.235  DRUDE (-2.43700,0.899000)
+       2         0.4000 # CD2O2A-DRUD DP NONBOND (0.00000,0.0000)    CHARGE    -2.709  DRUDE (0.000000,0.000000)
+       3        15.5994 # OD2C2A       O NONBOND (0.30000,1.8200)    CHARGE     1.454  DRUDE (-0.69900,2.399000)
+       4         0.4000 # OD2C2A-DRUD DP NONBOND (0.00000,0.0000)    CHARGE    -1.451  DRUDE (0.000000,0.000000)
+       5         0.0000 # LPD         LP NONBOND (0.00000,0.0000)    CHARGE    -0.383  DRUDE (0.000000,0.000000)
+
+Atoms
+
+        1     1    1       3.235    -0.000000     0.000000    -0.000000   # CD2O2A
+        2     1    2      -2.709    -0.000000    -0.000000     0.000000   # CD2O2A-DRUD
+        3     1    3       1.454     0.554461    -1.126248     0.109128   # OD2C2A
+        4     1    4      -1.451     0.554461    -1.126248     0.109128   # OD2C2A-DRUD
+        5     1    3       1.454     0.554461     1.126248    -0.109128   # OD2C2A
+        6     1    4      -1.451     0.554461     1.126248    -0.109128   # OD2C2A-DRUD
+        7     1    5      -0.383     0.311794    -1.377289     0.133452   # LPD
+        8     1    5      -0.383     0.902476    -1.089196     0.105537   # LPD
+        9     1    5      -0.383     0.311794     1.377289    -0.133452   # LPD
+       10     1    5      -0.383     0.902476     1.089197    -0.105537   # LPD
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+        1  525.000   1.2600 # OD2C2A CD2O2A
+        2  200.000   1.5000 # CD2O2A CD2R6A
+                COMMENT:    the bond for CD2O2A and CD2R6A does not natively exist in CHARMM36m-ndp
+        3  0.0000    0.000  # OD2C2A LPD
+        4  500.00    0.000  # CD2O2A CD2O2A-DRUD 
+        5  500.00    0.000  # OD2C2A OD2C2A-DRUD
+
+Bonds 
+
+       1      1     1     3                 #      CD2O2A      OD2C2A
+       2      1     1     5                 #      CD2O2A      OD2C2A
+       3      3     3     7                 #      OD2C2A      LPD
+       4      3     3     8                 #      OD2C2A      LPD
+       5      3     5     9                 #      OD2C2A      LPD 
+       6      3     5    10                 #      OD2C2A      LPD
+       7      4     1     2                 #      CD2O2A      CD2O2A-DRUD
+       8      5     3     4                 #      OD2C2A      OD2C2A-DRUD
+       9      5     5     6                 #      OD2C2A      OD2C2A-DRUD
+      10      2     1     c-idx             #      CD2O2A      CD2R6A 
+
+Angle Coeffs
+
+        1   45.00000    119.00000    0.00000    0.00000 # CD2O2A  CD2R6A CD2R6A
+        2   100.0000    128.00000    70.0000    2.25870 # OD2C2A  CD2O2A  OD2C2A
+        3   40.00000    116.00000    50.0000    2.35300 # CD2R6A CD2O2A  OD2C2A
+                COMMENT:    the angle for CD2O2A and CD2R6A does not natively exist in CHARMM36m-ndp
+
+Dihedral Coeffs
+
+        1   4.2000  2   180.00 # CD2R6A CD2R6A CD2R6A HGR6A
+        2   3.1000  2   180.00 # CD2O2A  CD2R6A CD2R6A CD2R6A
+        3   3.1000  2   180.00 # OD2C2A  CD2O2A  CD2R6A CD2R6A
+                COMMENT:    the bond for CD2O2A and CD2R6A does not natively exist in CHARMM36m-ndp
+        4   2.4000  2   180.00 # CD2O2A  CD2R6A CD2R6A HGR6A
+
+Improper Coeffs
+
+        1   96.00   0   00.00  # CD2R6A  OD2C2A  OD2C2A  CD2O2A
+                COMMENT:    the improper for COO- does not natively exist in CHARMM36m-ndp
+
+Lone Pairs
+
+        1   7   F   0.3500    110.00   000.00   # LPD (3,1,c-idx)
+        2   8   F   0.3500    110.00   180.00   # LPD (3,1,c-idx)
+        3   9   F   0.3500    110.00   000.00   # LPD (5,1,c-idx)
+        4  10   F   0.3500    110.00   180.00   # LPD (5,1,c-idx)
+
+Anisotropy
+
+        1   3    0.7229     1.265    # OD2C2A (1,7,8)
+        2   5    0.7229     1.265    # OD2C2A (1,9,10)
+
+END
+
+
+Fragment CH3
+Masses
+
+        1   11.6110   # CD33A       C  NONBOND (0.0780,2.0400)   CHARGE    1.972  DRUDE (-1.60800,0.4380)
+        2    0.4000   # CD33A-DRUD  DP NONBOND (0.0000,0.0000)   CHARGE   -2.201  DRUDE (0.00000,0.0000)
+        3    1.0080   # HDA3A       H  NONBOND (0.0240,1.3400)   CHARGE  0.07900  DRUDE (0.00000,0.0000)
+
+Atoms
+
+        1     1    1       1.972     0.000000    -0.000000     0.000000   # CD33A
+        2     1    2      -2.201     0.000000     0.000000     0.000000   # CD33A-DRUD
+        3     1    3     0.07900     0.357763     1.051264    -0.004271   # HDA3A
+        4     1    3     0.07900     0.357763    -0.521933     0.912557   # HDA3A
+        5     1    3     0.07900     0.357763    -0.529331    -0.908286   # HDA3A
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+        1   230.00      1.4900  # CD2R6A CD33A       
+        2   322.00      1.1110  # CD33A  HDA3A     
+        3   500.00      0.0000  # CD33A  CD33A-DRUD  
+
+Bonds
+
+        1   2   1   3                # CD33A HDA3A
+        2   2   1   4                # CD33A HDA3A
+        3   2   1   5                # CD33A HDA3A
+        4   3   1   2                # CD33A CD33A-DRUD
+        5   1   1   c-idx            # CD33A CD2R6A
+
+Angle Coeffs
+
+        1   45.80   122.30    0.000   0.0000   # CD2R6A CD2R6A CD33A  
+        2   49.30   107.50    0.000   0.0000   # CD2R6A CD33A  HDA3A   
+        3   35.50   108.40    5.40    1.802    # HDA3A  CD33A  HDA3A
+
+Dihedral Coeffs
+
+        1   3.1000   2  180.00   # CD2R6A CD2R6A CD2R6A CD33A   
+        2   4.2000   2  180.00   # CD33A  CD2R6A CD2R6A HDR6A   
+        3   0.0000   6    0.00   # CD2R6A CD2R6A CD33A  HDA3A   
+        4   0.0000   6    0.00   # HDR6A  CD2R6A CD33A  HDA3A   
+
+Improper Coeffs
+Lone Pairs
+Anisotropy
+END

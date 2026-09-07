@@ -1,0 +1,70 @@
+
+{
+    "metadata": {
+        "made-by": "chirality-kit",
+        "version": "0.6.1",
+        "creator": "Stef @ Warwick University",
+        "filename": "chirality_main.py"
+    },
+
+    "settings": {
+        "system_name": "auto",
+        "verbose": false,
+        "output_types": [".pdb", ".psf", ".xyz", ".data"],
+        "bonds": true,
+        "angles": true,
+        "dihedrals": true,
+        "impropers": true,
+        "lone-pairs": true,
+        "anisotropy": true
+    },
+
+    "system": {
+        "force-field": "CHARMM36m-NDP",
+        "size": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]],
+        "size-padding-xy": 14.0,
+        "size-padding-z": 30.0,
+        "nanotube": false,
+        "functionalisation": false,
+        "solvation": true
+    },
+
+    "nanotube": { "type": "CNT-Drude", "n": 9, "m": 9, "repeats": 10 },
+
+    "functionalisation": {
+        "term": {},
+        "loose": {}
+    },
+
+    "solvation": {
+        "groups": [
+            {
+                "type": "SWM4",
+                "placement": "packed",
+                "priority": 100,
+                "min_distance": 1.8,
+                "concentration": 55.5,
+                "molecules_per_unit": 1
+            },
+            {
+                "type": "KCl",
+                "placement": "ionic",
+                "charge-neutrality": true,
+                "priority": 50,
+                "count": 1,
+                "min_distance": 2.5
+            }
+        ],
+        "bridson_params": {
+            "k"              : 30,  
+            "r_floor"        : 1.0,  
+            "repeats"        : 2,    
+            "bracket_steps"  : 10,  
+            "bin_steps"      : 10, 
+            "final_repeats"  : 10,  
+            "tol_frac"       : 0.05,
+            "injection_limit": 1024  
+        }
+
+    }
+}

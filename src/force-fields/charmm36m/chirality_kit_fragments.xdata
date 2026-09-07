@@ -1,0 +1,655 @@
+Fragment Nanotube-Species CNT
+Masses 
+
+        1       12.0110 # CG2R61 C NONBOND (0.0700,1.9924) CHARGE 0.000
+
+Atoms 
+
+        1       1       1       0.000   0.000   0.000   0.000 # CG2R61
+
+PairIJ Coeffs
+
+
+Bond Coeffs 
+
+        1       305.000   1.3750  # CG2R61 CG2R61
+
+Bonds 
+
+
+Angle Coeffs
+
+        1       40.0000  120.0000  35.0000  2.4162  # CG2R61 CG2R61 CG2R61
+
+Dihedral Coeffs
+
+        1       3.1000   2   180.00 # CG2R61 CG2R61 CG2R61 CG2R61
+
+Improper Coeffs
+Lone Pairs      
+Anisotropy
+END
+
+
+
+Fragment H-term
+Masses
+
+       1        1.008   # HGR61  H  NONBOND (0.030000,1.3582)  CHARGE 0.0222222
+
+Atoms
+
+       1       1      1   0.0222222    0.0000000     0.0000000    0.0000  #      HGR61 
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+       1    340.000   1.0800 # CG2R61 HGR61   
+
+Bonds 
+
+        1  1  c-idx  1  #  CG2R61 HGR61 
+
+Angle Coeffs
+
+        1   30.00000    120.00000    22.0000    2.15250 # CG2R61 CG2R61 HGR61
+
+Dihedral Coeffs
+
+        1   2.4000  2   180.00 # HGR61  CG2R61 CG2R61 HGR61
+        2   4.2000  2   180.00 # CG2R61 CG2R61 CG2R61 HGR61
+
+Improper Coeffs
+Lone Pairs    
+Anisotropy
+END
+
+
+
+Fragment H+
+Masses
+
+       1        1.008   # HGR61  H  NONBOND (0.030000,1.3582)  CHARGE 0.0222222
+
+Atoms
+
+       1       1      1   0.0222222    0.0000000     0.0000000    0.0000  #      HGR61 
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+       1    340.000   1.0800 # CG2R61 HGR61   
+
+Bonds 
+
+        1  1  c-idx  1  #  CG2R61 HGR61 
+
+Angle Coeffs
+
+        1   30.00000    120.00000    22.0000    2.15250 # CG2R61 CG2R61 HGR61
+
+Dihedral Coeffs
+
+        1   2.4000  2   180.00 # HGR61  CG2R61 CG2R61 HGR61
+        2   4.2000  2   180.00 # CG2R61 CG2R61 CG2R61 HGR61
+
+Improper Coeffs
+Lone Pairs   
+Anisotropy
+END
+
+
+
+Fragment COO-
+Masses
+
+       1        12.011  # CG2O3  C NONBOND (0.07000,2.0000)    CHARGE     0.340 
+       2        15.9994 # OG2D2  O NONBOND (0.12000,1.7000)    CHARGE    -0.670
+
+Atoms
+
+        1     1    1       0.340    -0.000000     0.000000    -0.000000   # CG2O3
+        2     1    2      -0.670     0.554461     1.131228     0.025822   # OG2D2
+        3     1    2      -0.670     0.554461    -1.131228    -0.025822   # OG2D2
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+        1  525.000   1.2600 # OG2D2 CG2O3
+        2  200.000   1.5000 # CG2O3 CG2R61
+
+Bonds 
+
+       1      1     1     2                 #      CG2O3      OG2D2
+       2      1     1     3                 #      CG2O3      OG2D2
+       3      2     1     c-idx             #      CG2O3      CG2R61 
+
+Angle Coeffs
+
+        1   45.00000    119.00000    0.00000    0.00000 # CG2O3  CG2R61 CG2R61
+        2   100.0000    128.00000    70.0000    2.25870 # OG2D2  CG2O3  OG2D2
+        3   40.00000    116.00000    50.0000    2.35300 # CG2R61 CG2O3  OG2D2
+
+Dihedral Coeffs
+
+        1   4.2000  2   180.00 # CG2R61 CG2R61 CG2R61 HGR61
+        2   3.1000  2   180.00 # CG2O3  CG2R61 CG2R61 CG2R61
+        3   3.1000  2   180.00 # OG2D2  CG2O3  CG2R61 CG2R61
+        4   2.4000  2   180.00 # CG2O3  CG2R61 CG2R61 HGR61
+
+Improper Coeffs
+
+        1    96.00    0    0.00    # CG2O3  OG2D2  OG2D2  CG2R61
+
+Lone Pairs    
+Anisotropy
+END
+
+
+
+Fragment OH-
+Masses
+
+        1     15.9994   # OG311 O NONBOND (0.1921,1.7650)     CHARGE -1.32
+        2      1.0080   # HGP1  H NONBOND (0.0460,0.2245)     CHARGE  0.32
+
+Atoms
+
+        1     1    1       -1.32     0.000000    -0.000000    -0.000000   # OG311
+        2     1    2        0.32     0.296656     0.645599     0.645599   # HGP1
+
+PairIJ Coeffs
+
+
+
+Bond Coeffs
+
+        1    545.00     0.9600  #  OG311  HGP1 
+        2    334.30     1.4110  #  OG311  CG2R61
+Bonds 
+
+        1    1   1      2    # OG311  HGP1 
+        2    2   c-idx  1    # CG2R61 OG311
+
+Angle Coeffs
+
+        1   65.00    108.00   0.000   0.000 #  CG2R61 OG311  HGP1
+
+Dihedral Coeffs
+
+        1   0.9900  2   180.00  #  CG2R61 CG2R61 OG311  HGP1
+
+Improper Coeffs
+Lone Pairs  
+Anisotropy
+END
+
+
+
+Fragment C2H5
+Masses
+
+        1      12.011       #  CG321  C  NONBOND      (0.0560000,2.0100) CHARGE     -0.18
+        2      12.011       #  CG331  C  NONBOND      (0.0780000,2.0500) CHARGE     -0.27
+        3      1.0080       #  HGA2   H  NONBOND      (0.0350000,1.3400) CHARGE      0.09
+        4      1.0080       #  HGA3   H  NONBOND      (0.0240000,1.3400) CHARGE      0.09
+
+Atoms
+
+        1     1    1       -0.18     0.000000    -0.000000    -0.000000   # CG321
+        2     1    2       -0.27     0.478057     0.019084     1.450004   # CG331
+        3     1    3        0.09     0.348158     0.902085    -0.545832   # HGA2
+        4     1    3        0.09     0.348158    -0.916138    -0.521901   # HGA2
+        5     1    4        0.09     0.104271     0.928137     1.967861   # HGA3
+        6     1    4        0.09     0.104271    -0.876024     1.991606   # HGA3
+        7     1    4        0.09     1.588294     0.019618     1.490545   # HGA3
+
+PairIJ Coeffs
+
+
+
+Bond Coeffs
+
+        1      222.50     1.5280          # CG321 CG331 
+        2      322.00     1.1110          # CG331 HGA3
+        3      309.00     1.1110          # CG321 HGA2
+        4      230.00     1.4900          # CG321 CG2R61
+
+Bonds 
+
+        1      1       2        1  # CG321 CG331
+        2      3       1        3  # CG321 HGA2
+        3      3       1        4  # CG321 HGA2
+        4      2       2        5  # CG331 HGA3
+        5      2       2        6  # CG331 HGA3
+        6      2       2        7  # CG331 HGA3
+        7      4       1        c-idx # CG321 CG2R61
+
+Angle Coeffs
+
+        1   34.60    110.10   22.53   2.17900 # CG331  CG321  HGA2
+        2   35.50    109.00    5.40   1.802   # HGA2   CG321  HGA2
+        3   34.60    110.10   22.53   2.17900 # CG321  CG331  HGA3
+        4   51.80    107.50   0.000   0.000   # CG2R61 CG321  CG331
+        5   35.50    108.40    5.40   1.80200 # HGA3   CG331  HGA3
+        6   49.30    107.50   0.000   0.000   # CG2R61 CG321  HGA2
+
+Dihedral Coeffs
+
+        1  0.2300  2   180.0  # CG2R61 CG2R61 CG321  CG331
+        2  0.0400  3    0.00  # CG2R61 CG321  CG331  HGA3
+        3  0.1600  3    0.00  # HGA2   CG321  CG331  HGA3
+        4  0.0020  6    0.00  # CG2R61 CG2R61 CG321  HGA2
+
+Improper Coeffs
+Lone Pairs 
+Anisotropy
+END
+
+
+
+Fragment NH2-
+Masses
+
+        1     14.0070   # NG2S3  N  NONBOND (0.2000,1.8500)   CHARGE -0.850 
+        2      1.0080   # HGP4   H  NONBOND (0.0460,0.2245)   CHARGE  0.400
+
+Atoms
+
+        1     1    1      -0.850    -0.000000     0.000000     0.000000   # NG2S3
+        2     1    2       0.400     0.389285    -0.699549    -0.599553   # HGP4
+        3     1    2       0.400     0.389285     0.920971    -0.025403   # HGP4
+
+PairIJ Coeffs
+
+
+
+Bond Coeffs
+
+        1     488.00     1.0000     # NG2S3  HGP4
+        2     400.00     1.3900     # NG2S3  CG2R61
+
+Bonds
+
+        1        1        1          2      #    NG2S3    HGP4
+        2        1        1          3      #    NG2S3    HGP4
+        3        2        1        c-idx    #    NG2S3    CG2R61
+
+Angle Coeffs
+
+        1   60.00    121.00    0.000   0.000  # CG2R61  CG2R61  NG2S3 
+        2   31.00    117.00    0.000   0.000  # HGP4    NG2S3   HGP4
+        3   60.00    111.60    0.000   0.000  # CG2R61  NG2S3   HGP4
+
+Dihedral Coeffs
+
+        1       1.3500   2   180.00     # CG2R61  CG2R61  NG2S3   HGP4
+        2       2.4000   2   180.00     # NG2S3   CG2R61  CG2R61  HGR61
+        3       5.0000   2   180.00     # CG2R61  CG2R61  CG2R61  NG2S3
+
+Improper Coeffs
+
+        1    -2.50    0    0.00   # NG2S3  HGP4   HGP4   CG2R61
+
+Lone Pairs
+Anisotropy
+END
+
+
+
+Fragment COOH
+Masses
+
+        1     12.0110   # CG2O2  C  NONBOND (0.0980,1.7000)   CHARGE  0.46    
+        2     15.9994   # OG2D1  O  NONBOND (0.1200,1.7000)   CHARGE -0.46    
+        3     15.9994   # OG311  O  NONBOND (0.1921,1.7650)   CHARGE -0.51    
+        4      1.0080   # HGP1   H  NONBOND (0.0460,0.2245)   CHARGE  0.43    
+
+        COMMENT: residue ZOIC, ATOM C1   CG2R61   CHARGE 0.080
+
+Atoms
+
+        1     1    1        0.46     0.000000     0.000000    -0.000000   # CG2O2
+        2     1    2       -0.46     0.677466     1.016180    -0.002468   # OG2D1
+        3     1    3       -0.51     0.544218    -1.286572     0.003125   # OG311
+        4     1    4        0.43    -0.099041    -1.999183     0.004856   # HGP1
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+        1   254.00     1.4800   # CG2O2  CG2R61  
+        2   750.00     1.2200   # CG2O2  OG2D1   
+        3   230.00     1.4000   # CG2O2  OG311    
+        4   545.00     0.9600   # OG311  HGP1    
+
+Bonds
+
+        1     2     1     2     # CG2O2  OG2D1
+        2     3     1     3     # CG2O2  OG311
+        3     4     3     4     # OG311  HGP1
+        4     1     1     c-idx # CG2O2  CG2R61
+
+Angle Coeffs
+
+        1   45.00   120.00    0.00    0.0000  # CG2O2  CG2R61 CG2R61   
+        2   70.00   123.10   20.00    2.4420  # CG2R61 CG2O2  OG2D1    
+        3   40.00   113.90   30.00    2.3700  # CG2R61 CG2O2  OG311    
+        4   55.00   115.00    0.00    0.0000  # CG2O2  OG311  HGP1   
+        5   50.00   123.00  210.00    2.2620  # OG2D1  CG2O2  OG311
+
+Dihedral Coeffs
+
+        1   3.1000  2  180.00  # CG2O2  CG2R61 CG2R61 CG2R61   
+        2   2.4000  2  180.00  # CG2O2  CG2R61 CG2R61 HGR61    
+        3   0.9750  1  180.00  # CG2R61 CG2O2  OG311  HGP1     
+        4   2.7000  2  180.00  # CG2R61 CG2O2  OG311  HGP1     
+        5   0.0500  3  180.00  # CG2R61 CG2O2  OG311  HGP1     
+        6   0.2500  6  180.00  # CG2R61 CG2O2  OG311  HGP1     
+        7   2.0500  2  180.00  # OG2D1  CG2O2  OG311  HGP1
+
+        COMMENT: dihedrals 3-6 are a multi-term Fourier series for the C-O-O-H torsion (n=1,2,3,6 all present); make sure your dihedral handler sums all four terms rather than overwriting them.
+
+Improper Coeffs
+
+        1    65.00   0    0.00  # CG2O2  CG2R61 OG2D1  OG311   
+        
+        COMMENT: (ZOIC, benzoic acid; "MOLVIB 1% low (55 would be spot on)")  in the source the order is CG2O2 CG2R61 OG2D1 OG311 with k=53,
+        COMMENT: but for graphene-attached use the analogous PROT/LIPID wildcard k=65 (CG2O2 CG311 OG2D1 OG311, par L100) is more transferable. Use 53 if you want to match the benzoic-acid molvib exactly.
+
+Lone Pairs
+
+Anisotropy
+
+END
+
+
+
+Fragment CONH2
+Masses
+
+        1     12.0110   # CG2O1 C NONBOND (0.1100,2.0000)     CHARGE  0.63
+        2     15.9994   # OG2D1 O NONBOND (0.1200,1.7000)     CHARGE -0.46
+        3     14.0070   # NG2S2 N NONBOND (0.2000,1.8500)     CHARGE -0.90
+        4      1.0080   # HGP1   H NONBOND (0.0460,0.2245)    CHARGE  0.39
+
+        COMMENT: residue 3NAP, ATOM CD1 CG2R61 CHARGE -0.020
+        COMMENT: 3NAP atoms HC and HT share type HGP1; their per-atom charges remain 0.39 and 0.36 below
+
+Atoms
+
+        1     1    1        0.63     0.000000     0.000000     0.000000   # CG2O1
+        2     1    2       -0.46     0.679776     1.030411     0.001717   # OG2D1
+        3     1    3       -0.90     0.504803    -1.269930    -0.002116   # NG2S2
+        4     1    4        0.39     1.494273    -1.414665    -0.002357   # HGP1
+        5     1    4        0.36    -0.115278    -2.054467    -0.003422   # HGP1
+
+PairIJ Coeffs
+
+
+
+Bond Coeffs
+
+        1   300.00     1.4750   # CG2O1  CG2R61
+        2   620.00     1.2300   # CG2O1  OG2D1
+        3   430.00     1.3600   # CG2O1  NG2S2
+        4   480.00     1.0000   # NG2S2  HGP1
+
+Bonds
+
+        1     2     1     2     # CG2O1  OG2D1
+        2     3     1     3     # CG2O1  NG2S2
+        3     4     3     4     # NG2S2  HGP1
+        4     4     3     5     # NG2S2  HGP1
+        5     1     1     c-idx # CG2O1  CG2R61
+
+Angle Coeffs
+
+        1   45.00   119.00    0.00    0.0000  # CG2O1  CG2R61 CG2R61
+        2   50.00   110.23    0.00    0.0000  # CG2R61 CG2O1  NG2S2
+        3   30.00   121.00    0.00    0.0000  # CG2R61 CG2O1  OG2D1
+        4   75.00   122.50   50.00    2.3700  # NG2S2  CG2O1  OG2D1
+        5   50.00   120.00    0.00    0.0000  # CG2O1  NG2S2  HGP1
+        6   23.00   120.00    0.00    0.0000  # HGP1   NG2S2  HGP1
+
+Dihedral Coeffs
+
+        1   3.1000  2   180.00  # CG2O1  CG2R61 CG2R61 CG2R61
+        2   2.4000  2   180.00  # CG2O1  CG2R61 CG2R61 HGR61
+        3   1.0000  2   180.00  # CG2R61 CG2O1  NG2S2  HGP1
+        4   1.4000  2   180.00  # OG2D1  CG2O1  NG2S2  HGP1
+        5   1.0000  2   180.00  # NG2S2  CG2O1  CG2R61 CG2R61
+
+
+Improper Coeffs
+
+        1  120.00  0    0.00   # CG2O1  CG2R61 NG2S2  OG2D1
+
+Lone Pairs
+Anisotropy
+END
+
+
+
+Fragment NH3+
+Masses
+
+        1     14.0070   # NG3P3 N NONBOND (0.2000,1.8500)     CHARGE -0.30
+        2      1.0080   # HGP2  H NONBOND (0.0460,0.2245)     CHARGE  0.33
+
+        COMMENT: No direct CG2R61-NG3P3 CNT-NH3+ bonded model is available in CHARMM36m/CGenFF; Corry 2011 and Ding & Su 2023 do not publish one.
+        COMMENT: Direct BZAM analogue: map the actual CNT attachment type CG2R61 to BZAM methylene CG324 only for the bonded coefficients below.
+        COMMENT: BZAM has no NG3P3 improper, so none is added. Charges remain the legacy N -0.30 and 3 x H +0.33 model (net +0.69e).
+
+Atoms
+
+        1     1   1  -0.30    0.000    0.000    0.000   # NG3P3
+        2     1   2   0.33    0.347    0.980    0.000   # HGP2
+        3     1   2   0.33    0.347   -0.490    0.849   # HGP2
+        4     1   2   0.33    0.347   -0.490   -0.849   # HGP2
+
+PairIJ Coeffs
+
+Bond Coeffs
+
+        1   403.00     1.0400   # NG3P3  HGP2
+        2   200.00     1.4900   # CG2R61 NG3P3
+
+Bonds
+
+        1     1     1     2     # NG3P3 HGP2
+        2     1     1     3     # NG3P3 HGP2
+        3     1     1     4     # NG3P3 HGP2
+        4     2     1 c-idx     # NG3P3 CG2R61
+
+Angle Coeffs
+
+        1   45.80   120.00    0.00    0.0000  # CG2R61 CG2R61 NG3P3
+        2   30.00   109.50   20.00    2.0740  # CG2R61 NG3P3 HGP2
+        3   44.00   109.50    0.00    0.0000  # HGP2 NG3P3 HGP2
+
+Dihedral Coeffs
+
+        1    0.3300  2     0.00  # CG2R61 CG2R61 CG2R61 NG3P3
+        2    0.0400  3     0.00  # CG2R61 CG2R61 NG3P3 HGP2
+
+Improper Coeffs
+
+Lone Pairs
+Anisotropy
+END
+
+
+
+Fragment NH3+-CPEA
+Masses
+
+        1     14.0070   # NG3P3 N NONBOND (0.2000,1.8500)     CHARGE -0.32
+        2      1.0080   # HGP2  H NONBOND (0.0460,0.2245)     CHARGE  0.30
+
+        COMMENT: No direct CG2R61-NG3P3 CNT-NH3+ bonded model is available in CHARMM36m/CGenFF; this is a documented CPEA ring-carbon analogue.
+        COMMENT: Map the actual CNT attachment CG2R61 to CPEA C1 CG3C53 and its adjacent CNT ring carbons to CPEA C5/C4 CG2R51 for the bonded coefficients below.
+        COMMENT: residue CPEA, ATOM C1 CG3C53 CHARGE +0.330; omitted H1 HGA1 CHARGE +0.090. The generated CNT carbon remains CG2R61 with charge 0.000.
+        COMMENT: Copied NH3+ atoms total +0.580e. CPEA has no NG3P3 improper, so none is added.
+
+Atoms
+
+        1     1   1  -0.32    0.000    0.000    0.000   # NG3P3
+        2     1   2   0.30    0.347    0.980    0.000   # HGP2
+        3     1   2   0.30    0.347   -0.490    0.849   # HGP2
+        4     1   2   0.30    0.347   -0.490   -0.849   # HGP2
+
+PairIJ Coeffs
+
+Bond Coeffs
+
+        1   403.00     1.0400   # NG3P3  HGP2
+        2   320.00     1.4850   # CG2R61 NG3P3
+
+Bonds
+
+        1     1     1     2     # NG3P3 HGP2
+        2     1     1     3     # NG3P3 HGP2
+        3     1     1     4     # NG3P3 HGP2
+        4     2     1 c-idx     # NG3P3 CG2R61
+
+Angle Coeffs
+
+        1   77.00   109.50    0.00    0.0000  # CG2R61 CG2R61 NG3P3
+        2   30.00   109.50   20.00    2.0740  # CG2R61 NG3P3 HGP2
+        3   44.00   109.50    0.00    0.0000  # HGP2 NG3P3 HGP2
+
+Dihedral Coeffs
+
+        1    2.1000  3   180.00  # CG2R61 CG2R61 CG2R61 NG3P3
+        2    0.3000  3     0.00  # CG2R61 CG2R61 NG3P3 HGP2
+
+Improper Coeffs
+
+Lone Pairs
+Anisotropy
+END
+
+
+
+Fragment NH3+-CPOA
+Masses
+
+        1     14.0070   # NG3P3 N NONBOND (0.2000,1.8500)     CHARGE -0.34
+        2      1.0080   # HGP2  H NONBOND (0.0460,0.2245)     CHARGE  0.31
+
+        COMMENT: No direct CG2R61-NG3P3 CNT-NH3+ bonded model is available in CHARMM36m/CGenFF; this is a documented CPOA ring-carbon analogue.
+        COMMENT: Map the actual CNT attachment CG2R61 to CPOA C1 CG3C53 and its adjacent CNT ring carbons to CPOA C5/C4 CG3RC1 for the bonded coefficients below.
+        COMMENT: residue CPOA, ATOM C1 CG3C53 CHARGE +0.320; omitted H1 HGA1 CHARGE +0.090. The generated CNT carbon remains CG2R61 with charge 0.000.
+        COMMENT: Copied NH3+ atoms total +0.590e. CPOA has no NG3P3 improper, so none is added.
+
+Atoms
+
+        1     1   1  -0.34    0.000    0.000    0.000   # NG3P3
+        2     1   2   0.31    0.347    0.980    0.000   # HGP2
+        3     1   2   0.31    0.347   -0.490    0.849   # HGP2
+        4     1   2   0.31    0.347   -0.490   -0.849   # HGP2
+
+PairIJ Coeffs
+
+Bond Coeffs
+
+        1   403.00     1.0400   # NG3P3  HGP2
+        2   320.00     1.4850   # CG2R61 NG3P3
+
+Bonds
+
+        1     1     1     2     # NG3P3 HGP2
+        2     1     1     3     # NG3P3 HGP2
+        3     1     1     4     # NG3P3 HGP2
+        4     2     1 c-idx     # NG3P3 CG2R61
+
+Angle Coeffs
+
+        1   70.00   108.50    0.00    0.0000  # CG2R61 CG2R61 NG3P3
+        2   30.00   109.50   20.00    2.0740  # CG2R61 NG3P3 HGP2
+        3   44.00   109.50    0.00    0.0000  # HGP2 NG3P3 HGP2
+
+Dihedral Coeffs
+
+        1    0.9000  2     0.00  # CG2R61 CG2R61 CG2R61 NG3P3
+        2    0.7000  3     0.00  # CG2R61 CG2R61 CG2R61 NG3P3
+        3    0.0800  3     0.00  # CG2R61 CG2R61 NG3P3 HGP2
+
+Improper Coeffs
+
+Lone Pairs
+Anisotropy
+END
+
+
+
+Fragment CH2NH3+
+Masses
+
+        1     12.0110   # CG324 C NONBOND (0.0550,2.1750)     CHARGE  0.080
+        2      1.0080   # HGA2  H NONBOND (0.0350,1.3400)     CHARGE  0.090
+        3     14.0070   # NG3P3 N NONBOND (0.2000,1.8500)     CHARGE -0.340
+        4      1.0080   # HGP2  H NONBOND (0.0460,0.2245)     CHARGE  0.330
+
+        COMMENT: residue BZAM, ATOM C5 CG2R61 CHARGE +0.090
+        COMMENT: The copied CNT-CH2-NH3+ atoms total +0.910e; with BZAM C5 they reproduce the +1.000e residue charge. The CNT carbon remains 0.000e.
+        COMMENT: This is the fully CGenFF-covered BZAM phenyl-CH2-NH3+ linker model. BZAM has no NG3P3 improper, so none is added.
+
+Atoms
+
+        1     1    1       0.080     0.000000    -0.000000     0.000000   # CG324
+        2     1    2       0.090     0.362760     0.745707     0.720468   # HGA2
+        3     1    2       0.090     0.362760    -1.006744     0.248235   # HGA2
+        4     1    3      -0.340     0.480751     0.365565    -1.356607   # NG3P3
+        5     1    4       0.330     0.128840     1.312054    -1.604976   # HGP2
+        6     1    4       0.330     1.520593     0.368131    -1.366130   # HGP2
+        7     1    4       0.330     0.128840    -0.327978    -2.046916   # HGP2
+
+PairIJ Coeffs
+
+Bond Coeffs
+
+        1   284.50     1.1000   # CG324 HGA2
+        2   200.00     1.4900   # CG324 NG3P3
+        3   403.00     1.0400   # NG3P3 HGP2
+        4   230.00     1.4900   # CG2R61 CG324
+
+Bonds
+
+        1     1     1     2     # CG324 HGA2
+        2     1     1     3     # CG324 HGA2
+        3     2     1     4     # CG324 NG3P3
+        4     3     4     5     # NG3P3 HGP2
+        5     3     4     6     # NG3P3 HGP2
+        6     3     4     7     # NG3P3 HGP2
+        7     4     1 c-idx     # CG324 CG2R61
+
+Angle Coeffs
+
+        1   45.00   107.00    0.00    0.0000  # CG2R61 CG324 NG3P3
+        2   49.30   107.50    0.00    0.0000  # CG2R61 CG324 HGA2
+        3   45.00   107.50   35.00    2.1010  # NG3P3 CG324 HGA2
+        4   35.50   109.00    5.40    1.8020  # HGA2 CG324 HGA2
+        5   30.00   109.50   20.00    2.0740  # CG324 NG3P3 HGP2
+        6   44.00   109.50    0.00    0.0000  # HGP2 NG3P3 HGP2
+
+Dihedral Coeffs
+
+        1    0.3300  2     0.00  # CG2R61 CG2R61 CG324 NG3P3
+        2    0.0400  3     0.00  # CG2R61 CG324 NG3P3 HGP2
+        3    0.0000  2     0.00  # CG2R61 CG2R61 CG324 HGA2
+        4    0.1000  3     0.00  # HGA2 CG324 NG3P3 HGP2
+
+Improper Coeffs
+
+Lone Pairs
+Anisotropy
+END

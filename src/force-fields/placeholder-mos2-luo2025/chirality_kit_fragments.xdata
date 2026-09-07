@@ -1,0 +1,51 @@
+Fragment Nanotube-Species MoS2NT
+Masses
+
+        1     95.9600 # MOS2MO Mo NONBOND (0.0000,0.0000) CHARGE 0.000
+        2     32.0600 # MOS2S S NONBOND (0.0000,0.0000) CHARGE 0.000
+
+Atoms
+
+        1       1       1       0.000   0.000   0.000   0.000 # MOS2MO
+        2       1       2       0.000   2.410   0.000   0.000 # MOS2S
+        3       1       2       0.000  -2.410   0.000   0.000 # MOS2S
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+        1       305.000   2.4100  # MOS2MO MOS2S
+
+Bonds
+
+
+Angle Coeffs
+
+        1       40.0000       82.0000        0.0000        0.0000  # MOS2S MOS2MO MOS2S
+        2       40.0000       80.0000        0.0000        0.0000  # MOS2MO MOS2S MOS2MO
+
+Angles
+
+
+Dihedral Coeffs
+
+        1        0.0000   1      180.0000  # MOS2S MOS2MO MOS2S MOS2MO
+        2        0.0000   1      180.0000  # MOS2MO MOS2S MOS2MO MOS2S
+
+Dihedrals
+
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END

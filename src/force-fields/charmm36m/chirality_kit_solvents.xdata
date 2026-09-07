@@ -1,0 +1,1910 @@
+COMMENT: Water Models
+
+Solvent TIP3
+Masses
+
+        1   15.9994    # OT-TIP3 O NONBOND (0.1521,1.7682) CHARGE -0.834
+        2   1.00800    # HT-TIP3 H NONBOND (0.0460,0.2245) CHARGE  0.417
+
+Atoms 
+
+        1   1    1   -0.834      0.000    0.000   0.000   # OT-TIP3
+        2   1    2    0.417    0.75695  0.58588   0.000   # HT-TIP3  
+        3   1    2    0.417   -0.75695  0.58588   0.000   # HT-TIP3
+
+PairIJ Coeffs 
+
+
+Bond Coeffs 
+
+        1   0.000       1.5139  # HT-TIP3   HT-TIP3
+        2   450.0       0.9572  # HT-TIP3   OT-TIP3
+
+Bonds
+
+        1   2   1   3   #    HT-TIP3   OT-TIP3
+        2   2   1   2   #    HT-TIP3   OT-TIP3
+        3   1   2   3   #    HT-TIP3   HT-TIP3
+
+Angle Coeffs 
+
+        1   55.0      104.52    0.00    0.00    # HT-TIP3 OT-TIP3 HT-TIP3
+
+Angles
+
+        1   1   2   1   3   # HT-TIP3 OT-TIP3 HT-TIP3
+
+Dihedral Coeffs 
+Dihedrals
+Improper Coeffs 
+Impropers
+Lone Pairs
+        
+Anisotropy
+
+END
+
+Solvent SPCE
+Masses
+
+        1   15.9994    # OT-SPCE O NONBOND (0.15529,1.7766) CHARGE -0.8476
+        2   1.00800    # HT-SPCE H NONBOND (0.000001,0.0001) CHARGE  0.4238
+
+Atoms 
+
+        1   1    1   -0.8476     0.000000   0.000000   0.000000   # OT-SPCE
+        2   1    2    0.4238     0.816490   0.577359   0.000000   # HT-SPCE
+        3   1    2    0.4238    -0.816490   0.577359   0.000000   # HT-SPCE
+
+PairIJ Coeffs 
+
+
+Bond Coeffs 
+
+        1   0.000       1.6330  # HT-SPCE   HT-SPCE
+        2   450.0       1.0000  # HT-SPCE   OT-SPCE
+
+Bonds
+
+        1   2   1   3   #    HT-SPCE   OT-SPCE
+        2   2   1   2   #    HT-SPCE   OT-SPCE
+        3   1   2   3   #    HT-SPCE   HT-SPCE
+
+Angle Coeffs 
+
+        1   55.0      109.47    0.00    0.00    # HT-SPCE OT-SPCE HT-SPCE
+
+Angles
+
+        1   1   2   1   3   # HT-SPCE OT-SPCE HT-SPCE
+
+Dihedral Coeffs 
+Dihedrals
+Improper Coeffs 
+Impropers
+Lone Pairs
+        
+Anisotropy
+
+END
+
+
+Solvent SPC
+Masses
+
+        1   15.99940    # OT-SPC O NONBOND (0.15529,1.762827) CHARGE -0.8068
+        2    1.00800    # HT-SPC H NONBOND (0.000001,0.0001) CHARGE  0.4034
+
+Atoms
+
+        1   1    1   -0.8068    0.000000    0.000000   0.000000   # OT-SPC
+        2   1    2    0.4034    0.816490    0.577359   0.000000   # HT-SPC
+        3   1    2    0.4034   -0.816490    0.577359   0.000000   # HT-SPC
+
+PairIJ Coeffs
+
+Bond Coeffs
+
+        1     0.0       1.6330  # HT-SPC HT-SPC
+        2   450.0       1.0000  # HT-SPC OT-SPC
+
+Bonds
+
+        1   2   1   2   # OT-SPC HT-SPC
+        2   2   1   3   # OT-SPC HT-SPC
+        3   1   2   3   # HT-SPC HT-SPC
+
+Angle Coeffs
+
+        1   55.0      109.47    0.00    0.00    # HT-SPC OT-SPC HT-SPC
+
+Angles
+
+        1   1   2   1   3   # HT-SPC OT-SPC HT-SPC
+
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+
+END
+
+
+Solvent TIP4P
+Masses
+
+        1   15.99940    # OT-TIP4P O NONBOND (0.155,1.7699) CHARGE  0.000
+        2    0.00000    # LP-TIP4P LP NONBOND (0.000,0.0000) CHARGE -1.040
+        3    1.00800    # HT-TIP4P H NONBOND (0.000,0.0000) CHARGE  0.520
+
+Atoms
+
+        1   1    1    0.000    0.000000    0.000000   0.000000   # OT-TIP4P
+        2   1    2   -1.040    0.000000    0.150000   0.000000   # LP-TIP4P
+        3   1    3    0.520    0.756950    0.585880   0.000000   # HT-TIP4P
+        4   1    3    0.520   -0.756950    0.585880   0.000000   # HT-TIP4P
+
+PairIJ Coeffs
+
+Bond Coeffs
+
+        1     0.0       1.5139  # HT-TIP4P HT-TIP4P
+        2   450.0       0.9572  # HT-TIP4P OT-TIP4P
+        3     0.0       0.1500  # OT-TIP4P LP-TIP4P
+
+Bonds
+
+        1   2   1   3   # OT-TIP4P HT-TIP4P
+        2   2   1   4   # OT-TIP4P HT-TIP4P
+        3   1   3   4   # HT-TIP4P HT-TIP4P
+        4   3   1   2   # OT-TIP4P LP-TIP4P
+
+Angle Coeffs
+
+        1   55.0      104.52    0.00    0.00    # HT-TIP4P OT-TIP4P HT-TIP4P
+
+Angles
+
+        1   1   3   1   4   # HT-TIP4P OT-TIP4P HT-TIP4P
+
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+
+Lone Pairs
+
+        1   2   F   -0.150000    0.000000    0.000000   # LP-TIP4P (1,3,4)
+
+Anisotropy
+
+END
+
+
+Solvent TIP5P
+Masses
+
+        1   15.99940    # OT-TIP5P O NONBOND (0.160,1.7508) CHARGE  0.000
+        2    1.00800    # HT-TIP5P H NONBOND (0.000,0.0000) CHARGE  0.241
+        3    0.00000    # LP-TIP5P LP NONBOND (0.000,0.0000) CHARGE -0.241
+
+Atoms
+
+        1   1    1    0.000    0.000000    0.000000   0.000000   # OT-TIP5P
+        2   1    2    0.241    0.756950    0.585880   0.000000   # HT-TIP5P
+        3   1    2    0.241   -0.756950    0.585880   0.000000   # HT-TIP5P
+        4   1    3   -0.241    0.000000   -0.404145   0.571548   # LP-TIP5P
+        5   1    3   -0.241    0.000000   -0.404145  -0.571548   # LP-TIP5P
+
+PairIJ Coeffs
+
+Bond Coeffs
+
+        1     0.0       1.5139  # HT-TIP5P HT-TIP5P
+        2   450.0       0.9572  # HT-TIP5P OT-TIP5P
+        3     0.0       0.7000  # OT-TIP5P LP-TIP5P
+
+Bonds
+
+        1   2   1   2   # OT-TIP5P HT-TIP5P
+        2   2   1   3   # OT-TIP5P HT-TIP5P
+        3   1   2   3   # HT-TIP5P HT-TIP5P
+        4   3   1   4   # OT-TIP5P LP-TIP5P
+        5   3   1   5   # OT-TIP5P LP-TIP5P
+
+Angle Coeffs
+
+        1   55.0      104.52    0.00    0.00    # HT-TIP5P OT-TIP5P HT-TIP5P
+
+Angles
+
+        1   1   2   1   3   # HT-TIP5P OT-TIP5P HT-TIP5P
+
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+
+Lone Pairs
+
+        1   4   R    0.700000  125.265000   90.000000   # LP-TIP5P (1,2,3)
+        2   5   R    0.700000  125.265000  -90.000000   # LP-TIP5P (1,2,3)
+
+Anisotropy
+
+END
+
+
+COMMENT: Ions
+
+Solvent K
+Masses 
+
+        1   39.0983    # POT K NONBOND (0.0870,1.76375)   CHARGE    1.0
+
+PairIJ Coeffs 
+
+Atoms
+        1   1   1  1.000  0.000    0.000   0.000   # POT
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs 
+Dihedrals
+Improper Coeffs 
+Impropers
+Lone Pairs
+        
+Anisotropy
+
+END
+
+
+
+Solvent Cl
+Masses 
+
+        1   35.4500    # CLA Cl NONBOND (0.1500,2.2700)   CHARGE   -1.0
+
+PairIJ Coeffs 
+
+Atoms
+
+        1   1   1  -1.000  0.000    0.000   0.000   # CLA
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs 
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+        
+Anisotropy
+
+END
+
+
+
+Solvent Na
+Masses 
+
+        1   22.98977    # SOD Na NONBOND (0.0469,1.41075)   CHARGE    1.0
+
+PairIJ Coeffs 
+
+Atoms
+        1   1   1  1.000  0.000    0.000   0.000   # SOD
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs 
+Dihedrals
+Improper Coeffs 
+Impropers
+Lone Pairs    
+Anisotropy
+END
+
+
+Solvent Li
+Masses
+
+        1   6.94100    # LIT Li NONBOND (0.00233,1.2975)   CHARGE    1.0
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1  1.000  0.000    0.000   0.000   # LIT
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Mg
+Masses
+
+        1   24.30500    # MG Mg NONBOND (0.0150,1.18500)   CHARGE    2.0
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1  2.000  0.000    0.000   0.000   # MG
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Ca
+Masses
+
+        1   40.08000    # CAL Ca NONBOND (0.120,1.367)   CHARGE    2.0
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1  2.000  0.000    0.000   0.000   # CAL
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Rb
+Masses
+
+        1   85.46780    # RUB Rb NONBOND (0.150,1.900)   CHARGE    1.0
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1  1.000  0.000    0.000   0.000   # RUB
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Cs
+Masses
+
+        1   132.90545    # CES Cs NONBOND (0.1900,2.100)   CHARGE    1.0
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1  1.000  0.000    0.000   0.000   # CES
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Ba
+Masses
+
+        1   137.32700    # BAR Ba NONBOND (0.150,1.890)   CHARGE    2.0
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1  2.000  0.000    0.000   0.000   # BAR
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Zn
+Masses
+
+        1   65.37000    # ZN Zn NONBOND (0.250,1.090)   CHARGE    2.0
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1  2.000  0.000    0.000   0.000   # ZN
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Cd
+Masses
+
+        1   112.41100    # CAD Cd NONBOND (0.120,1.357)   CHARGE    2.0
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1  2.000  0.000    0.000   0.000   # CAD
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+COMMENT: Small Molecules
+
+Solvent ETHA
+COMMENT: Ethane
+Masses
+
+           1     1.008000 # HGA3-ETHA             H  NONBOND (0.02400000,1.34000000) CHARGE 0.09000000
+           2    12.011000 # CG331-ETHA            C  NONBOND (0.07800000,2.05000000) CHARGE -0.27000000
+
+Atoms
+
+        1     1    1  0.09000000     0.370069     0.169257     0.333752   # HGA3-ETHA
+        2     1    1  0.09000000     0.902973     0.403357    -1.374315   # HGA3-ETHA
+        3     1    1  0.09000000     1.583612    -0.950365    -0.394289   # HGA3-ETHA
+        4     1    2 -0.27000000     0.667484    -0.356244    -0.598687   # CG331-ETHA
+        5     1    1  0.09000000    -0.164730    -1.795523    -2.008799   # HGA3-ETHA
+        6     1    1  0.09000000    -0.697634    -2.029623    -0.300732   # HGA3-ETHA
+        7     1    1  0.09000000    -1.378273    -0.675902    -1.280758   # HGA3-ETHA
+        8     1    2 -0.27000000    -0.462144    -1.270022    -1.076360   # CG331-ETHA
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   322.000000   1.111000 # CG331-ETHA HGA3-ETHA
+           2   222.500000   1.530000 # CG331-ETHA CG331-ETHA
+
+Bonds
+
+           1    1    4    1 # CG331-ETHA HGA3-ETHA
+           2    1    4    2 # CG331-ETHA HGA3-ETHA
+           3    1    4    3 # CG331-ETHA HGA3-ETHA
+           4    2    4    8 # CG331-ETHA CG331-ETHA
+           5    1    8    5 # CG331-ETHA HGA3-ETHA
+           6    1    8    6 # CG331-ETHA HGA3-ETHA
+           7    1    8    7 # CG331-ETHA HGA3-ETHA
+
+Angle Coeffs
+
+           1    37.500000 110.100000  22.530000   2.179000 # CG331-ETHA CG331-ETHA HGA3-ETHA
+           2    35.500000 108.400000   5.400000   1.802000 # HGA3-ETHA CG331-ETHA HGA3-ETHA
+
+Angles
+
+           1    2    1    4    2 # HGA3-ETHA CG331-ETHA HGA3-ETHA
+           2    2    1    4    3 # HGA3-ETHA CG331-ETHA HGA3-ETHA
+           3    1    1    4    8 # HGA3-ETHA CG331-ETHA CG331-ETHA
+           4    2    2    4    3 # HGA3-ETHA CG331-ETHA HGA3-ETHA
+           5    1    2    4    8 # HGA3-ETHA CG331-ETHA CG331-ETHA
+           6    1    3    4    8 # HGA3-ETHA CG331-ETHA CG331-ETHA
+           7    1    4    8    5 # CG331-ETHA CG331-ETHA HGA3-ETHA
+           8    1    4    8    6 # CG331-ETHA CG331-ETHA HGA3-ETHA
+           9    1    4    8    7 # CG331-ETHA CG331-ETHA HGA3-ETHA
+          10    2    5    8    6 # HGA3-ETHA CG331-ETHA HGA3-ETHA
+          11    2    5    8    7 # HGA3-ETHA CG331-ETHA HGA3-ETHA
+          12    2    6    8    7 # HGA3-ETHA CG331-ETHA HGA3-ETHA
+
+Dihedral Coeffs
+
+           1     0.155000   3   0.000000 # HGA3-ETHA CG331-ETHA CG331-ETHA HGA3-ETHA
+
+Dihedrals
+
+           1    1    1    4    8    5 # HGA3-ETHA CG331-ETHA CG331-ETHA HGA3-ETHA
+           2    1    1    4    8    6 # HGA3-ETHA CG331-ETHA CG331-ETHA HGA3-ETHA
+           3    1    1    4    8    7 # HGA3-ETHA CG331-ETHA CG331-ETHA HGA3-ETHA
+           4    1    2    4    8    5 # HGA3-ETHA CG331-ETHA CG331-ETHA HGA3-ETHA
+           5    1    2    4    8    6 # HGA3-ETHA CG331-ETHA CG331-ETHA HGA3-ETHA
+           6    1    2    4    8    7 # HGA3-ETHA CG331-ETHA CG331-ETHA HGA3-ETHA
+           7    1    3    4    8    5 # HGA3-ETHA CG331-ETHA CG331-ETHA HGA3-ETHA
+           8    1    3    4    8    6 # HGA3-ETHA CG331-ETHA CG331-ETHA HGA3-ETHA
+           9    1    3    4    8    7 # HGA3-ETHA CG331-ETHA CG331-ETHA HGA3-ETHA
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent PRPA
+COMMENT: Propane
+Masses
+
+           1     1.008000 # HGA3-PRPA             H  NONBOND (0.02400000,1.34000000) CHARGE 0.09000000
+           2    12.011000 # CG331-PRPA            C  NONBOND (0.07800000,2.05000000) CHARGE -0.27000000
+           3    12.011000 # CG321-PRPA            C  NONBOND (0.05600000,2.01000000) CHARGE -0.18000000
+           4     1.008000 # HGA2-PRPA             H  NONBOND (0.03500000,1.34000000) CHARGE 0.09000000
+
+Atoms
+
+        1     1    1  0.09000000    -1.552612     0.285251    -0.846821   # HGA3-PRPA
+        2     1    1  0.09000000    -1.456735     0.190809     0.952624   # HGA3-PRPA
+        3     1    1  0.09000000    -1.948028     1.733055     0.154989   # HGA3-PRPA
+        4     1    2 -0.27000000    -1.283381     0.846770     0.073060   # CG331-PRPA
+        5     1    3 -0.18000000     0.181773     1.285026     0.017995   # CG321-PRPA
+        6     1    4  0.09000000     0.420828     1.864701     0.937057   # HGA2-PRPA
+        7     1    4  0.09000000     0.325309     1.958790    -0.855666   # HGA2-PRPA
+        8     1    1  0.09000000     1.045766    -0.566767     0.779526   # HGA3-PRPA
+        9     1    1  0.09000000     2.201641     0.476836    -0.132044   # HGA3-PRPA
+       10     1    1  0.09000000     0.949888    -0.472325    -1.019919   # HGA3-PRPA
+       11     1    2 -0.27000000     1.154153     0.108861    -0.095544   # CG331-PRPA
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   322.000000   1.111000 # CG331-PRPA HGA3-PRPA
+           2   222.500000   1.528000 # CG331-PRPA CG321-PRPA
+           3   309.000000   1.111000 # CG321-PRPA HGA2-PRPA
+           4   222.500000   1.528000 # CG321-PRPA CG331-PRPA
+
+Bonds
+
+           1    1    4    1 # CG331-PRPA HGA3-PRPA
+           2    1    4    2 # CG331-PRPA HGA3-PRPA
+           3    1    4    3 # CG331-PRPA HGA3-PRPA
+           4    2    4    5 # CG331-PRPA CG321-PRPA
+           5    3    5    6 # CG321-PRPA HGA2-PRPA
+           6    3    5    7 # CG321-PRPA HGA2-PRPA
+           7    4    5   11 # CG321-PRPA CG331-PRPA
+           8    1   11    8 # CG331-PRPA HGA3-PRPA
+           9    1   11    9 # CG331-PRPA HGA3-PRPA
+          10    1   11   10 # CG331-PRPA HGA3-PRPA
+
+Angle Coeffs
+
+           1    53.350000 114.000000   8.000000   2.561000 # CG331-PRPA CG321-PRPA CG331-PRPA
+           2    34.600000 110.100000  22.530000   2.179000 # CG331-PRPA CG321-PRPA HGA2-PRPA
+           3    34.600000 110.100000  22.530000   2.179000 # CG321-PRPA CG331-PRPA HGA3-PRPA
+           4    35.500000 108.400000   5.400000   1.802000 # HGA3-PRPA CG331-PRPA HGA3-PRPA
+           5    35.500000 109.000000   5.400000   1.802000 # HGA2-PRPA CG321-PRPA HGA2-PRPA
+
+Angles
+
+           1    4    1    4    2 # HGA3-PRPA CG331-PRPA HGA3-PRPA
+           2    4    1    4    3 # HGA3-PRPA CG331-PRPA HGA3-PRPA
+           3    3    1    4    5 # HGA3-PRPA CG331-PRPA CG321-PRPA
+           4    4    2    4    3 # HGA3-PRPA CG331-PRPA HGA3-PRPA
+           5    3    2    4    5 # HGA3-PRPA CG331-PRPA CG321-PRPA
+           6    3    3    4    5 # HGA3-PRPA CG331-PRPA CG321-PRPA
+           7    2    4    5    6 # CG331-PRPA CG321-PRPA HGA2-PRPA
+           8    2    4    5    7 # CG331-PRPA CG321-PRPA HGA2-PRPA
+           9    1    4    5   11 # CG331-PRPA CG321-PRPA CG331-PRPA
+          10    5    6    5    7 # HGA2-PRPA CG321-PRPA HGA2-PRPA
+          11    2    6    5   11 # HGA2-PRPA CG321-PRPA CG331-PRPA
+          12    2    7    5   11 # HGA2-PRPA CG321-PRPA CG331-PRPA
+          13    3    5   11    8 # CG321-PRPA CG331-PRPA HGA3-PRPA
+          14    3    5   11    9 # CG321-PRPA CG331-PRPA HGA3-PRPA
+          15    3    5   11   10 # CG321-PRPA CG331-PRPA HGA3-PRPA
+          16    4    8   11    9 # HGA3-PRPA CG331-PRPA HGA3-PRPA
+          17    4    8   11   10 # HGA3-PRPA CG331-PRPA HGA3-PRPA
+          18    4    9   11   10 # HGA3-PRPA CG331-PRPA HGA3-PRPA
+
+Dihedral Coeffs
+
+           1     0.160000   3   0.000000 # CG331-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+           2     0.160000   3   0.000000 # HGA3-PRPA CG331-PRPA CG321-PRPA HGA2-PRPA
+           3     0.160000   3   0.000000 # HGA2-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+
+Dihedrals
+
+           1    2    1    4    5    6 # HGA3-PRPA CG331-PRPA CG321-PRPA HGA2-PRPA
+           2    2    1    4    5    7 # HGA3-PRPA CG331-PRPA CG321-PRPA HGA2-PRPA
+           3    1    1    4    5   11 # HGA3-PRPA CG331-PRPA CG321-PRPA CG331-PRPA
+           4    2    2    4    5    6 # HGA3-PRPA CG331-PRPA CG321-PRPA HGA2-PRPA
+           5    2    2    4    5    7 # HGA3-PRPA CG331-PRPA CG321-PRPA HGA2-PRPA
+           6    1    2    4    5   11 # HGA3-PRPA CG331-PRPA CG321-PRPA CG331-PRPA
+           7    2    3    4    5    6 # HGA3-PRPA CG331-PRPA CG321-PRPA HGA2-PRPA
+           8    2    3    4    5    7 # HGA3-PRPA CG331-PRPA CG321-PRPA HGA2-PRPA
+           9    1    3    4    5   11 # HGA3-PRPA CG331-PRPA CG321-PRPA CG331-PRPA
+          10    1    4    5   11    8 # CG331-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+          11    1    4    5   11    9 # CG331-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+          12    1    4    5   11   10 # CG331-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+          13    2    6    5   11    8 # HGA2-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+          14    2    6    5   11    9 # HGA2-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+          15    2    6    5   11   10 # HGA2-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+          16    2    7    5   11    8 # HGA2-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+          17    2    7    5   11    9 # HGA2-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+          18    2    7    5   11   10 # HGA2-PRPA CG321-PRPA CG331-PRPA HGA3-PRPA
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent BENZ
+COMMENT: Benzene
+Masses
+
+           1    12.011000 # CG2R61-BENZ           C  NONBOND (0.07000000,1.99240000) CHARGE -0.11500000
+           2     1.008000 # HGR61-BENZ            H  NONBOND (0.03000000,1.35820000) CHARGE 0.11500000
+
+Atoms
+
+        1     1    1 -0.11500000    -0.026039    -1.460840     1.059188   # CG2R61-BENZ
+        2     1    2  0.11500000    -0.642536    -1.733196     1.905028   # HGR61-BENZ
+        3     1    1 -0.11500000     1.135763    -0.739470     1.255042   # CG2R61-BENZ
+        4     1    2  0.11500000     1.428802    -0.447090     2.254209   # HGR61-BENZ
+        5     1    1 -0.11500000    -0.400353    -1.834313    -0.217104   # CG2R61-BENZ
+        6     1    2  0.11500000    -1.309890    -2.399049    -0.370432   # HGR61-BENZ
+        7     1    1 -0.11500000     1.923250    -0.391574     0.174603   # CG2R61-BENZ
+        8     1    2  0.11500000     2.832786     0.173162     0.327930   # HGR61-BENZ
+        9     1    1 -0.11500000     0.387134    -1.486416    -1.297543   # CG2R61-BENZ
+       10     1    2  0.11500000     0.094095    -1.778796    -2.296710   # HGR61-BENZ
+       11     1    1 -0.11500000     1.548936    -0.765047    -1.101689   # CG2R61-BENZ
+       12     1    2  0.11500000     2.165433    -0.492690    -1.947529   # HGR61-BENZ
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   305.000000   1.375000 # CG2R61-BENZ CG2R61-BENZ
+           2   340.000000   1.080000 # CG2R61-BENZ HGR61-BENZ
+
+Bonds
+
+           1    1    3    1 # CG2R61-BENZ CG2R61-BENZ
+           2    1    5    1 # CG2R61-BENZ CG2R61-BENZ
+           3    1    7    3 # CG2R61-BENZ CG2R61-BENZ
+           4    1    9    5 # CG2R61-BENZ CG2R61-BENZ
+           5    1   11    7 # CG2R61-BENZ CG2R61-BENZ
+           6    1   11    9 # CG2R61-BENZ CG2R61-BENZ
+           7    2    1    2 # CG2R61-BENZ HGR61-BENZ
+           8    2    3    4 # CG2R61-BENZ HGR61-BENZ
+           9    2    5    6 # CG2R61-BENZ HGR61-BENZ
+          10    2    7    8 # CG2R61-BENZ HGR61-BENZ
+          11    2    9   10 # CG2R61-BENZ HGR61-BENZ
+          12    2   11   12 # CG2R61-BENZ HGR61-BENZ
+
+Angle Coeffs
+
+           1    40.000000 120.000000  35.000000   2.416200 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+           2    30.000000 120.000000  22.000000   2.152500 # CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+
+Angles
+
+           1    2    2    1    3 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ
+           2    2    2    1    5 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ
+           3    1    3    1    5 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+           4    2    1    3    4 # CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+           5    1    1    3    7 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+           6    2    4    3    7 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ
+           7    2    1    5    6 # CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+           8    1    1    5    9 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+           9    2    6    5    9 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ
+          10    2    3    7    8 # CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+          11    1    3    7   11 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          12    2    8    7   11 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ
+          13    2    5    9   10 # CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+          14    1    5    9   11 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          15    2   10    9   11 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ
+          16    1    7   11    9 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          17    2    7   11   12 # CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+          18    2    9   11   12 # CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+
+Dihedral Coeffs
+
+           1     3.100000   2 180.000000 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+           2     4.200000   2 180.000000 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+           3     2.400000   2 180.000000 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+
+Dihedrals
+
+           1    2    1    3    7    8 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+           2    1    1    3    7   11 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+           3    2    1    5    9   10 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+           4    1    1    5    9   11 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+           5    3    2    1    3    4 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+           6    2    2    1    3    7 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+           7    3    2    1    5    6 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+           8    2    2    1    5    9 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+           9    2    3    1    5    6 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+          10    1    3    1    5    9 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          11    1    3    7   11    9 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          12    2    3    7   11   12 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+          13    2    4    3    1    5 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          14    3    4    3    7    8 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+          15    2    4    3    7   11 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          16    1    5    1    3    7 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          17    1    5    9   11    7 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          18    2    5    9   11   12 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+          19    3    6    5    9   10 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+          20    2    6    5    9   11 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          21    2    7   11    9   10 # CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+          22    2    8    7   11    9 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ CG2R61-BENZ
+          23    3    8    7   11   12 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+          24    3   10    9   11   12 # HGR61-BENZ CG2R61-BENZ CG2R61-BENZ HGR61-BENZ
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent TOLU
+COMMENT: Toluene
+Masses
+
+           1    12.011000 # CG2R61-TOLU           C  NONBOND (0.07000000,1.99240000) CHARGE -0.11500000
+           2     1.008000 # HGR61-TOLU            H  NONBOND (0.03000000,1.35820000) CHARGE 0.11500000
+           3    12.011000 # CG331-TOLU            C  NONBOND (0.07800000,2.05000000) CHARGE -0.27000000
+           4     1.008000 # HGA3-TOLU             H  NONBOND (0.02400000,1.34000000) CHARGE 0.09000000
+
+Atoms
+
+        1     1    1 -0.11500000    -1.854042     1.606015     0.623002   # CG2R61-TOLU
+        2     1    2  0.11500000    -2.635719     2.353446     0.626331   # HGR61-TOLU
+        3     1    1 -0.11500000    -2.174060     0.271174     0.779530   # CG2R61-TOLU
+        4     1    2  0.11500000    -3.206175    -0.026419     0.905393   # HGR61-TOLU
+        5     1    1 -0.11500000    -0.535572     1.986149     0.462222   # CG2R61-TOLU
+        6     1    2  0.11500000    -0.285038     3.031080     0.339688   # HGR61-TOLU
+        7     1    1 -0.11500000    -1.175344    -0.683454     0.775246   # CG2R61-TOLU
+        8     1    2  0.11500000    -1.425429    -1.728525     0.897751   # HGR61-TOLU
+        9     1    1 -0.11500000     0.462812     1.031173     0.458001   # CG2R61-TOLU
+       10     1    2  0.11500000     1.495085     1.328323     0.332166   # HGR61-TOLU
+       11     1    1  0.00000000     0.141930    -0.302510     0.614502   # CG2R61-TOLU
+       12     1    3 -0.27000000     1.218841    -1.332240     0.609916   # CG331-TOLU
+       13     1    4  0.09000000     0.903375    -2.182690     1.250528   # HGA3-TOLU
+       14     1    4  0.09000000     2.150115    -0.877750     1.009086   # HGA3-TOLU
+       15     1    4  0.09000000     1.378762    -1.678023    -0.433170   # HGA3-TOLU
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   305.000000   1.375000 # CG2R61-TOLU CG2R61-TOLU
+           2   340.000000   1.080000 # CG2R61-TOLU HGR61-TOLU
+           3   230.000000   1.490000 # CG2R61-TOLU CG331-TOLU
+           4   322.000000   1.111000 # CG331-TOLU HGA3-TOLU
+
+Bonds
+
+           1    1    3    1 # CG2R61-TOLU CG2R61-TOLU
+           2    1    5    1 # CG2R61-TOLU CG2R61-TOLU
+           3    1    7    3 # CG2R61-TOLU CG2R61-TOLU
+           4    1    9    5 # CG2R61-TOLU CG2R61-TOLU
+           5    1   11    7 # CG2R61-TOLU CG2R61-TOLU
+           6    1   11    9 # CG2R61-TOLU CG2R61-TOLU
+           7    2    1    2 # CG2R61-TOLU HGR61-TOLU
+           8    2    3    4 # CG2R61-TOLU HGR61-TOLU
+           9    2    5    6 # CG2R61-TOLU HGR61-TOLU
+          10    2    7    8 # CG2R61-TOLU HGR61-TOLU
+          11    2    9   10 # CG2R61-TOLU HGR61-TOLU
+          12    3   11   12 # CG2R61-TOLU CG331-TOLU
+          13    4   12   13 # CG331-TOLU HGA3-TOLU
+          14    4   12   14 # CG331-TOLU HGA3-TOLU
+          15    4   12   15 # CG331-TOLU HGA3-TOLU
+
+Angle Coeffs
+
+           1    40.000000 120.000000  35.000000   2.416200 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+           2    30.000000 120.000000  22.000000   2.152500 # CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+           3    45.800000 120.000000   0.000000   0.000000 # CG2R61-TOLU CG2R61-TOLU CG331-TOLU
+           4    49.300000 107.500000   0.000000   0.000000 # CG2R61-TOLU CG331-TOLU HGA3-TOLU
+           5    35.500000 108.400000   5.400000   1.802000 # HGA3-TOLU CG331-TOLU HGA3-TOLU
+
+Angles
+
+           1    2    2    1    3 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU
+           2    2    2    1    5 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU
+           3    1    3    1    5 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+           4    2    1    3    4 # CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+           5    1    1    3    7 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+           6    2    4    3    7 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU
+           7    2    1    5    6 # CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+           8    1    1    5    9 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+           9    2    6    5    9 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU
+          10    2    3    7    8 # CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+          11    1    3    7   11 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          12    2    8    7   11 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU
+          13    2    5    9   10 # CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+          14    1    5    9   11 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          15    2   10    9   11 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU
+          16    1    7   11    9 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          17    3    7   11   12 # CG2R61-TOLU CG2R61-TOLU CG331-TOLU
+          18    3    9   11   12 # CG2R61-TOLU CG2R61-TOLU CG331-TOLU
+          19    4   11   12   13 # CG2R61-TOLU CG331-TOLU HGA3-TOLU
+          20    4   11   12   14 # CG2R61-TOLU CG331-TOLU HGA3-TOLU
+          21    4   11   12   15 # CG2R61-TOLU CG331-TOLU HGA3-TOLU
+          22    5   13   12   14 # HGA3-TOLU CG331-TOLU HGA3-TOLU
+          23    5   13   12   15 # HGA3-TOLU CG331-TOLU HGA3-TOLU
+          24    5   14   12   15 # HGA3-TOLU CG331-TOLU HGA3-TOLU
+
+Dihedral Coeffs
+
+           1     3.100000   2 180.000000 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+           2     3.100000   2 180.000000 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU CG331-TOLU
+           3     4.200000   2 180.000000 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+           4     0.002000   6   0.000000 # CG2R61-TOLU CG2R61-TOLU CG331-TOLU HGA3-TOLU
+           5     2.400000   2 180.000000 # CG331-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+           6     2.400000   2 180.000000 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+
+Dihedrals
+
+           1    3    1    3    7    8 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+           2    1    1    3    7   11 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+           3    3    1    5    9   10 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+           4    1    1    5    9   11 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+           5    6    2    1    3    4 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+           6    3    2    1    3    7 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+           7    6    2    1    5    6 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+           8    3    2    1    5    9 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+           9    3    3    1    5    6 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+          10    1    3    1    5    9 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          11    1    3    7   11    9 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          12    2    3    7   11   12 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU CG331-TOLU
+          13    3    4    3    1    5 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          14    6    4    3    7    8 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+          15    3    4    3    7   11 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          16    1    5    1    3    7 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          17    1    5    9   11    7 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          18    2    5    9   11   12 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU CG331-TOLU
+          19    6    6    5    9   10 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+          20    3    6    5    9   11 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          21    3    7   11    9   10 # CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU HGR61-TOLU
+          22    4    7   11   12   13 # CG2R61-TOLU CG2R61-TOLU CG331-TOLU HGA3-TOLU
+          23    4    7   11   12   14 # CG2R61-TOLU CG2R61-TOLU CG331-TOLU HGA3-TOLU
+          24    4    7   11   12   15 # CG2R61-TOLU CG2R61-TOLU CG331-TOLU HGA3-TOLU
+          25    3    8    7   11    9 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU CG2R61-TOLU
+          26    5    8    7   11   12 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU CG331-TOLU
+          27    4    9   11   12   13 # CG2R61-TOLU CG2R61-TOLU CG331-TOLU HGA3-TOLU
+          28    4    9   11   12   14 # CG2R61-TOLU CG2R61-TOLU CG331-TOLU HGA3-TOLU
+          29    4    9   11   12   15 # CG2R61-TOLU CG2R61-TOLU CG331-TOLU HGA3-TOLU
+          30    5   10    9   11   12 # HGR61-TOLU CG2R61-TOLU CG2R61-TOLU CG331-TOLU
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent PHEN
+COMMENT: Phenol
+Masses
+
+           1    12.011000 # CG2R61-PHEN           C  NONBOND (0.07000000,1.99240000) CHARGE -0.11500000
+           2     1.008000 # HGR61-PHEN            H  NONBOND (0.03000000,1.35820000) CHARGE 0.11500000
+           3    15.999400 # OG311-PHEN            O  NONBOND (0.19210000,1.76500000) CHARGE -0.53000000
+           4     1.008000 # HGP1-PHEN             H  NONBOND (0.04600000,0.22450000) CHARGE 0.42000000
+
+Atoms
+
+        1     1    1 -0.11500000     1.136729     0.545137    -0.898164   # CG2R61-PHEN
+        2     1    2  0.11500000     1.929060     1.127509    -1.348431   # HGR61-PHEN
+        3     1    1 -0.11500000    -0.029592     1.163846    -0.491213   # CG2R61-PHEN
+        4     1    2  0.11500000    -0.150367     2.230497    -0.622860   # HGR61-PHEN
+        5     1    1 -0.11500000     1.290992    -0.817447    -0.729984   # CG2R61-PHEN
+        6     1    2  0.11500000     2.204000    -1.301798    -1.048547   # HGR61-PHEN
+        7     1    1 -0.11500000    -1.041617     0.419698     0.083953   # CG2R61-PHEN
+        8     1    2  0.11500000    -1.954817     0.903646     0.402670   # HGR61-PHEN
+        9     1    1 -0.11500000     0.278700    -1.561194    -0.154770   # CG2R61-PHEN
+       10     1    2  0.11500000     0.399050    -2.627897    -0.022926   # HGR61-PHEN
+       11     1    1  0.11000000    -0.886443    -0.941917     0.251564   # CG2R61-PHEN
+       12     1    3 -0.53000000    -1.920153    -1.701707     0.839002   # OG311-PHEN
+       13     1    4  0.42000000    -1.633638    -2.617381     0.871409   # HGP1-PHEN
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   305.000000   1.375000 # CG2R61-PHEN CG2R61-PHEN
+           2   340.000000   1.080000 # CG2R61-PHEN HGR61-PHEN
+           3   334.300000   1.411000 # CG2R61-PHEN OG311-PHEN
+           4   545.000000   0.960000 # OG311-PHEN HGP1-PHEN
+
+Bonds
+
+           1    1    5    1 # CG2R61-PHEN CG2R61-PHEN
+           2    1    7    3 # CG2R61-PHEN CG2R61-PHEN
+           3    1   11    9 # CG2R61-PHEN CG2R61-PHEN
+           4    2    1    2 # CG2R61-PHEN HGR61-PHEN
+           5    2    3    4 # CG2R61-PHEN HGR61-PHEN
+           6    2    5    6 # CG2R61-PHEN HGR61-PHEN
+           7    2    7    8 # CG2R61-PHEN HGR61-PHEN
+           8    2    9   10 # CG2R61-PHEN HGR61-PHEN
+           9    3   11   12 # CG2R61-PHEN OG311-PHEN
+          10    4   12   13 # OG311-PHEN HGP1-PHEN
+          11    1    3    1 # CG2R61-PHEN CG2R61-PHEN
+          12    1    9    5 # CG2R61-PHEN CG2R61-PHEN
+          13    1   11    7 # CG2R61-PHEN CG2R61-PHEN
+
+Angle Coeffs
+
+           1    40.000000 120.000000  35.000000   2.416200 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+           2    30.000000 120.000000  22.000000   2.152500 # CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+           3    45.200000 120.000000   0.000000   0.000000 # CG2R61-PHEN CG2R61-PHEN OG311-PHEN
+           4    65.000000 108.000000   0.000000   0.000000 # CG2R61-PHEN OG311-PHEN HGP1-PHEN
+
+Angles
+
+           1    2    2    1    3 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN
+           2    2    2    1    5 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN
+           3    1    3    1    5 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+           4    2    1    3    4 # CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+           5    1    1    3    7 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+           6    2    4    3    7 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN
+           7    2    1    5    6 # CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+           8    1    1    5    9 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+           9    2    6    5    9 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN
+          10    2    3    7    8 # CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+          11    1    3    7   11 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          12    2    8    7   11 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN
+          13    2    5    9   10 # CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+          14    1    5    9   11 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          15    2   10    9   11 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN
+          16    1    7   11    9 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          17    3    7   11   12 # CG2R61-PHEN CG2R61-PHEN OG311-PHEN
+          18    3    9   11   12 # CG2R61-PHEN CG2R61-PHEN OG311-PHEN
+          19    4   11   12   13 # CG2R61-PHEN OG311-PHEN HGP1-PHEN
+
+Dihedral Coeffs
+
+           1     3.100000   2 180.000000 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+           2     3.100000   2 180.000000 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN OG311-PHEN
+           3     4.200000   2 180.000000 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+           4     0.990000   2 180.000000 # CG2R61-PHEN CG2R61-PHEN OG311-PHEN HGP1-PHEN
+           5     2.400000   2 180.000000 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+           6     2.400000   2 180.000000 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN OG311-PHEN
+
+Dihedrals
+
+           1    3    1    3    7    8 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+           2    1    1    3    7   11 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+           3    3    1    5    9   10 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+           4    1    1    5    9   11 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+           5    5    2    1    3    4 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+           6    3    2    1    3    7 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+           7    5    2    1    5    6 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+           8    3    2    1    5    9 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+           9    3    3    1    5    6 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+          10    1    3    1    5    9 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          11    1    3    7   11    9 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          12    2    3    7   11   12 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN OG311-PHEN
+          13    3    4    3    1    5 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          14    5    4    3    7    8 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+          15    3    4    3    7   11 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          16    1    5    1    3    7 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          17    1    5    9   11    7 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          18    2    5    9   11   12 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN OG311-PHEN
+          19    5    6    5    9   10 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+          20    3    6    5    9   11 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          21    3    7   11    9   10 # CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN HGR61-PHEN
+          22    4    7   11   12   13 # CG2R61-PHEN CG2R61-PHEN OG311-PHEN HGP1-PHEN
+          23    3    8    7   11    9 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN CG2R61-PHEN
+          24    6    8    7   11   12 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN OG311-PHEN
+          25    4    9   11   12   13 # CG2R61-PHEN CG2R61-PHEN OG311-PHEN HGP1-PHEN
+          26    6   10    9   11   12 # HGR61-PHEN CG2R61-PHEN CG2R61-PHEN OG311-PHEN
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent MEOH
+COMMENT: Methanol
+Masses
+
+           1    12.011000 # CG331-MEOH            C  NONBOND (0.07800000,2.05000000) CHARGE -0.04000000
+           2    15.999400 # OG311-MEOH            O  NONBOND (0.19210000,1.76500000) CHARGE -0.65000000
+           3     1.008000 # HGP1-MEOH             H  NONBOND (0.04600000,0.22450000) CHARGE 0.42000000
+           4     1.008000 # HGA3-MEOH             H  NONBOND (0.02400000,1.34000000) CHARGE 0.09000000
+
+Atoms
+
+        1     1    1 -0.04000000    -0.108915    -0.092804     0.096456   # CG331-MEOH
+        2     1    2 -0.65000000    -0.414879    -1.244497    -0.675807   # OG311-MEOH
+        3     1    3  0.42000000    -1.369272    -1.341533    -0.639528   # HGP1-MEOH
+        4     1    4  0.09000000    -0.617831     0.793834    -0.337817   # HGA3-MEOH
+        5     1    4  0.09000000    -0.456437    -0.240661     1.141005   # HGA3-MEOH
+        6     1    4  0.09000000     0.988810     0.076652     0.095195   # HGA3-MEOH
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   428.000000   1.420000 # CG331-MEOH OG311-MEOH
+           2   545.000000   0.960000 # OG311-MEOH HGP1-MEOH
+           3   322.000000   1.111000 # CG331-MEOH HGA3-MEOH
+
+Bonds
+
+           1    1    1    2 # CG331-MEOH OG311-MEOH
+           2    2    2    3 # OG311-MEOH HGP1-MEOH
+           3    3    1    4 # CG331-MEOH HGA3-MEOH
+           4    3    1    5 # CG331-MEOH HGA3-MEOH
+           5    3    1    6 # CG331-MEOH HGA3-MEOH
+
+Angle Coeffs
+
+           1    57.500000 106.000000   0.000000   0.000000 # CG331-MEOH OG311-MEOH HGP1-MEOH
+           2    35.500000 108.400000   5.400000   1.802000 # HGA3-MEOH CG331-MEOH HGA3-MEOH
+           3    45.900000 108.890000   0.000000   0.000000 # HGA3-MEOH CG331-MEOH OG311-MEOH
+
+Angles
+
+           1    3    2    1    4 # OG311-MEOH CG331-MEOH HGA3-MEOH
+           2    3    2    1    5 # OG311-MEOH CG331-MEOH HGA3-MEOH
+           3    3    2    1    6 # OG311-MEOH CG331-MEOH HGA3-MEOH
+           4    2    4    1    5 # HGA3-MEOH CG331-MEOH HGA3-MEOH
+           5    2    4    1    6 # HGA3-MEOH CG331-MEOH HGA3-MEOH
+           6    2    5    1    6 # HGA3-MEOH CG331-MEOH HGA3-MEOH
+           7    1    1    2    3 # CG331-MEOH OG311-MEOH HGP1-MEOH
+
+Dihedral Coeffs
+
+           1     0.180000   3   0.000000 # HGA3-MEOH CG331-MEOH OG311-MEOH HGP1-MEOH
+
+Dihedrals
+
+           1    1    3    2    1    4 # HGP1-MEOH OG311-MEOH CG331-MEOH HGA3-MEOH
+           2    1    3    2    1    5 # HGP1-MEOH OG311-MEOH CG331-MEOH HGA3-MEOH
+           3    1    3    2    1    6 # HGP1-MEOH OG311-MEOH CG331-MEOH HGA3-MEOH
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent ETOH
+COMMENT: Ethanol
+Masses
+
+           1    12.011000 # CG321-ETOH            C  NONBOND (0.05600000,2.01000000) CHARGE 0.05000000
+           2    15.999400 # OG311-ETOH            O  NONBOND (0.19210000,1.76500000) CHARGE -0.65000000
+           3     1.008000 # HGP1-ETOH             H  NONBOND (0.04600000,0.22450000) CHARGE 0.42000000
+           4     1.008000 # HGA2-ETOH             H  NONBOND (0.03500000,1.34000000) CHARGE 0.09000000
+           5    12.011000 # CG331-ETOH            C  NONBOND (0.07800000,2.05000000) CHARGE -0.27000000
+           6     1.008000 # HGA3-ETOH             H  NONBOND (0.02400000,1.34000000) CHARGE 0.09000000
+
+Atoms
+
+        1     1    1  0.05000000    -0.219649    -0.104754    -0.291453   # CG321-ETOH
+        2     1    2 -0.65000000    -1.254048    -0.434153     0.623923   # OG311-ETOH
+        3     1    3  0.42000000    -0.902426    -1.133053     1.180251   # HGP1-ETOH
+        4     1    4  0.09000000     0.043632    -1.011703    -0.876754   # HGA2-ETOH
+        5     1    4  0.09000000     0.673477     0.226362     0.280506   # HGA2-ETOH
+        6     1    5 -0.27000000    -0.684641     1.008664    -1.229542   # CG331-ETOH
+        7     1    6  0.09000000    -0.949548     1.917491    -0.648168   # HGA3-ETOH
+        8     1    6  0.09000000     0.121607     1.269865    -1.947787   # HGA3-ETOH
+        9     1    6  0.09000000    -1.578143     0.681883    -1.803132   # HGA3-ETOH
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   222.500000   1.528000 # CG321-ETOH CG331-ETOH
+           2   428.000000   1.420000 # CG321-ETOH OG311-ETOH
+           3   309.000000   1.111000 # CG321-ETOH HGA2-ETOH
+           4   545.000000   0.960000 # OG311-ETOH HGP1-ETOH
+           5   322.000000   1.111000 # CG331-ETOH HGA3-ETOH
+
+Bonds
+
+           1    1    1    6 # CG321-ETOH CG331-ETOH
+           2    2    1    2 # CG321-ETOH OG311-ETOH
+           3    3    1    4 # CG321-ETOH HGA2-ETOH
+           4    3    1    5 # CG321-ETOH HGA2-ETOH
+           5    4    2    3 # OG311-ETOH HGP1-ETOH
+           6    5    6    7 # CG331-ETOH HGA3-ETOH
+           7    5    6    8 # CG331-ETOH HGA3-ETOH
+           8    5    6    9 # CG331-ETOH HGA3-ETOH
+
+Angle Coeffs
+
+           1    34.600000 110.100000  22.530000   2.179000 # CG321-ETOH CG331-ETOH HGA3-ETOH
+           2    50.000000 106.000000   0.000000   0.000000 # CG321-ETOH OG311-ETOH HGP1-ETOH
+           3    34.600000 110.100000  22.530000   2.179000 # CG331-ETOH CG321-ETOH HGA2-ETOH
+           4    75.700000 110.100000   0.000000   0.000000 # CG331-ETOH CG321-ETOH OG311-ETOH
+           5    35.500000 109.000000   5.400000   1.802000 # HGA2-ETOH CG321-ETOH HGA2-ETOH
+           6    45.900000 108.890000   0.000000   0.000000 # HGA2-ETOH CG321-ETOH OG311-ETOH
+           7    35.500000 108.400000   5.400000   1.802000 # HGA3-ETOH CG331-ETOH HGA3-ETOH
+
+Angles
+
+           1    6    2    1    4 # OG311-ETOH CG321-ETOH HGA2-ETOH
+           2    6    2    1    5 # OG311-ETOH CG321-ETOH HGA2-ETOH
+           3    4    2    1    6 # OG311-ETOH CG321-ETOH CG331-ETOH
+           4    5    4    1    5 # HGA2-ETOH CG321-ETOH HGA2-ETOH
+           5    3    4    1    6 # HGA2-ETOH CG321-ETOH CG331-ETOH
+           6    3    5    1    6 # HGA2-ETOH CG321-ETOH CG331-ETOH
+           7    2    1    2    3 # CG321-ETOH OG311-ETOH HGP1-ETOH
+           8    1    1    6    7 # CG321-ETOH CG331-ETOH HGA3-ETOH
+           9    1    1    6    8 # CG321-ETOH CG331-ETOH HGA3-ETOH
+          10    1    1    6    9 # CG321-ETOH CG331-ETOH HGA3-ETOH
+          11    7    7    6    8 # HGA3-ETOH CG331-ETOH HGA3-ETOH
+          12    7    7    6    9 # HGA3-ETOH CG331-ETOH HGA3-ETOH
+          13    7    8    6    9 # HGA3-ETOH CG331-ETOH HGA3-ETOH
+
+Dihedral Coeffs
+
+           1     1.130000   1   0.000000 # CG331-ETOH CG321-ETOH OG311-ETOH HGP1-ETOH
+           2     0.140000   2   0.000000 # CG331-ETOH CG321-ETOH OG311-ETOH HGP1-ETOH
+           3     0.240000   3   0.000000 # CG331-ETOH CG321-ETOH OG311-ETOH HGP1-ETOH
+           4     0.160000   3   0.000000 # HGA2-ETOH CG321-ETOH CG331-ETOH HGA3-ETOH
+           5     0.180000   3   0.000000 # HGA2-ETOH CG321-ETOH OG311-ETOH HGP1-ETOH
+           6     0.160000   3   0.000000 # HGA3-ETOH CG331-ETOH CG321-ETOH OG311-ETOH
+
+Dihedrals
+
+           1    6    2    1    6    7 # OG311-ETOH CG321-ETOH CG331-ETOH HGA3-ETOH
+           2    6    2    1    6    8 # OG311-ETOH CG321-ETOH CG331-ETOH HGA3-ETOH
+           3    6    2    1    6    9 # OG311-ETOH CG321-ETOH CG331-ETOH HGA3-ETOH
+           4    5    3    2    1    4 # HGP1-ETOH OG311-ETOH CG321-ETOH HGA2-ETOH
+           5    5    3    2    1    5 # HGP1-ETOH OG311-ETOH CG321-ETOH HGA2-ETOH
+           6    1    3    2    1    6 # HGP1-ETOH OG311-ETOH CG321-ETOH CG331-ETOH
+           7    4    4    1    6    7 # HGA2-ETOH CG321-ETOH CG331-ETOH HGA3-ETOH
+           8    4    4    1    6    8 # HGA2-ETOH CG321-ETOH CG331-ETOH HGA3-ETOH
+           9    4    4    1    6    9 # HGA2-ETOH CG321-ETOH CG331-ETOH HGA3-ETOH
+          10    4    5    1    6    7 # HGA2-ETOH CG321-ETOH CG331-ETOH HGA3-ETOH
+          11    4    5    1    6    8 # HGA2-ETOH CG321-ETOH CG331-ETOH HGA3-ETOH
+          12    4    5    1    6    9 # HGA2-ETOH CG321-ETOH CG331-ETOH HGA3-ETOH
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent PRO2
+COMMENT: 2-Propanol
+Masses
+
+           1    12.011000 # CG311-PRO2            C  NONBOND (0.03200000,2.00000000) CHARGE 0.14000000
+           2    15.999400 # OG311-PRO2            O  NONBOND (0.19210000,1.76500000) CHARGE -0.65000000
+           3     1.008000 # HGP1-PRO2             H  NONBOND (0.04600000,0.22450000) CHARGE 0.42000000
+           4     1.008000 # HGA1-PRO2             H  NONBOND (0.04500000,1.34000000) CHARGE 0.09000000
+           5    12.011000 # CG331-PRO2            C  NONBOND (0.07800000,2.05000000) CHARGE -0.27000000
+           6     1.008000 # HGA3-PRO2             H  NONBOND (0.02400000,1.34000000) CHARGE 0.09000000
+
+Atoms
+
+        1     1    1  0.14000000     0.264200    -0.004252     0.293163   # CG311-PRO2
+        2     1    2 -0.65000000     0.346362     1.409907     0.194151   # OG311-PRO2
+        3     1    3  0.42000000     0.756231     1.708861     1.009156   # HGP1-PRO2
+        4     1    4  0.09000000     0.696321    -0.306548     1.272052   # HGA1-PRO2
+        5     1    5 -0.27000000     1.091576    -0.638807    -0.836277   # CG331-PRO2
+        6     1    6  0.09000000     1.056222    -1.746384    -0.762855   # HGA3-PRO2
+        7     1    6  0.09000000     0.688459    -0.334678    -1.825401   # HGA3-PRO2
+        8     1    6  0.09000000     2.150504    -0.311221    -0.767554   # HGA3-PRO2
+        9     1    5 -0.27000000    -1.212273    -0.429218     0.245457   # CG331-PRO2
+       10     1    6  0.09000000    -1.775918     0.045980     1.076033   # HGA3-PRO2
+       11     1    6  0.09000000    -1.670150    -0.120106    -0.717956   # HGA3-PRO2
+       12     1    6  0.09000000    -1.297975    -1.532214     0.342519   # HGA3-PRO2
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   222.500000   1.538000 # CG331-PRO2 CG311-PRO2
+           2   222.500000   1.538000 # CG311-PRO2 CG331-PRO2
+           3   428.000000   1.420000 # CG311-PRO2 OG311-PRO2
+           4   309.000000   1.111000 # CG311-PRO2 HGA1-PRO2
+           5   545.000000   0.960000 # OG311-PRO2 HGP1-PRO2
+           6   322.000000   1.111000 # CG331-PRO2 HGA3-PRO2
+
+Bonds
+
+           1    1    5    1 # CG331-PRO2 CG311-PRO2
+           2    2    1    9 # CG311-PRO2 CG331-PRO2
+           3    3    1    2 # CG311-PRO2 OG311-PRO2
+           4    4    1    4 # CG311-PRO2 HGA1-PRO2
+           5    5    2    3 # OG311-PRO2 HGP1-PRO2
+           6    6    5    6 # CG331-PRO2 HGA3-PRO2
+           7    6    5    7 # CG331-PRO2 HGA3-PRO2
+           8    6    5    8 # CG331-PRO2 HGA3-PRO2
+           9    6    9   10 # CG331-PRO2 HGA3-PRO2
+          10    6    9   11 # CG331-PRO2 HGA3-PRO2
+          11    6    9   12 # CG331-PRO2 HGA3-PRO2
+
+Angle Coeffs
+
+           1    53.350000 114.000000   8.000000   2.561000 # CG331-PRO2 CG311-PRO2 CG331-PRO2
+           2    34.500000 110.100000  22.530000   2.179000 # CG331-PRO2 CG311-PRO2 HGA1-PRO2
+           3    75.700000 110.100000   0.000000   0.000000 # CG331-PRO2 CG311-PRO2 OG311-PRO2
+           4    33.430000 110.100000  22.530000   2.179000 # CG311-PRO2 CG331-PRO2 HGA3-PRO2
+           5    50.000000 106.000000   0.000000   0.000000 # CG311-PRO2 OG311-PRO2 HGP1-PRO2
+           6    35.500000 108.400000   5.400000   1.802000 # HGA3-PRO2 CG331-PRO2 HGA3-PRO2
+           7    45.900000 108.890000   0.000000   0.000000 # HGA1-PRO2 CG311-PRO2 OG311-PRO2
+
+Angles
+
+           1    7    2    1    4 # OG311-PRO2 CG311-PRO2 HGA1-PRO2
+           2    3    2    1    5 # OG311-PRO2 CG311-PRO2 CG331-PRO2
+           3    3    2    1    9 # OG311-PRO2 CG311-PRO2 CG331-PRO2
+           4    2    4    1    5 # HGA1-PRO2 CG311-PRO2 CG331-PRO2
+           5    2    4    1    9 # HGA1-PRO2 CG311-PRO2 CG331-PRO2
+           6    1    5    1    9 # CG331-PRO2 CG311-PRO2 CG331-PRO2
+           7    5    1    2    3 # CG311-PRO2 OG311-PRO2 HGP1-PRO2
+           8    4    1    5    6 # CG311-PRO2 CG331-PRO2 HGA3-PRO2
+           9    4    1    5    7 # CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          10    4    1    5    8 # CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          11    6    6    5    7 # HGA3-PRO2 CG331-PRO2 HGA3-PRO2
+          12    6    6    5    8 # HGA3-PRO2 CG331-PRO2 HGA3-PRO2
+          13    6    7    5    8 # HGA3-PRO2 CG331-PRO2 HGA3-PRO2
+          14    4    1    9   10 # CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          15    4    1    9   11 # CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          16    4    1    9   12 # CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          17    6   10    9   11 # HGA3-PRO2 CG331-PRO2 HGA3-PRO2
+          18    6   10    9   12 # HGA3-PRO2 CG331-PRO2 HGA3-PRO2
+          19    6   11    9   12 # HGA3-PRO2 CG331-PRO2 HGA3-PRO2
+
+Dihedral Coeffs
+
+           1     0.195000   3   0.000000 # CG331-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+           2     1.330000   1   0.000000 # CG331-PRO2 CG311-PRO2 OG311-PRO2 HGP1-PRO2
+           3     0.180000   2   0.000000 # CG331-PRO2 CG311-PRO2 OG311-PRO2 HGP1-PRO2
+           4     0.460000   3   0.000000 # CG331-PRO2 CG311-PRO2 OG311-PRO2 HGP1-PRO2
+           5     0.195000   3   0.000000 # HGA3-PRO2 CG331-PRO2 CG311-PRO2 HGA1-PRO2
+           6     0.200000   3   0.000000 # HGA3-PRO2 CG331-PRO2 CG311-PRO2 OG311-PRO2
+           7     0.195000   3   0.000000 # HGA1-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+           8     0.000000   3   0.000000 # HGA1-PRO2 CG311-PRO2 OG311-PRO2 HGP1-PRO2
+
+Dihedrals
+
+           1    6    2    1    5    6 # OG311-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+           2    6    2    1    5    7 # OG311-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+           3    6    2    1    5    8 # OG311-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+           4    6    2    1    9   10 # OG311-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+           5    6    2    1    9   11 # OG311-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+           6    6    2    1    9   12 # OG311-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+           7    8    3    2    1    4 # HGP1-PRO2 OG311-PRO2 CG311-PRO2 HGA1-PRO2
+           8    2    3    2    1    5 # HGP1-PRO2 OG311-PRO2 CG311-PRO2 CG331-PRO2
+           9    2    3    2    1    9 # HGP1-PRO2 OG311-PRO2 CG311-PRO2 CG331-PRO2
+          10    5    4    1    5    6 # HGA1-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          11    5    4    1    5    7 # HGA1-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          12    5    4    1    5    8 # HGA1-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          13    5    4    1    9   10 # HGA1-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          14    5    4    1    9   11 # HGA1-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          15    5    4    1    9   12 # HGA1-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          16    1    5    1    9   10 # CG331-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          17    1    5    1    9   11 # CG331-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          18    1    5    1    9   12 # CG331-PRO2 CG311-PRO2 CG331-PRO2 HGA3-PRO2
+          19    1    6    5    1    9 # HGA3-PRO2 CG331-PRO2 CG311-PRO2 CG331-PRO2
+          20    1    7    5    1    9 # HGA3-PRO2 CG331-PRO2 CG311-PRO2 CG331-PRO2
+          21    1    8    5    1    9 # HGA3-PRO2 CG331-PRO2 CG311-PRO2 CG331-PRO2
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent ACO
+COMMENT: Acetone
+Masses
+
+           1    15.999400 # OG2D3-ACO            O  NONBOND (0.05000000,1.70000000) CHARGE -0.48000000
+           2    12.011000 # CG2O5-ACO            C  NONBOND (0.09000000,2.00000000) CHARGE 0.40000000
+           3    12.011000 # CG331-ACO            C  NONBOND (0.07800000,2.05000000) CHARGE -0.23000000
+           4     1.008000 # HGA3-ACO             H  NONBOND (0.02400000,1.34000000) CHARGE 0.09000000
+
+Atoms
+
+        1     1    1 -0.48000000     0.649257    -0.312017    -0.002270   # OG2D3-ACO
+        2     1    2  0.40000000     0.356113     0.269207     1.041351   # CG2O5-ACO
+        3     1    3 -0.23000000     0.514228    -0.375102     2.386663   # CG331-ACO
+        4     1    3 -0.23000000    -0.183002     1.668933     1.052431   # CG331-ACO
+        5     1    4  0.09000000    -0.469876    -0.429142     2.899054   # HGA3-ACO
+        6     1    4  0.09000000     1.214842     0.218850     3.011391   # HGA3-ACO
+        7     1    4  0.09000000     0.917578    -1.403438     2.269367   # HGA3-ACO
+        8     1    4  0.09000000     0.494251     2.331372     1.632455   # HGA3-ACO
+        9     1    4  0.09000000    -0.261470     2.053119     0.013119   # HGA3-ACO
+       10     1    4  0.09000000    -1.190466     1.683380     1.520118   # HGA3-ACO
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   330.000000   1.500000 # CG2O5-ACO CG331-ACO
+           2   322.000000   1.111000 # CG331-ACO HGA3-ACO
+           3   700.000000   1.230000 # OG2D3-ACO CG2O5-ACO
+
+Bonds
+
+           1    1    2    3 # CG2O5-ACO CG331-ACO
+           2    1    2    4 # CG2O5-ACO CG331-ACO
+           3    2    3    5 # CG331-ACO HGA3-ACO
+           4    2    3    6 # CG331-ACO HGA3-ACO
+           5    2    3    7 # CG331-ACO HGA3-ACO
+           6    2    4    8 # CG331-ACO HGA3-ACO
+           7    2    4    9 # CG331-ACO HGA3-ACO
+           8    2    4   10 # CG331-ACO HGA3-ACO
+           9    3    1    2 # OG2D3-ACO CG2O5-ACO
+
+Angle Coeffs
+
+           1    50.000000 109.500000   0.000000   0.000000 # CG2O5-ACO CG331-ACO HGA3-ACO
+           2    35.000000 115.600000   0.000000   0.000000 # CG331-ACO CG2O5-ACO CG331-ACO
+           3    75.000000 122.200000   0.000000   0.000000 # CG331-ACO CG2O5-ACO OG2D3-ACO
+           4    35.500000 108.400000   5.400000   1.802000 # HGA3-ACO CG331-ACO HGA3-ACO
+
+Angles
+
+           1    3    1    2    3 # OG2D3-ACO CG2O5-ACO CG331-ACO
+           2    3    1    2    4 # OG2D3-ACO CG2O5-ACO CG331-ACO
+           3    2    3    2    4 # CG331-ACO CG2O5-ACO CG331-ACO
+           4    1    2    3    5 # CG2O5-ACO CG331-ACO HGA3-ACO
+           5    1    2    3    6 # CG2O5-ACO CG331-ACO HGA3-ACO
+           6    1    2    3    7 # CG2O5-ACO CG331-ACO HGA3-ACO
+           7    4    5    3    6 # HGA3-ACO CG331-ACO HGA3-ACO
+           8    4    5    3    7 # HGA3-ACO CG331-ACO HGA3-ACO
+           9    4    6    3    7 # HGA3-ACO CG331-ACO HGA3-ACO
+          10    1    2    4    8 # CG2O5-ACO CG331-ACO HGA3-ACO
+          11    1    2    4    9 # CG2O5-ACO CG331-ACO HGA3-ACO
+          12    1    2    4   10 # CG2O5-ACO CG331-ACO HGA3-ACO
+          13    4    8    4    9 # HGA3-ACO CG331-ACO HGA3-ACO
+          14    4    8    4   10 # HGA3-ACO CG331-ACO HGA3-ACO
+          15    4    9    4   10 # HGA3-ACO CG331-ACO HGA3-ACO
+
+Dihedral Coeffs
+
+           1     0.100000   3   0.000000 # CG331-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+           2     0.000000   3   0.000000 # HGA3-ACO CG331-ACO CG2O5-ACO OG2D3-ACO
+
+Dihedrals
+
+           1    2    1    2    3    5 # OG2D3-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+           2    2    1    2    3    6 # OG2D3-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+           3    2    1    2    3    7 # OG2D3-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+           4    2    1    2    4    8 # OG2D3-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+           5    2    1    2    4    9 # OG2D3-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+           6    2    1    2    4   10 # OG2D3-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+           7    1    3    2    4    8 # CG331-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+           8    1    3    2    4    9 # CG331-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+           9    1    3    2    4   10 # CG331-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+          10    1    4    2    3    5 # CG331-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+          11    1    4    2    3    6 # CG331-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+          12    1    4    2    3    7 # CG331-ACO CG2O5-ACO CG331-ACO HGA3-ACO
+
+Improper Coeffs
+
+           1    70.000000   0   0.000000 # CG2O5-ACO CG331-ACO CG331-ACO OG2D3-ACO
+
+Impropers
+
+           1    1    2    3    4    1 # CG2O5-ACO CG331-ACO CG331-ACO OG2D3-ACO
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent MGLY
+COMMENT: Glycerol
+Masses
+
+           1    12.011000 # CC322-MGLY            C  NONBOND (0.05600000,2.01000000) CHARGE 0.05000000
+           2     1.008000 # HCA2-MGLY             H  NONBOND (0.03500000,1.34000000) CHARGE 0.09000000
+           3    15.999400 # OC311-MGLY            O  NONBOND (0.19210000,1.76500000) CHARGE -0.65000000
+           4     1.008000 # HCP1-MGLY             H  NONBOND (0.04600000,0.22450000) CHARGE 0.42000000
+           5    12.011000 # CC312-MGLY            C  NONBOND (0.03200000,2.00000000) CHARGE 0.14000000
+           6     1.008000 # HCA1-MGLY             H  NONBOND (0.04500000,1.34000000) CHARGE 0.09000000
+
+Atoms
+
+        1     1    1  0.05000000    -0.246842     0.593904    -0.197705   # CC322-MGLY
+        2     1    2  0.09000000    -1.107413     1.083276    -0.704498   # HCA2-MGLY
+        3     1    2  0.09000000    -0.063429     1.089324     0.780480   # HCA2-MGLY
+        4     1    3 -0.65000000     0.902987     0.721600    -1.021105   # OC311-MGLY
+        5     1    4  0.42000000     1.635754     0.372813    -0.508270   # HCP1-MGLY
+        6     1    5  0.14000000    -0.487566    -0.868537    -0.034463   # CC312-MGLY
+        7     1    6  0.09000000    -1.466470    -1.048939     0.465963   # HCA1-MGLY
+        8     1    3 -0.65000000    -0.505421    -1.454858    -1.327641   # OC311-MGLY
+        9     1    4  0.42000000     0.354634    -1.272031    -1.712971   # HCP1-MGLY
+       10     1    1  0.05000000     0.618604    -1.500826     0.740086   # CC322-MGLY
+       11     1    2  0.09000000     0.790999    -0.978738     1.706333   # HCA2-MGLY
+       12     1    2  0.09000000     0.403958    -2.574854     0.933214   # HCA2-MGLY
+       13     1    3 -0.65000000     1.781251    -1.404153    -0.069425   # OC311-MGLY
+       14     1    4  0.42000000     1.983007    -0.467681    -0.131988   # HCP1-MGLY
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   400.000000   1.420000 # CC322-MGLY OC311-MGLY
+           2   309.000000   1.111000 # CC322-MGLY HCA2-MGLY
+           3   545.000000   0.960000 # OC311-MGLY HCP1-MGLY
+           4   222.500000   1.485000 # CC322-MGLY CC312-MGLY
+           5   309.000000   1.111000 # CC312-MGLY HCA1-MGLY
+           6   400.000000   1.420000 # CC312-MGLY OC311-MGLY
+           7   222.500000   1.485000 # CC312-MGLY CC322-MGLY
+
+Bonds
+
+           1    1    1    4 # CC322-MGLY OC311-MGLY
+           2    2    1    2 # CC322-MGLY HCA2-MGLY
+           3    3    4    5 # OC311-MGLY HCP1-MGLY
+           4    2    1    3 # CC322-MGLY HCA2-MGLY
+           5    4    1    6 # CC322-MGLY CC312-MGLY
+           6    5    6    7 # CC312-MGLY HCA1-MGLY
+           7    6    6    8 # CC312-MGLY OC311-MGLY
+           8    3    8    9 # OC311-MGLY HCP1-MGLY
+           9    7    6   10 # CC312-MGLY CC322-MGLY
+          10    2   10   11 # CC322-MGLY HCA2-MGLY
+          11    1   10   13 # CC322-MGLY OC311-MGLY
+          12    3   13   14 # OC311-MGLY HCP1-MGLY
+          13    2   10   12 # CC322-MGLY HCA2-MGLY
+
+Angle Coeffs
+
+           1    45.000000 111.000000   0.000000   0.000000 # CC322-MGLY CC312-MGLY CC322-MGLY
+           2    34.500000 110.100000  22.530000   2.179000 # CC322-MGLY CC312-MGLY HCA1-MGLY
+           3    75.700000 108.000000   0.000000   0.000000 # CC322-MGLY CC312-MGLY OC311-MGLY
+           4    50.000000 106.000000   0.000000   0.000000 # CC322-MGLY OC311-MGLY HCP1-MGLY
+           5    33.430000 110.100000  22.530000   2.179000 # CC312-MGLY CC322-MGLY HCA2-MGLY
+           6    50.000000 106.000000   0.000000   0.000000 # CC312-MGLY CC322-MGLY OC311-MGLY
+           7    50.000000 106.000000   0.000000   0.000000 # CC312-MGLY OC311-MGLY HCP1-MGLY
+           8    35.500000 109.000000   5.400000   1.802000 # HCA2-MGLY CC322-MGLY HCA2-MGLY
+           9    55.000000 108.890000   0.000000   0.000000 # HCA2-MGLY CC322-MGLY OC311-MGLY
+          10    55.000000 108.890000   0.000000   0.000000 # HCA1-MGLY CC312-MGLY OC311-MGLY
+
+Angles
+
+           1    8    2    1    3 # HCA2-MGLY CC322-MGLY HCA2-MGLY
+           2    9    2    1    4 # HCA2-MGLY CC322-MGLY OC311-MGLY
+           3    5    2    1    6 # HCA2-MGLY CC322-MGLY CC312-MGLY
+           4    9    3    1    4 # HCA2-MGLY CC322-MGLY OC311-MGLY
+           5    5    3    1    6 # HCA2-MGLY CC322-MGLY CC312-MGLY
+           6    6    4    1    6 # OC311-MGLY CC322-MGLY CC312-MGLY
+           7    4    1    4    5 # CC322-MGLY OC311-MGLY HCP1-MGLY
+           8    2    1    6    7 # CC322-MGLY CC312-MGLY HCA1-MGLY
+           9    3    1    6    8 # CC322-MGLY CC312-MGLY OC311-MGLY
+          10    1    1    6   10 # CC322-MGLY CC312-MGLY CC322-MGLY
+          11   10    7    6    8 # HCA1-MGLY CC312-MGLY OC311-MGLY
+          12    2    7    6   10 # HCA1-MGLY CC312-MGLY CC322-MGLY
+          13    3    8    6   10 # OC311-MGLY CC312-MGLY CC322-MGLY
+          14    7    6    8    9 # CC312-MGLY OC311-MGLY HCP1-MGLY
+          15    5    6   10   11 # CC312-MGLY CC322-MGLY HCA2-MGLY
+          16    5    6   10   12 # CC312-MGLY CC322-MGLY HCA2-MGLY
+          17    6    6   10   13 # CC312-MGLY CC322-MGLY OC311-MGLY
+          18    8   11   10   12 # HCA2-MGLY CC322-MGLY HCA2-MGLY
+          19    9   11   10   13 # HCA2-MGLY CC322-MGLY OC311-MGLY
+          20    9   12   10   13 # HCA2-MGLY CC322-MGLY OC311-MGLY
+          21    4   10   13   14 # CC322-MGLY OC311-MGLY HCP1-MGLY
+
+Dihedral Coeffs
+
+           1     0.200000   3   0.000000 # CC322-MGLY CC312-MGLY CC322-MGLY HCA2-MGLY
+           2     0.350000   1   0.000000 # CC322-MGLY CC312-MGLY CC322-MGLY OC311-MGLY
+           3     0.690000   2   0.000000 # CC322-MGLY CC312-MGLY CC322-MGLY OC311-MGLY
+           4     2.790000   3 180.000000 # CC322-MGLY CC312-MGLY CC322-MGLY OC311-MGLY
+           5     0.350000   1   0.000000 # CC322-MGLY CC312-MGLY OC311-MGLY HCP1-MGLY
+           6     0.370000   2   0.000000 # CC322-MGLY CC312-MGLY OC311-MGLY HCP1-MGLY
+           7     0.190000   3 180.000000 # CC322-MGLY CC312-MGLY OC311-MGLY HCP1-MGLY
+           8     0.350000   1   0.000000 # CC312-MGLY CC322-MGLY OC311-MGLY HCP1-MGLY
+           9     0.370000   2   0.000000 # CC312-MGLY CC322-MGLY OC311-MGLY HCP1-MGLY
+          10     0.190000   3 180.000000 # CC312-MGLY CC322-MGLY OC311-MGLY HCP1-MGLY
+          11     0.200000   3   0.000000 # HCA2-MGLY CC322-MGLY CC312-MGLY HCA1-MGLY
+          12     0.140000   3   0.000000 # HCA2-MGLY CC322-MGLY CC312-MGLY OC311-MGLY
+          13     0.180000   3   0.000000 # HCA2-MGLY CC322-MGLY OC311-MGLY HCP1-MGLY
+          14     0.140000   3   0.000000 # HCA1-MGLY CC312-MGLY CC322-MGLY OC311-MGLY
+          15     0.200000   3   0.000000 # HCA1-MGLY CC312-MGLY CC322-MGLY HCA2-MGLY
+          16     0.180000   3   0.000000 # HCA1-MGLY CC312-MGLY OC311-MGLY HCP1-MGLY
+          17     1.340000   1 180.000000 # OC311-MGLY CC322-MGLY CC312-MGLY OC311-MGLY
+          18     1.190000   2   0.000000 # OC311-MGLY CC322-MGLY CC312-MGLY OC311-MGLY
+          19     2.580000   3   0.000000 # OC311-MGLY CC322-MGLY CC312-MGLY OC311-MGLY
+          20     1.340000   1 180.000000 # OC311-MGLY CC312-MGLY CC322-MGLY OC311-MGLY
+          21     1.190000   2   0.000000 # OC311-MGLY CC312-MGLY CC322-MGLY OC311-MGLY
+          22     2.580000   3   0.000000 # OC311-MGLY CC312-MGLY CC322-MGLY OC311-MGLY
+
+Dihedrals
+
+           1    5    1    6    8    9 # CC322-MGLY CC312-MGLY OC311-MGLY HCP1-MGLY
+           2    1    1    6   10   11 # CC322-MGLY CC312-MGLY CC322-MGLY HCA2-MGLY
+           3    1    1    6   10   12 # CC322-MGLY CC312-MGLY CC322-MGLY HCA2-MGLY
+           4    2    1    6   10   13 # CC322-MGLY CC312-MGLY CC322-MGLY OC311-MGLY
+           5   13    2    1    4    5 # HCA2-MGLY CC322-MGLY OC311-MGLY HCP1-MGLY
+           6   11    2    1    6    7 # HCA2-MGLY CC322-MGLY CC312-MGLY HCA1-MGLY
+           7   12    2    1    6    8 # HCA2-MGLY CC322-MGLY CC312-MGLY OC311-MGLY
+           8    1    2    1    6   10 # HCA2-MGLY CC322-MGLY CC312-MGLY CC322-MGLY
+           9   13    3    1    4    5 # HCA2-MGLY CC322-MGLY OC311-MGLY HCP1-MGLY
+          10   11    3    1    6    7 # HCA2-MGLY CC322-MGLY CC312-MGLY HCA1-MGLY
+          11   12    3    1    6    8 # HCA2-MGLY CC322-MGLY CC312-MGLY OC311-MGLY
+          12    1    3    1    6   10 # HCA2-MGLY CC322-MGLY CC312-MGLY CC322-MGLY
+          13   14    4    1    6    7 # OC311-MGLY CC322-MGLY CC312-MGLY HCA1-MGLY
+          14   17    4    1    6    8 # OC311-MGLY CC322-MGLY CC312-MGLY OC311-MGLY
+          15    2    4    1    6   10 # OC311-MGLY CC322-MGLY CC312-MGLY CC322-MGLY
+          16    8    5    4    1    6 # HCP1-MGLY OC311-MGLY CC322-MGLY CC312-MGLY
+          17    8    6   10   13   14 # CC312-MGLY CC322-MGLY OC311-MGLY HCP1-MGLY
+          18   16    7    6    8    9 # HCA1-MGLY CC312-MGLY OC311-MGLY HCP1-MGLY
+          19   11    7    6   10   11 # HCA1-MGLY CC312-MGLY CC322-MGLY HCA2-MGLY
+          20   11    7    6   10   12 # HCA1-MGLY CC312-MGLY CC322-MGLY HCA2-MGLY
+          21   14    7    6   10   13 # HCA1-MGLY CC312-MGLY CC322-MGLY OC311-MGLY
+          22   12    8    6   10   11 # OC311-MGLY CC312-MGLY CC322-MGLY HCA2-MGLY
+          23   12    8    6   10   12 # OC311-MGLY CC312-MGLY CC322-MGLY HCA2-MGLY
+          24   17    8    6   10   13 # OC311-MGLY CC312-MGLY CC322-MGLY OC311-MGLY
+          25    5    9    8    6   10 # HCP1-MGLY OC311-MGLY CC312-MGLY CC322-MGLY
+          26   13   11   10   13   14 # HCA2-MGLY CC322-MGLY OC311-MGLY HCP1-MGLY
+          27   13   12   10   13   14 # HCA2-MGLY CC322-MGLY OC311-MGLY HCP1-MGLY
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent EGLY
+COMMENT: Ethylene glycol
+Masses
+
+           1    12.011000 # CC321-EGLY            C  NONBOND (0.05600000,2.01000000) CHARGE 0.05000000
+           2     1.008000 # HCA2-EGLY             H  NONBOND (0.03500000,1.34000000) CHARGE 0.09000000
+           3    15.999400 # OC311M-EGLY           O  NONBOND (0.19210000,1.76500000) CHARGE -0.65000000
+           4     1.008000 # HCP1M-EGLY            H  NONBOND (0.04600000,0.22450000) CHARGE 0.42000000
+
+Atoms
+
+        1     1    1  0.05000000    -0.031248     0.082305     0.055072   # CC321-EGLY
+        2     1    2  0.09000000    -1.132674    -0.050585    -0.002716   # HCA2-EGLY
+        3     1    2  0.09000000     0.433560    -0.365436    -0.849309   # HCA2-EGLY
+        4     1    3 -0.65000000     0.262072     1.471410     0.082471   # OC311M-EGLY
+        5     1    4  0.42000000     1.210572     1.539024     0.214292   # HCP1M-EGLY
+        6     1    1  0.05000000     0.516199    -0.594978     1.313575   # CC321-EGLY
+        7     1    2  0.09000000     0.266204    -1.677369     1.305206   # HCA2-EGLY
+        8     1    2  0.09000000     0.071157    -0.129462     2.218923   # HCA2-EGLY
+        9     1    3 -0.65000000     1.927762    -0.450946     1.369636   # OC311M-EGLY
+       10     1    4  0.42000000     2.100982     0.490160     1.292727   # HCP1M-EGLY
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   428.000000   1.420000 # CC321-EGLY OC311M-EGLY
+           2   309.000000   1.111000 # CC321-EGLY HCA2-EGLY
+           3   545.000000   0.960000 # OC311M-EGLY HCP1M-EGLY
+           4   222.500000   1.530000 # CC321-EGLY CC321-EGLY
+
+Bonds
+
+           1    1    1    4 # CC321-EGLY OC311M-EGLY
+           2    2    1    2 # CC321-EGLY HCA2-EGLY
+           3    2    1    3 # CC321-EGLY HCA2-EGLY
+           4    3    4    5 # OC311M-EGLY HCP1M-EGLY
+           5    4    1    6 # CC321-EGLY CC321-EGLY
+           6    1    6    9 # CC321-EGLY OC311M-EGLY
+           7    2    6    7 # CC321-EGLY HCA2-EGLY
+           8    2    6    8 # CC321-EGLY HCA2-EGLY
+           9    3    9   10 # OC311M-EGLY HCP1M-EGLY
+
+Angle Coeffs
+
+           1    26.500000 110.100000  22.530000   2.179000 # CC321-EGLY CC321-EGLY HCA2-EGLY
+           2    75.700000 110.100000   0.000000   0.000000 # CC321-EGLY CC321-EGLY OC311M-EGLY
+           3    50.000000 106.000000   0.000000   0.000000 # CC321-EGLY OC311M-EGLY HCP1M-EGLY
+           4    35.500000 109.000000   5.400000   1.802000 # HCA2-EGLY CC321-EGLY HCA2-EGLY
+           5    55.000000 108.890000   0.000000   0.000000 # HCA2-EGLY CC321-EGLY OC311M-EGLY
+
+Angles
+
+           1    4    2    1    3 # HCA2-EGLY CC321-EGLY HCA2-EGLY
+           2    5    2    1    4 # HCA2-EGLY CC321-EGLY OC311M-EGLY
+           3    1    2    1    6 # HCA2-EGLY CC321-EGLY CC321-EGLY
+           4    5    3    1    4 # HCA2-EGLY CC321-EGLY OC311M-EGLY
+           5    1    3    1    6 # HCA2-EGLY CC321-EGLY CC321-EGLY
+           6    2    4    1    6 # OC311M-EGLY CC321-EGLY CC321-EGLY
+           7    3    1    4    5 # CC321-EGLY OC311M-EGLY HCP1M-EGLY
+           8    1    1    6    7 # CC321-EGLY CC321-EGLY HCA2-EGLY
+           9    1    1    6    8 # CC321-EGLY CC321-EGLY HCA2-EGLY
+          10    2    1    6    9 # CC321-EGLY CC321-EGLY OC311M-EGLY
+          11    4    7    6    8 # HCA2-EGLY CC321-EGLY HCA2-EGLY
+          12    5    7    6    9 # HCA2-EGLY CC321-EGLY OC311M-EGLY
+          13    5    8    6    9 # HCA2-EGLY CC321-EGLY OC311M-EGLY
+          14    3    6    9   10 # CC321-EGLY OC311M-EGLY HCP1M-EGLY
+
+Dihedral Coeffs
+
+           1     0.400000   1 180.000000 # CC321-EGLY CC321-EGLY OC311M-EGLY HCP1M-EGLY
+           2     0.010000   2   0.000000 # CC321-EGLY CC321-EGLY OC311M-EGLY HCP1M-EGLY
+           3     0.260000   3   0.000000 # CC321-EGLY CC321-EGLY OC311M-EGLY HCP1M-EGLY
+           4     0.190000   3   0.000000 # HCA2-EGLY CC321-EGLY CC321-EGLY HCA2-EGLY
+           5     0.140000   3   0.000000 # HCA2-EGLY CC321-EGLY CC321-EGLY OC311M-EGLY
+           6     0.180000   3   0.000000 # HCA2-EGLY CC321-EGLY OC311M-EGLY HCP1M-EGLY
+           7     0.330000   1   0.000000 # OC311M-EGLY CC321-EGLY CC321-EGLY OC311M-EGLY
+           8     2.170000   2   0.000000 # OC311M-EGLY CC321-EGLY CC321-EGLY OC311M-EGLY
+           9     0.450000   3   0.000000 # OC311M-EGLY CC321-EGLY CC321-EGLY OC311M-EGLY
+
+Dihedrals
+
+           1    1    1    6    9   10 # CC321-EGLY CC321-EGLY OC311M-EGLY HCP1M-EGLY
+           2    6    2    1    4    5 # HCA2-EGLY CC321-EGLY OC311M-EGLY HCP1M-EGLY
+           3    4    2    1    6    7 # HCA2-EGLY CC321-EGLY CC321-EGLY HCA2-EGLY
+           4    4    2    1    6    8 # HCA2-EGLY CC321-EGLY CC321-EGLY HCA2-EGLY
+           5    5    2    1    6    9 # HCA2-EGLY CC321-EGLY CC321-EGLY OC311M-EGLY
+           6    6    3    1    4    5 # HCA2-EGLY CC321-EGLY OC311M-EGLY HCP1M-EGLY
+           7    4    3    1    6    7 # HCA2-EGLY CC321-EGLY CC321-EGLY HCA2-EGLY
+           8    4    3    1    6    8 # HCA2-EGLY CC321-EGLY CC321-EGLY HCA2-EGLY
+           9    5    3    1    6    9 # HCA2-EGLY CC321-EGLY CC321-EGLY OC311M-EGLY
+          10    5    4    1    6    7 # OC311M-EGLY CC321-EGLY CC321-EGLY HCA2-EGLY
+          11    5    4    1    6    8 # OC311M-EGLY CC321-EGLY CC321-EGLY HCA2-EGLY
+          12    7    4    1    6    9 # OC311M-EGLY CC321-EGLY CC321-EGLY OC311M-EGLY
+          13    1    5    4    1    6 # HCP1M-EGLY OC311M-EGLY CC321-EGLY CC321-EGLY
+          14    6    7    6    9   10 # HCA2-EGLY CC321-EGLY OC311M-EGLY HCP1M-EGLY
+          15    6    8    6    9   10 # HCA2-EGLY CC321-EGLY OC311M-EGLY HCP1M-EGLY
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent CO2
+COMMENT: Carbon dioxide
+Masses
+
+           1    12.011000 # CG2O7-CO2            C  NONBOND (0.05800000,1.56300000) CHARGE 0.60000000
+           2    15.999400 # OG2D5-CO2            O  NONBOND (0.16500000,1.69200000) CHARGE -0.30000000
+
+Atoms
+
+           1 1    1   0.60000000     0.000000     0.000000     0.000000 # CG2O7-CO2
+           2 1    2  -0.30000000     1.170000     0.000000     0.000000 # OG2D5-CO2
+           3 1    2  -0.30000000    -1.170000     0.000000     0.000000 # OG2D5-CO2
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   986.000000   1.170000 # CG2O7-CO2 OG2D5-CO2
+
+Bonds
+
+           1    1    1    2 # CG2O7-CO2 OG2D5-CO2
+           2    1    1    3 # CG2O7-CO2 OG2D5-CO2
+
+Angle Coeffs
+
+           1    45.000000 180.000000   0.000000   0.000000 # OG2D5-CO2 CG2O7-CO2 OG2D5-CO2
+
+Angles
+
+           1    1    2    1    3 # OG2D5-CO2 CG2O7-CO2 OG2D5-CO2
+
+
+Dihedral Coeffs
+
+
+Dihedrals
+
+
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent AMM1
+COMMENT: Ammonia
+Masses
+
+           1    14.007000 # NG331-AMM1            N  NONBOND (0.07000000,1.98000000) CHARGE -1.12500000
+           2     1.008000 # HGPAM3-AMM1           H  NONBOND (0.01200000,0.87000000) CHARGE 0.37500000
+
+Atoms
+
+           1 1    1  -1.12500000     0.000000     0.000000     0.000000 # NG331-AMM1
+           2 1    2   0.37500000     0.362114     0.324204     0.893241 # HGPAM3-AMM1
+           3 1    2   0.37500000    -0.210915     0.841588    -0.530806 # HGPAM3-AMM1
+           4 1    2   0.37500000     0.788187    -0.431958    -0.475772 # HGPAM3-AMM1
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   455.500000   1.014000 # NG331-AMM1 HGPAM3-AMM1
+
+Bonds
+
+           1    1    1    2 # NG331-AMM1 HGPAM3-AMM1
+           2    1    1    3 # NG331-AMM1 HGPAM3-AMM1
+           3    1    1    4 # NG331-AMM1 HGPAM3-AMM1
+
+Angle Coeffs
+
+           1    41.500000 107.100000   0.000000   0.000000 # HGPAM3-AMM1 NG331-AMM1 HGPAM3-AMM1
+
+Angles
+
+           1    1    2    1    3 # HGPAM3-AMM1 NG331-AMM1 HGPAM3-AMM1
+           2    1    2    1    4 # HGPAM3-AMM1 NG331-AMM1 HGPAM3-AMM1
+           3    1    3    1    4 # HGPAM3-AMM1 NG331-AMM1 HGPAM3-AMM1
+
+Dihedral Coeffs
+
+
+Dihedrals
+
+
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END

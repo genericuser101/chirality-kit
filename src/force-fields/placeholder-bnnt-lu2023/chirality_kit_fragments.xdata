@@ -1,0 +1,50 @@
+Fragment Nanotube-Species BNNT
+Masses
+
+        1     10.8110 # BNTB B NONBOND (0.0000,0.0000) CHARGE 0.000
+        2     14.0067 # BNTN N NONBOND (0.0000,0.0000) CHARGE 0.000
+
+Atoms
+
+        1       1       1       0.000   0.000   0.000   0.000 # BNTB
+        2       1       2       0.000   1.446   0.000   0.000 # BNTN
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+        1       305.000   1.4460  # BNTB BNTN
+
+Bonds
+
+
+Angle Coeffs
+
+        1       40.0000      120.0000       35.0000        2.5040  # BNTB BNTN BNTB
+        2       40.0000      120.0000       35.0000        2.5040  # BNTN BNTB BNTN
+
+Angles
+
+
+Dihedral Coeffs
+
+        1        0.0000   1      180.0000  # BNTB BNTN BNTB BNTN
+        2        0.0000   1      180.0000  # BNTN BNTB BNTN BNTB
+
+Dihedrals
+
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END

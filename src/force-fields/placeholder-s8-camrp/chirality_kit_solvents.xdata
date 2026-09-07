@@ -1,0 +1,66 @@
+Solvent S8
+Masses
+
+        1   32.06    # S-S8 S NONBOND (0.000,0.000) CHARGE 0.000
+
+Atoms 
+
+        1       1       1   0.000       -0.20786625       1.00303675       2.20112100  # S-S8
+        2       1       1   0.000        0.20786575      -1.00303725       2.20112100  # S-S8
+        3       1       1   0.000        0.91613575      -0.42377625      -2.20096600  # S-S8
+        4       1       1   0.000       -0.91613525       0.42377675      -2.20096600  # S-S8
+        5       1       1   0.000        0.94857175      -1.99867825      -0.89173800  # S-S8
+        6       1       1   0.000       -0.94857125       1.99867775      -0.89173800  # S-S8
+        7       1       1   0.000       -1.74295125       1.37153875       0.89158300  # S-S8
+        8       1       1   0.000        1.74295075      -1.37153825       0.89158300  # S-S8
+
+PairIJ Coeffs 
+
+
+Bond Coeffs 
+
+        1   450.0       1.2000  # S-S8     S-S8   
+
+Bonds
+
+        1   1   1   2   # S-S8    S-S8
+        2   1   1   7   # S-S8    S-S8
+        3   1   2   8   # S-S8    S-S8
+        4   1   3   4   # S-S8    S-S8
+        5   1   3   5   # S-S8    S-S8
+        6   1   4   6   # S-S8    S-S8
+        7   1   5   8   # S-S8    S-S8
+        8   1   6   7   # S-S8    S-S8
+
+Angle Coeffs 
+Angles
+Dihedral Coeffs 
+Dihedrals
+Improper Coeffs 
+Impropers
+Lone Pairs
+Anisotropy
+
+END
+
+
+Solvent CAM
+Masses
+
+        1   12.0110 # C-CAM C NONBOND (0.000,0.000) CHARGE 0.000
+
+Atoms 
+
+        1       1       1       0.000   0.000   0.000   0.000 # C-CAM
+
+PairIJ Coeffs
+
+Bond Coeffs 
+Bonds
+Angle Coeffs
+Dihedral Coeffs
+Improper Coeffs
+Lone Pairs      
+Anisotropy
+
+END

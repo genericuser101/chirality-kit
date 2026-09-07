@@ -1,0 +1,80 @@
+{
+    "metadata": {
+        "made-by": "chirality-kit",
+        "version": "0.6.1",
+        "creator": "Stef @ Warwick University",
+        "filename": "chirality_main.py"
+    },
+    "settings": {
+        "system_name": "auto",
+        "verbose": false,
+        "output_types": [".pdb", ".psf", ".xyz", ".data"],
+        "adjust-ion-partial-charge": false,
+        "bonds": true,
+        "angles": true,
+        "dihedrals": true,
+        "impropers": true,
+        "lone-pairs": true,
+        "anisotropy": true
+    },
+    "system": {
+        "force-field": "CHARMM36m",
+        "size": "auto",
+        "size-padding-xy": 14.0,
+        "size-padding-z": 30.0,
+        "nanotube": true,
+        "functionalisation": true,
+        "solvation": false
+    },
+    "nanotube": {
+        "type": "CNT",
+        "n": 8,
+        "m": 4,
+        "repeats": 2
+    },
+    "functionalisation": {
+        "term": {
+            "term-hydrogenate": true,
+            "groups": [
+                {"type": "COO-", "count": 1, "side": "-"},
+                {"type": "DUMMY", "count": 2, "side": "-"},
+                {"type": "COO-", "count": 1, "side": "-"},
+                {"type": "OH-", "count": 1, "side": "+"},
+                {"type": "DUMMY", "count": 1, "side": "+"},
+                {"type": "OH-", "count": 1, "side": "+"},
+                {"type": "C2H5", "count": 1, "side": "both"}
+            ]
+        },
+        "rings": [
+            {
+                "ring-phase-increment": 0.0,
+                "ring-phase-start-offset": 0.0,
+                "ring-padding": true,
+                "ring-count": 1,
+                "ring-placement": "external",
+                "groups": [
+                    {"type": "H+", "count": 1},
+                    {"type": "DUMMY", "count": 2},
+                    {"type": "H+", "count": 1},
+                    {"type": "DUMMY", "count": 1}
+                ]
+            },
+            {
+                "ring-phase-increment": 0.0,
+                "ring-phase-start-offset": 0.62831853072,
+                "ring-padding": true,
+                "ring-count": 1,
+                "ring-placement": "internal",
+                "groups": [
+                    {"type": "H+", "count": 1},
+                    {"type": "DUMMY", "count": 1},
+                    {"type": "H+", "count": 1},
+                    {"type": "DUMMY", "count": 2}
+                ]
+            }
+        ]
+    },
+    "solvation": {
+        "groups": []
+    }
+}

@@ -1,0 +1,61 @@
+! PARAMETERS FOR DRUDE COO- groups
+! NOT THIS IS NOT FROM AN OFFICIAL CHARMM36m-ndp release
+! MADE WITH CHARMM-GUI BONDED PARAMETERS FOR NDP CARBON NANOTUBES COO GROUPS
+
+!All new model compound parameters should be included in the 
+!toppar_drude_master_protein stream file to avoid 
+!conflicts being generated
+
+BONDS 
+!atom type      Kb       b0 
+!============================================ 
+! 
+!SD2C2A   CD33A    218.00      1.832 ! MESH
+CD2R6A   CD2O2A  200.00     1.5000 ! 3CPY, pyridine-3-carboxylate (PYRIDINE nicotinic acid), yin
+
+ANGLES 
+!atom types     Ktheta  Theta0   Kub     S0 
+!================================================== 
+!
+!OD30BN   PD1AN    OD31A     48.10    108.00  ! MP_1, ADM Jr., c36, to master
+CD2R6A   CD2O2A   OD2C2A   40.00    116.00   50.00   2.3530  ! 3CPY, pyridine-3-carboxylate (PYRIDINE nicotinic acid), yin
+CD2O2A   CD2R6A   CD2R6A  45.00    119.00 ! 3CB, Benzoate. Based on a slack parameter from 3ACP, 3-acetylpyridine ==> re-optimize
+
+
+
+DIHEDRALS 
+!atom types            Kchi     n     delta 
+!================================================= 
+! 
+!Please follow these conventions when fitting dihedral parameters
+!1) use positive force constants in all cases (switch the phase...) 
+!   (vary phase during fitting and keep force constants positive) 
+!2) maintain the phase at 0 or 180 if possiple. perform initial
+!   fitting with this contraint and, if necessary, only then
+!   vary the phases during fitting. note that if the phases
+!   are NOT 0 or 180 the parameters are NOT transferable across
+!   stereoisomers
+!3) refit with only individual multiplicities of 1 through 6 
+!4) maintain the number of significant figures used below
+! 
+!HDP1A    ND2A1    CD2O1A   OD2C1A      2.000    2   180.00 ! comment for format
+CD2O2A   CD2R6A   CD2R6A   CD2R6A    3.1000  2   180.00 ! BIPHENYL ANALOGS, peml
+CD2O2A   CD2R6A   CD2R6A   HDR6A    2.4000  2   180.00 ! PYRIDINE aminopyridine Kenno: 4.2 -> 2.4 
+OD2C2A   CD2O2A   CD2R6A   CD2R6A  3.1000  2   180.00 ! BIPHENYL ANALOGS, peml 
+
+IMPROPER 
+!V(improper) = Kpsi(psi - psi0)**2 
+! 
+!Kpsi: kcal/mole/rad**2 
+!psi0: degrees 
+!note that the second column of numbers (0) is ignored 
+! 
+!OD2C3B   CD33A    OD30CL   CD2O3B     85.000   0     0.00 ! MAS
+CD2O2A   OD2C2A   OD2C2A   CD2R6A    96.00  0     0.00 ! PROT 90.0->96.0 acetate, single impr (KK) WILDCARD
+
+NONBONDED nbxmod  5 atom vatom cdiel vdistance switch vswitch - 
+cutnb 16.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5 
+
+NBFIX
+
+end

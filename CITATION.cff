@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: chirality-kit
+message: >-
+  If you use chirality-kit in your research, please cite it using the metadata
+  below. Please also cite the authors of any force field you simulate with;
+  their references are listed in src/force-fields/README.md.
+type: software
+authors:
+  - given-names: Stefan
+    family-names: Zhikharev
+    email: stefan.zhikharev@warwick.ac.uk
+    affiliation: University of Warwick
+repository-code: 'https://github.com/genericuser101/chirality-kit'
+abstract: >-
+  A standalone molecular-dynamics input-file generator for functionalised
+  nanostructures. chirality-kit builds carbon, boron nitride, MoS2 and MoSSe
+  nanotubes of specified chirality, applies terminal groups, rings, ordered
+  gaps and loose sidewall functionalisation, solvates them with solvents and
+  salts at a requested molarity, enforces charge neutrality, and writes
+  matched structure and topology files for MD engines.
+keywords:
+  - molecular dynamics
+  - nanotube
+  - carbon nanotube
+  - functionalisation
+  - CHARMM
+  - force field
+  - structure generation
+license: MIT
+version: 0.6.1
+date-released: '2026-09-07'

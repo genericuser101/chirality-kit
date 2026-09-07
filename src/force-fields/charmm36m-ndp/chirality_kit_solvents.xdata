@@ -1,0 +1,2147 @@
+COMMENT: Water Models
+
+Solvent SWM4
+Masses
+
+        1    15.59940  #       ODW-SWM4   O NONBOND (0.21094325,1.78692899) CHARGE   1.71640  DRUDE (-0.97825258,1.3)
+        2     0.40000  #      DOH2-SWM4  DP NONBOND (0.00000000,0.00000000) CHARGE  -1.71640  DRUDE (0.00000,0.00000)
+        3     0.00000  #      LPDW-SWM4  LP NONBOND (0.00000000,0.01000000) CHARGE  -1.11466  DRUDE (0.00000,0.00000)
+        4     1.00800  #       HDW-SWM4   H NONBOND (0.00000000,0.00000000) CHARGE   0.55733  DRUDE (0.00000,0.00000)
+
+Atoms
+
+        1       1       1      1.71640         0.000         0.000       0.000   #   ODW-SWM4
+        2       1       2     -1.71640         0.000         0.000       0.000   #   DOH2-SWM4
+        3       1       3     -1.11466         0.000    0.24034492       0.000   #   LPDW-SWM4              
+        4       1       4      0.55733       0.75695       0.58588       0.000   #   HDW-SWM4
+        5       1       4      0.55733      -0.75695       0.58588       0.000   #   HDW-SWM4
+
+        COMMENT: drude water molecules need to be sorted, but its oxygen, Drude particle, LP, hydrogen, hydrogen
+        COMMENT: https://www.ks.uiuc.edu/Research/namd/3.0/ug/node27.html? check yourself
+
+PairIJ Coeffs
+
+
+
+Bond Coeffs
+
+        1   500.00      0.0000  #  ODW-SWM4   DOH2-SWM4
+        2   500.00      0.0000  # DOH2-SWM4   LPDW-SWM4
+        3   450.00      0.9572  #  ODW-SWM4    HDW-SWM4
+        4    0.000      1.5139  #  HDW-SWM4    HDW-SWM4
+        5    0.000  0.24034492  #  ODW-SWM4   LPDW-SWM4
+
+Bonds
+
+        1       1       1       2   #   ODW-SWM4    DOH2-SWM4
+        2       5       1       3   #   ODW-SWM4    LPDW-SWM4
+        3       3       1       4   #   ODW-SWM4    HDW-SWM4
+        4       3       1       5   #   ODW-SWM4    HDW-SWM4
+        5       4       4       5   #   HDW-SWM4    HDW-SWM4
+
+
+
+Angle Coeffs 
+
+        1   55.000   104.52    0.000    0.000   # HDW-SWM4  ODW-SWM4  HDW-SWM4
+
+Angles
+
+        1       1       4       1       5       #  HDW-SWM4  ODW-SWM4  HDW-SWM4
+
+Dihedral Coeffs
+
+Dihedrals
+
+Improper Coeffs
+
+Impropers
+
+Lone Pairs
+
+        1   3   F  -0.24034492  0.00000  0.00000  # LPDW-SWM4 (1,4,5)
+
+Anisotropy
+
+END
+
+Solvent SPC
+Masses
+
+        1   15.99940    # OT-SPC O NONBOND (0.15529,1.762827) CHARGE -0.8068
+        2    1.00800    # HT-SPC H NONBOND (0.000001,0.0001) CHARGE  0.4034
+
+Atoms
+
+        1   1    1   -0.8068    0.000000    0.000000   0.000000   # OT-SPC
+        2   1    2    0.4034    0.816490    0.577359   0.000000   # HT-SPC
+        3   1    2    0.4034   -0.816490    0.577359   0.000000   # HT-SPC
+
+PairIJ Coeffs
+
+Bond Coeffs
+
+        1     0.0       1.6330  # HT-SPC HT-SPC
+        2   450.0       1.0000  # HT-SPC OT-SPC
+
+Bonds
+
+        1   2   1   2   # OT-SPC HT-SPC
+        2   2   1   3   # OT-SPC HT-SPC
+        3   1   2   3   # HT-SPC HT-SPC
+
+Angle Coeffs
+
+        1   55.0      109.47    0.00    0.00    # HT-SPC OT-SPC HT-SPC
+
+Angles
+
+        1   1   2   1   3   # HT-SPC OT-SPC HT-SPC
+
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+
+END
+
+
+Solvent TIP4P
+Masses
+
+        1   15.99940    # OT-TIP4P O NONBOND (0.155,1.7699) CHARGE  0.000
+        2    0.00000    # LP-TIP4P LP NONBOND (0.000,0.0000) CHARGE -1.040
+        3    1.00800    # HT-TIP4P H NONBOND (0.000,0.0000) CHARGE  0.520
+
+Atoms
+
+        1   1    1    0.000    0.000000    0.000000   0.000000   # OT-TIP4P
+        2   1    2   -1.040    0.000000    0.150000   0.000000   # LP-TIP4P
+        3   1    3    0.520    0.756950    0.585880   0.000000   # HT-TIP4P
+        4   1    3    0.520   -0.756950    0.585880   0.000000   # HT-TIP4P
+
+PairIJ Coeffs
+
+Bond Coeffs
+
+        1     0.0       1.5139  # HT-TIP4P HT-TIP4P
+        2   450.0       0.9572  # HT-TIP4P OT-TIP4P
+        3     0.0       0.1500  # OT-TIP4P LP-TIP4P
+
+Bonds
+
+        1   2   1   3   # OT-TIP4P HT-TIP4P
+        2   2   1   4   # OT-TIP4P HT-TIP4P
+        3   1   3   4   # HT-TIP4P HT-TIP4P
+        4   3   1   2   # OT-TIP4P LP-TIP4P
+
+Angle Coeffs
+
+        1   55.0      104.52    0.00    0.00    # HT-TIP4P OT-TIP4P HT-TIP4P
+
+Angles
+
+        1   1   3   1   4   # HT-TIP4P OT-TIP4P HT-TIP4P
+
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+
+Lone Pairs
+
+        1   2   F   -0.150000    0.000000    0.000000   # LP-TIP4P (1,3,4)
+
+Anisotropy
+
+END
+
+
+Solvent TIP5P
+Masses
+
+        1   15.99940    # OT-TIP5P O NONBOND (0.160,1.7508) CHARGE  0.000
+        2    1.00800    # HT-TIP5P H NONBOND (0.000,0.0000) CHARGE  0.241
+        3    0.00000    # LP-TIP5P LP NONBOND (0.000,0.0000) CHARGE -0.241
+
+Atoms
+
+        1   1    1    0.000    0.000000    0.000000   0.000000   # OT-TIP5P
+        2   1    2    0.241    0.756950    0.585880   0.000000   # HT-TIP5P
+        3   1    2    0.241   -0.756950    0.585880   0.000000   # HT-TIP5P
+        4   1    3   -0.241    0.000000   -0.404145   0.571548   # LP-TIP5P
+        5   1    3   -0.241    0.000000   -0.404145  -0.571548   # LP-TIP5P
+
+PairIJ Coeffs
+
+Bond Coeffs
+
+        1     0.0       1.5139  # HT-TIP5P HT-TIP5P
+        2   450.0       0.9572  # HT-TIP5P OT-TIP5P
+        3     0.0       0.7000  # OT-TIP5P LP-TIP5P
+
+Bonds
+
+        1   2   1   2   # OT-TIP5P HT-TIP5P
+        2   2   1   3   # OT-TIP5P HT-TIP5P
+        3   1   2   3   # HT-TIP5P HT-TIP5P
+        4   3   1   4   # OT-TIP5P LP-TIP5P
+        5   3   1   5   # OT-TIP5P LP-TIP5P
+
+Angle Coeffs
+
+        1   55.0      104.52    0.00    0.00    # HT-TIP5P OT-TIP5P HT-TIP5P
+
+Angles
+
+        1   1   2   1   3   # HT-TIP5P OT-TIP5P HT-TIP5P
+
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+
+Lone Pairs
+
+        1   4   R    0.700000  125.265000   90.000000   # LP-TIP5P (1,2,3)
+        2   5   R    0.700000  125.265000  -90.000000   # LP-TIP5P (1,2,3)
+
+Anisotropy
+
+END
+
+
+
+COMMENT: Ions
+
+Solvent K
+Masses 
+
+        1   38.6983    # POTD   K NONBOND (0.1419265,1.6866521)   CHARGE    2.58100 DRUDE (-0.830000,1.3000)
+        2    0.4000    # DPOT  DP NONBOND (0.0000000,0.0000000)   CHARGE   -1.58100 DRUDE (0.00000,0.000000)
+
+PairIJ Coeffs 
+
+Atoms
+
+        1   1   1   2.58100  0.000    0.000    0.000   # POTD
+        2   1   2  -1.58100  0.000    0.000    0.000   # DPOT
+
+Bond Coeffs
+
+        1   500.00      0.0000  #  POTD   DPOT 
+
+Bonds
+
+        1   1   1   2   # POTD   DPOT 
+
+Angle Coeffs
+Angles
+Dihedral Coeffs 
+Dihedrals
+Improper Coeffs 
+Impropers
+Lone Pairs
+        
+Anisotropy
+
+END
+
+
+Solvent Cl
+Masses 
+
+        1   35.0532    # CLAD  Cl NONBOND (-0.0719737,2.4811139)   CHARGE    2.45720 DRUDE (-3.96900,1.3000)
+        2   0.40000    # DCLA  DP NONBOND      (0.0000,0.000000)   CHARGE   -3.45720 DRUDE (0.00000,0.00000)
+
+PairIJ Coeffs 
+
+Atoms
+
+        1   1   1   2.45720  0.000    0.000    0.000   # CLAD
+        2   1   2  -3.45720  0.000    0.000    0.000   # DCLA
+
+Bond Coeffs
+
+        1   500.00      0.0000  #  CLAD   DCLA 
+
+Bonds
+
+        1   1   1   2   # CLAD   DCLA  
+
+Angle Coeffs
+Angles
+Dihedral Coeffs 
+Dihedrals
+Improper Coeffs 
+Impropers
+Lone Pairs
+        
+Anisotropy
+
+END
+
+
+
+Solvent Na
+Masses 
+
+        1   22.58977    # SODD Na NONBOND (0.03151,1.4616800)   CHARGE     1.688  DRUDE (-0.157,1.3000) 
+        2    0.40000    # DSOD DP NONBOND (0.0000,0.0000)       CHARGE    -0.688  DRUDE (0.0000,0.0000)
+
+PairIJ Coeffs 
+
+Atoms
+        1   1   1   1.688   0.000    0.000   0.000   # SODD
+        2   1   2  -0.688   0.000    0.000   0.000   # DSOD
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs 
+Dihedrals
+Improper Coeffs 
+Impropers
+Lone Pairs    
+Anisotropy
+END
+
+
+Solvent Li
+Masses
+
+        1   6.54100    #  LID Li NONBOND (0.03000,1.1000000)   CHARGE     1.31 DRUDE (-0.032,1.3000)
+        2   0.40000    # DLID DP NONBOND (0.00000,0.0000)      CHARGE    -0.31 DRUDE (0.000,0.000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1  1.310  0.000    0.000   0.000   # LID
+        2   1   2  -0.31  0.000    0.000   0.000   # DLID
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Rb
+Masses
+
+        1   85.06783    # RBD Rb NONBOND (0.2730669,1.7855083) CHARGE 3.03119 DRUDE (-1.370,1.3000)
+        2   0.40000    # DRUB DP NONBOND (0.0000,0.0000) CHARGE -2.03119 DRUDE (0.0000,0.0000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1   3.03119   0.000   0.000   0.000   # RBD
+        2   1   2   -2.03119   0.000   0.000   0.000   # DRUB
+
+Bond Coeffs
+        1   500.00   0.0000   # RBD DRUB
+Bonds
+        1   1   1   2        # RBD DRUB
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Cs
+Masses
+
+        1   132.50545    # CSD Cs NONBOND (0.2766036,2.0238218) CHARGE 3.66591 DRUDE (-2.360,1.3000)
+        2   0.40000    # DCES DP NONBOND (0.0000,0.0000) CHARGE -2.66591 DRUDE (0.0000,0.0000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1   3.66591   0.000   0.000   0.000   # CSD
+        2   1   2   -2.66591   0.000   0.000   0.000   # DCES
+
+Bond Coeffs
+        1   500.00   0.0000   # CSD DCES
+Bonds
+        1   1   1   2        # CSD DCES
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent F
+Masses
+
+        1   18.59840    # FAD F NONBOND (0.0026181,2.4622406) CHARGE 1.31916 DRUDE (-1.786,1.3000)
+        2   0.40000    # DF DP NONBOND (0.0000,0.0000) CHARGE -2.31916 DRUDE (0.0000,0.0000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1   1.31916   0.000   0.000   0.000   # FAD
+        2   1   2   -2.31916   0.000   0.000   0.000   # DF
+
+Bond Coeffs
+        1   500.00   0.0000   # FAD DF
+Bonds
+        1   1   1   2        # FAD DF
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Br
+Masses
+
+        1   79.50410    # BRAD Br NONBOND (0.0823440,2.6262883) CHARGE 2.98075 DRUDE (-5.262,1.3000)
+        2   0.40000    # DBR DP NONBOND (0.0000,0.0000) CHARGE -3.98075 DRUDE (0.0000,0.0000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1   2.98075   0.000   0.000   0.000   # BRAD
+        2   1   2   -3.98075   0.000   0.000   0.000   # DBR
+
+Bond Coeffs
+        1   500.00   0.0000   # BRAD DBR
+Bonds
+        1   1   1   2        # BRAD DBR
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent I
+Masses
+
+        1   126.50447    # IAD I NONBOND (0.2084343,2.7579694) CHARGE 3.73311 DRUDE (-7.439,1.3000)
+        2   0.40000    # DI DP NONBOND (0.0000,0.0000) CHARGE -4.73311 DRUDE (0.0000,0.0000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1   3.73311   0.000   0.000   0.000   # IAD
+        2   1   2   -4.73311   0.000   0.000   0.000   # DI
+
+Bond Coeffs
+        1   500.00   0.0000   # IAD DI
+Bonds
+        1   1   1   2        # IAD DI
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Zn
+Masses
+
+        1   64.98400    # ZND Zn NONBOND (0.2500,0.9349678) CHARGE 3.12464 DRUDE (-0.420,1.3000)
+        2   0.40000    # DZN DP NONBOND (0.0000,0.0000) CHARGE -1.12464 DRUDE (0.0000,0.0000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1   3.12464   0.000   0.000   0.000   # ZND
+        2   1   2   -1.12464   0.000   0.000   0.000   # DZN
+
+Bond Coeffs
+        1   500.00   0.0000   # ZND DZN
+Bonds
+        1   1   1   2        # ZND DZN
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Mg
+Masses
+
+        1   23.90000    # MAGD Mg NONBOND (0.0500,1.1264156) CHARGE 2.47525 DRUDE (-0.075,1.3000)
+        2   0.40000    # DMG DP NONBOND (0.0000,0.0000) CHARGE -0.47525 DRUDE (0.0000,0.0000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1   2.47525   0.000   0.000   0.000   # MAGD
+        2   1   2   -0.47525   0.000   0.000   0.000   # DMG
+
+Bond Coeffs
+        1   500.00   0.0000   # MAGD DMG
+Bonds
+        1   1   1   2        # MAGD DMG
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Ca
+Masses
+
+        1   39.68000    # CALD Ca NONBOND (0.120,1.367)   CHARGE    3.215   DRUDE (-0.490,1.300)
+        2    0.40000    # DCAL DP NONBOND (0.000,0.000)   CHARGE   -1.215   DRUDE (0.0000,0.000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1  3.215  0.000    0.000   0.000   # CALD
+        2   1   2  -1.215 0.000    0.000   0.000   # DCAL
+
+Bond Coeffs
+Bonds
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Sr
+Masses
+
+        1   87.22000    # SRD Sr NONBOND (0.3400,1.3059400) CHARGE 3.61863 DRUDE (-0.870,1.3000)
+        2   0.40000    # DSR DP NONBOND (0.0000,0.0000) CHARGE -1.61863 DRUDE (0.0000,0.0000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1   3.61863   0.000   0.000   0.000   # SRD
+        2   1   2   -1.61863   0.000   0.000   0.000   # DSR
+
+Bond Coeffs
+        1   500.00   0.0000   # SRD DSR
+Bonds
+        1   1   1   2        # SRD DSR
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+Solvent Ba
+Masses
+
+        1   136.93000    # BAD Ba NONBOND (0.6000,1.5717385) CHARGE 4.16746 DRUDE (-1.560,1.3000)
+        2   0.40000    # DBA DP NONBOND (0.0000,0.0000) CHARGE -2.16746 DRUDE (0.0000,0.0000)
+
+PairIJ Coeffs
+
+Atoms
+        1   1   1   4.16746   0.000   0.000   0.000   # BAD
+        2   1   2   -2.16746   0.000   0.000   0.000   # DBA
+
+Bond Coeffs
+        1   500.00   0.0000   # BAD DBA
+Bonds
+        1   1   1   2        # BAD DBA
+Angle Coeffs
+Angles
+Dihedral Coeffs
+Dihedrals
+Improper Coeffs
+Impropers
+Lone Pairs
+Anisotropy
+END
+
+
+COMMENT: Small Molecules
+
+Solvent ETHA
+COMMENT: Ethane
+Masses
+
+           1    11.611000 # CD33A-ETHA            C  NONBOND (0.07800000,2.04000000) CHARGE 2.30823215 DRUDE (-2.051000,1.300000)
+           2     0.400000 # CD33A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -2.48523215 DRUDE (0.000000,0.000000)
+           3     1.008000 # HDA3A-ETHA            H  NONBOND (0.02400000,1.34000000) CHARGE 0.05900000 DRUDE (0.000000,0.000000)
+
+Atoms
+
+           1 1    1   2.30823215     0.000000     0.000000     0.000000 # CD33A-ETHA
+           2 1    2  -2.48523215     0.000000     0.000000     0.000000 # CD33A-DRUD
+           3 1    3   0.05900000    -1.000409    -0.288402    -0.335825 # HDA3A-ETHA
+           4 1    3   0.05900000     0.702606    -0.763749    -0.350404 # HDA3A-ETHA
+           5 1    3   0.05900000     0.003219    -0.020942     1.095127 # HDA3A-ETHA
+           6 1    1   2.30823215     0.381851     1.384687    -0.526792 # CD33A-ETHA
+           7 1    2  -2.48523215     0.381851     1.384687    -0.526792 # CD33A-DRUD
+           8 1    3   0.05900000     1.383555     1.673109    -0.190410 # HDA3A-ETHA
+           9 1    3   0.05900000     0.378725     1.405603    -1.621920 # HDA3A-ETHA
+          10 1    3   0.05900000    -0.319667     2.147751    -0.176965 # HDA3A-ETHA
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   322.000000   1.111000 # CD33A-ETHA HDA3A-ETHA
+           2   222.500000   1.530000 # CD33A-ETHA CD33A-ETHA
+           3   500.000000   0.000000 # CD33A-ETHA CD33A-DRUD
+
+Bonds
+
+           1    1    1    3 # CD33A-ETHA HDA3A-ETHA
+           2    1    1    4 # CD33A-ETHA HDA3A-ETHA
+           3    1    1    5 # CD33A-ETHA HDA3A-ETHA
+           4    2    1    6 # CD33A-ETHA CD33A-ETHA
+           5    1    6    8 # CD33A-ETHA HDA3A-ETHA
+           6    1    6    9 # CD33A-ETHA HDA3A-ETHA
+           7    1    6   10 # CD33A-ETHA HDA3A-ETHA
+           8    3    1    2 # CD33A-ETHA CD33A-DRUD
+           9    3    6    7 # CD33A-ETHA CD33A-DRUD
+
+Angle Coeffs
+
+           1    37.500000 110.100000  22.530000   2.179000 # CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           2    35.500000 108.400000   5.400000   1.802000 # HDA3A-ETHA CD33A-ETHA HDA3A-ETHA
+
+Angles
+
+           1    2    3    1    4 # HDA3A-ETHA CD33A-ETHA HDA3A-ETHA
+           2    2    3    1    5 # HDA3A-ETHA CD33A-ETHA HDA3A-ETHA
+           3    1    3    1    6 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA
+           4    2    4    1    5 # HDA3A-ETHA CD33A-ETHA HDA3A-ETHA
+           5    1    4    1    6 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA
+           6    1    5    1    6 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA
+           7    1    1    6    8 # CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           8    1    1    6    9 # CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           9    1    1    6   10 # CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+          10    2    8    6    9 # HDA3A-ETHA CD33A-ETHA HDA3A-ETHA
+          11    2    8    6   10 # HDA3A-ETHA CD33A-ETHA HDA3A-ETHA
+          12    2    9    6   10 # HDA3A-ETHA CD33A-ETHA HDA3A-ETHA
+
+Dihedral Coeffs
+
+           1     0.144000   3   0.000000 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+
+Dihedrals
+
+           1    1    3    1    6    8 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           2    1    3    1    6    9 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           3    1    3    1    6   10 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           4    1    4    1    6    8 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           5    1    4    1    6    9 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           6    1    4    1    6   10 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           7    1    5    1    6    8 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           8    1    5    1    6    9 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+           9    1    5    1    6   10 # HDA3A-ETHA CD33A-ETHA CD33A-ETHA HDA3A-ETHA
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent PRPA
+COMMENT: Propane
+Masses
+
+           1    11.611000 # CD33A-PRPA            C  NONBOND (0.07800000,2.04000000) CHARGE 2.30823215 DRUDE (-2.051000,1.300000)
+           2     0.400000 # CD33A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -2.48523215 DRUDE (0.000000,0.000000)
+           3     1.008000 # HDA3A-PRPA            H  NONBOND (0.02400000,1.34000000) CHARGE 0.05900000 DRUDE (0.000000,0.000000)
+           4    11.611000 # CD32A-PRPA            C  NONBOND (0.05600000,2.10000000) CHARGE 2.07982690 DRUDE (-1.660000,1.300000)
+           5     0.400000 # CD32A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -2.23582690 DRUDE (0.000000,0.000000)
+           6     1.008000 # HDA2A-PRPA            H  NONBOND (0.02100000,1.34000000) CHARGE 0.07800000 DRUDE (0.000000,0.000000)
+
+Atoms
+
+           1 1    1   2.30823215     0.000000     0.000000     0.000000 # CD33A-PRPA
+           2 1    2  -2.48523215     0.000000     0.000000     0.000000 # CD33A-DRUD
+           3 1    3   0.05900000     1.095005     0.019880     0.017476 # HDA3A-PRPA
+           4 1    3   0.05900000    -0.357725     0.425079     0.945450 # HDA3A-PRPA
+           5 1    3   0.05900000    -0.317277    -1.048174    -0.039286 # HDA3A-PRPA
+           6 1    4   2.07982690    -0.538038     0.791689    -1.188737 # CD32A-PRPA
+           7 1    5  -2.23582690    -0.538038     0.791689    -1.188737 # CD32A-DRUD
+           8 1    6   0.07800000    -0.187671     0.332883    -2.122718 # HDA2A-PRPA
+           9 1    6   0.07800000    -1.634617     0.736902    -1.198731 # HDA2A-PRPA
+          10 1    1   2.30823215    -0.108177     2.255742    -1.154734 # CD33A-PRPA
+          11 1    2  -2.48523215    -0.108177     2.255742    -1.154734 # CD33A-DRUD
+          12 1    3   0.05900000     0.984941     2.341507    -1.171121 # HDA3A-PRPA
+          13 1    3   0.05900000    -0.502302     2.809730    -2.014174 # HDA3A-PRPA
+          14 1    3   0.05900000    -0.469028     2.746854    -0.243072 # HDA3A-PRPA
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   322.000000   1.111000 # CD33A-PRPA HDA3A-PRPA
+           2   222.500000   1.528000 # CD33A-PRPA CD32A-PRPA
+           3   309.000000   1.111000 # CD32A-PRPA HDA2A-PRPA
+           4   222.500000   1.528000 # CD32A-PRPA CD33A-PRPA
+           5   500.000000   0.000000 # CD33A-PRPA CD33A-DRUD
+           6   500.000000   0.000000 # CD32A-PRPA CD32A-DRUD
+
+Bonds
+
+           1    1    1    3 # CD33A-PRPA HDA3A-PRPA
+           2    1    1    4 # CD33A-PRPA HDA3A-PRPA
+           3    1    1    5 # CD33A-PRPA HDA3A-PRPA
+           4    2    1    6 # CD33A-PRPA CD32A-PRPA
+           5    3    6    8 # CD32A-PRPA HDA2A-PRPA
+           6    3    6    9 # CD32A-PRPA HDA2A-PRPA
+           7    4    6   10 # CD32A-PRPA CD33A-PRPA
+           8    1   10   12 # CD33A-PRPA HDA3A-PRPA
+           9    1   10   13 # CD33A-PRPA HDA3A-PRPA
+          10    1   10   14 # CD33A-PRPA HDA3A-PRPA
+          11    5    1    2 # CD33A-PRPA CD33A-DRUD
+          12    6    6    7 # CD32A-PRPA CD32A-DRUD
+          13    5   10   11 # CD33A-PRPA CD33A-DRUD
+
+Angle Coeffs
+
+           1    53.350000 114.000000   8.000000   2.561000 # CD33A-PRPA CD32A-PRPA CD33A-PRPA
+           2    34.600000 110.100000  22.530000   2.179000 # CD33A-PRPA CD32A-PRPA HDA2A-PRPA
+           3    34.600000 111.500000  22.530000   2.179000 # CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+           4    35.500000 108.400000   5.400000   1.802000 # HDA3A-PRPA CD33A-PRPA HDA3A-PRPA
+           5    35.500000 109.000000   5.400000   1.802000 # HDA2A-PRPA CD32A-PRPA HDA2A-PRPA
+
+Angles
+
+           1    4    3    1    4 # HDA3A-PRPA CD33A-PRPA HDA3A-PRPA
+           2    4    3    1    5 # HDA3A-PRPA CD33A-PRPA HDA3A-PRPA
+           3    3    3    1    6 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA
+           4    4    4    1    5 # HDA3A-PRPA CD33A-PRPA HDA3A-PRPA
+           5    3    4    1    6 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA
+           6    3    5    1    6 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA
+           7    2    1    6    8 # CD33A-PRPA CD32A-PRPA HDA2A-PRPA
+           8    2    1    6    9 # CD33A-PRPA CD32A-PRPA HDA2A-PRPA
+           9    1    1    6   10 # CD33A-PRPA CD32A-PRPA CD33A-PRPA
+          10    5    8    6    9 # HDA2A-PRPA CD32A-PRPA HDA2A-PRPA
+          11    2    8    6   10 # HDA2A-PRPA CD32A-PRPA CD33A-PRPA
+          12    2    9    6   10 # HDA2A-PRPA CD32A-PRPA CD33A-PRPA
+          13    3    6   10   12 # CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+          14    3    6   10   13 # CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+          15    3    6   10   14 # CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+          16    4   12   10   13 # HDA3A-PRPA CD33A-PRPA HDA3A-PRPA
+          17    4   12   10   14 # HDA3A-PRPA CD33A-PRPA HDA3A-PRPA
+          18    4   13   10   14 # HDA3A-PRPA CD33A-PRPA HDA3A-PRPA
+
+Dihedral Coeffs
+
+           1     0.185000   3   0.000000 # CD33A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+           2     0.145000   3   0.000000 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA HDA2A-PRPA
+           3     0.145000   3   0.000000 # HDA2A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+
+Dihedrals
+
+           1    1    1    6   10   12 # CD33A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+           2    1    1    6   10   13 # CD33A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+           3    1    1    6   10   14 # CD33A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+           4    2    3    1    6    8 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA HDA2A-PRPA
+           5    2    3    1    6    9 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA HDA2A-PRPA
+           6    1    3    1    6   10 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA CD33A-PRPA
+           7    2    4    1    6    8 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA HDA2A-PRPA
+           8    2    4    1    6    9 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA HDA2A-PRPA
+           9    1    4    1    6   10 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA CD33A-PRPA
+          10    2    5    1    6    8 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA HDA2A-PRPA
+          11    2    5    1    6    9 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA HDA2A-PRPA
+          12    1    5    1    6   10 # HDA3A-PRPA CD33A-PRPA CD32A-PRPA CD33A-PRPA
+          13    2    8    6   10   12 # HDA2A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+          14    2    8    6   10   13 # HDA2A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+          15    2    8    6   10   14 # HDA2A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+          16    2    9    6   10   12 # HDA2A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+          17    2    9    6   10   13 # HDA2A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+          18    2    9    6   10   14 # HDA2A-PRPA CD32A-PRPA CD33A-PRPA HDA3A-PRPA
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+
+Anisotropy
+
+
+END
+
+Solvent BENZ
+COMMENT: Benzene
+Masses
+
+           1    11.611000 # CD2R6A-BENZ           C  NONBOND (0.06900000,2.09000000) CHARGE 2.09471380 DRUDE (-1.615000,1.195000)
+           2     0.400000 # CD2R6A-DRUD      DP NONBOND (0.00000000,0.01000000) CHARGE -2.20531380 DRUDE (0.000000,0.000000)
+           3     1.008000 # HDR6A-BENZ            H  NONBOND (0.03000000,1.05000000) CHARGE 0.11060000 DRUDE (0.000000,0.000000)
+           4     0.000000 # LPA1-BENZ            LP  NONBOND (0.00000000,0.01000000) CHARGE 0.00000000 DRUDE (0.000000,0.000000)
+
+Atoms
+
+           1 1    1   2.09471380     0.000000     0.000000     0.000000 # CD2R6A-BENZ
+           2 1    2  -2.20531380     0.000000     0.000000     0.000000 # CD2R6A-DRUD
+           3 1    3   0.11060000    -0.158803    -0.731629     0.780508 # HDR6A-BENZ
+           4 1    1   2.09471380     1.137557    -0.059658    -0.781615 # CD2R6A-BENZ
+           5 1    2  -2.20531380     1.137557    -0.059658    -0.781615 # CD2R6A-DRUD
+           6 1    3   0.11060000     1.869309    -0.837991    -0.613007 # HDR6A-BENZ
+           7 1    1   2.09471380    -0.934708     0.994209    -0.215372 # CD2R6A-BENZ
+           8 1    2  -2.20531380    -0.934708     0.994209    -0.215372 # CD2R6A-DRUD
+           9 1    3   0.11060000    -1.825264     1.040913     0.396528 # HDR6A-BENZ
+          10 1    1   2.09471380     1.340405     0.874893    -1.778602 # CD2R6A-BENZ
+          11 1    2  -2.20531380     1.340405     0.874893    -1.778602 # CD2R6A-DRUD
+          12 1    3   0.11060000     2.230960     0.828189    -2.390502 # HDR6A-BENZ
+          13 1    1   2.09471380    -0.731860     1.928760    -1.212359 # CD2R6A-BENZ
+          14 1    2  -2.20531380    -0.731860     1.928760    -1.212359 # CD2R6A-DRUD
+          15 1    3   0.11060000    -1.463612     2.707093    -1.380966 # HDR6A-BENZ
+          16 1    1   2.09471380     0.405697     1.869102    -1.993974 # CD2R6A-BENZ
+          17 1    2  -2.20531380     0.405697     1.869102    -1.993974 # CD2R6A-DRUD
+          18 1    3   0.11060000     0.564500     2.600731    -2.774482 # HDR6A-BENZ
+          19 1    4   0.00000000     0.208356     0.959925    -1.024057 # LPA1-BENZ
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   305.000000   1.375000 # CD2R6A-BENZ CD2R6A-BENZ
+           2   340.000000   1.080000 # CD2R6A-BENZ HDR6A-BENZ
+           3   500.000000   0.000000 # CD2R6A-BENZ CD2R6A-DRUD
+
+Bonds
+
+           1    1    4    1 # CD2R6A-BENZ CD2R6A-BENZ
+           2    1    7    1 # CD2R6A-BENZ CD2R6A-BENZ
+           3    1   10    4 # CD2R6A-BENZ CD2R6A-BENZ
+           4    1   13    7 # CD2R6A-BENZ CD2R6A-BENZ
+           5    1   16   10 # CD2R6A-BENZ CD2R6A-BENZ
+           6    1   16   13 # CD2R6A-BENZ CD2R6A-BENZ
+           7    2    1    3 # CD2R6A-BENZ HDR6A-BENZ
+           8    2    4    6 # CD2R6A-BENZ HDR6A-BENZ
+           9    2    7    9 # CD2R6A-BENZ HDR6A-BENZ
+          10    2   10   12 # CD2R6A-BENZ HDR6A-BENZ
+          11    2   13   15 # CD2R6A-BENZ HDR6A-BENZ
+          12    2   16   18 # CD2R6A-BENZ HDR6A-BENZ
+          13    3    1    2 # CD2R6A-BENZ CD2R6A-DRUD
+          14    3    4    5 # CD2R6A-BENZ CD2R6A-DRUD
+          15    3    7    8 # CD2R6A-BENZ CD2R6A-DRUD
+          16    3   10   11 # CD2R6A-BENZ CD2R6A-DRUD
+          17    3   13   14 # CD2R6A-BENZ CD2R6A-DRUD
+          18    3   16   17 # CD2R6A-BENZ CD2R6A-DRUD
+
+Angle Coeffs
+
+           1    40.000000 120.000000  35.000000   2.416200 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           2    30.000000 120.000000  22.000000   2.152500 # CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+
+Angles
+
+           1    2    3    1    4 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           2    2    3    1    7 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           3    1    4    1    7 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           4    2    1    4    6 # CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+           5    1    1    4   10 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           6    2    6    4   10 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           7    2    1    7    9 # CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+           8    1    1    7   13 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           9    2    9    7   13 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          10    2    4   10   12 # CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+          11    1    4   10   16 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          12    2   12   10   16 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          13    2    7   13   15 # CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+          14    1    7   13   16 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          15    2   15   13   16 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          16    1   10   16   13 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          17    2   10   16   18 # CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+          18    2   13   16   18 # CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+
+Dihedral Coeffs
+
+           1     2.800000   2 180.000000 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           2     4.200000   2 180.000000 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+           3     2.400000   2 180.000000 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+
+Dihedrals
+
+           1    2    1    4   10   12 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+           2    1    1    4   10   16 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           3    2    1    7   13   15 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+           4    1    1    7   13   16 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           5    3    3    1    4    6 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+           6    2    3    1    4   10 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           7    3    3    1    7    9 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+           8    2    3    1    7   13 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+           9    2    4    1    7    9 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+          10    1    4    1    7   13 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          11    1    4   10   16   13 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          12    2    4   10   16   18 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+          13    2    6    4    1    7 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          14    3    6    4   10   12 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+          15    2    6    4   10   16 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          16    1    7    1    4   10 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          17    1    7   13   16   10 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          18    2    7   13   16   18 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+          19    3    9    7   13   15 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+          20    2    9    7   13   16 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          21    2   10   16   13   15 # CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+          22    2   12   10   16   13 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ CD2R6A-BENZ
+          23    3   12   10   16   18 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+          24    3   15   13   16   18 # HDR6A-BENZ CD2R6A-BENZ CD2R6A-BENZ HDR6A-BENZ
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+           1   19 B   1.419000   0.000000   0.000000 # LPA1-BENZ (1,4,7)
+
+Anisotropy
+
+
+END
+
+Solvent TOLU
+COMMENT: Toluene
+Masses
+
+           1    11.611000 # CD33A-TOLU            C  NONBOND (0.07800000,2.04000000) CHARGE 1.97152930 DRUDE (-1.608000,0.438000)
+           2     0.400000 # CD33A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -2.20052930 DRUDE (0.000000,0.000000)
+           3     1.008000 # HDA3A-TOLU            H  NONBOND (0.02400000,1.34000000) CHARGE 0.07900000 DRUDE (0.000000,0.000000)
+           4    11.611000 # CD2R6A-TOLU           C  NONBOND (0.06900000,2.09000000) CHARGE 2.19747866 DRUDE (-1.550000,1.262000)
+           5     0.400000 # CD2R6A-DRUD      DP NONBOND (0.00000000,0.01000000) CHARGE -2.16047866 DRUDE (0.000000,0.000000)
+           6     1.008000 # HDR6A-TOLU            H  NONBOND (0.03000000,1.05000000) CHARGE 0.09900000 DRUDE (0.000000,0.000000)
+           7     0.000000 # LPA1-TOLU            LP  NONBOND (0.00000000,0.01000000) CHARGE 0.00000000 DRUDE (0.000000,0.000000)
+           8    11.611000 # CD2R6A-TOLU           C  NONBOND (0.06900000,2.09000000) CHARGE 2.19747866 DRUDE (-1.604000,1.262000)
+           9    11.611000 # CD2R6A-TOLU           C  NONBOND (0.06900000,2.09000000) CHARGE 2.19747866 DRUDE (-1.606000,1.262000)
+          10    11.611000 # CD2R6A-TOLU           C  NONBOND (0.06900000,2.09000000) CHARGE 2.19747866 DRUDE (-1.610000,1.262000)
+
+Atoms
+
+           1 1    1   1.97152930     0.000000     0.000000     0.000000 # CD33A-TOLU
+           2 1    2  -2.20052930     0.000000     0.000000     0.000000 # CD33A-DRUD
+           3 1    3   0.07900000     0.665897    -0.888099     0.032101 # HDA3A-TOLU
+           4 1    3   0.07900000     0.333822     0.699651    -0.795123 # HDA3A-TOLU
+           5 1    3   0.07900000    -1.048918    -0.315024    -0.183576 # HDA3A-TOLU
+           6 1    4   2.19747866     0.068301     0.698946     1.314119 # CD2R6A-TOLU
+           7 1    5  -2.16047866     0.068301     0.698946     1.314119 # CD2R6A-DRUD
+           8 1    8   2.11079062    -0.999251     0.643692     2.189907 # CD2R6A-TOLU
+           9 1    5  -2.19779062    -0.999251     0.643692     2.189907 # CD2R6A-DRUD
+          10 1    6   0.09900000    -1.888378     0.090168     1.919396 # HDR6A-TOLU
+          11 1    8   2.11079062     1.199804     1.408633     1.668760 # CD2R6A-TOLU
+          12 1    5  -2.19779062     1.199804     1.408633     1.668760 # CD2R6A-DRUD
+          13 1    6   0.09900000     2.039516     1.456485     0.988535 # HDR6A-TOLU
+          14 1    9   2.08516038    -0.937606     1.291033     3.408490 # CD2R6A-TOLU
+          15 1    5  -2.19916038    -0.937606     1.291033     3.408490 # CD2R6A-DRUD
+          16 1    6   0.09600000    -1.776934     1.243495     4.088979 # HDR6A-TOLU
+          17 1    9   2.08516038     1.264789     2.057135     2.886551 # CD2R6A-TOLU
+          18 1    5  -2.19916038     1.264789     2.057135     2.886551 # CD2R6A-DRUD
+          19 1    6   0.09600000     2.153568     2.610719     3.157500 # HDR6A-TOLU
+          20 1   10   2.06889736     0.195325     1.998819     3.758070 # CD2R6A-TOLU
+          21 1    5  -2.20189736     0.195325     1.998819     3.758070 # CD2R6A-DRUD
+          22 1    6   0.10000000     0.244901     2.506137     4.711900 # HDR6A-TOLU
+          23 1    7   0.00000000     0.133347     1.364586     2.565619 # LPA1-TOLU
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   305.000000   1.375000 # CD2R6A-TOLU CD2R6A-TOLU
+           2   230.000000   1.490000 # CD2R6A-TOLU CD33A-TOLU
+           3   340.000000   1.080000 # CD2R6A-TOLU HDR6A-TOLU
+           4   322.000000   1.111000 # CD33A-TOLU HDA3A-TOLU
+           5   500.000000   0.000000 # CD33A-TOLU CD33A-DRUD
+           6   500.000000   0.000000 # CD2R6A-TOLU CD2R6A-DRUD
+
+Bonds
+
+           1    1    8    6 # CD2R6A-TOLU CD2R6A-TOLU
+           2    1   11    6 # CD2R6A-TOLU CD2R6A-TOLU
+           3    1   14    8 # CD2R6A-TOLU CD2R6A-TOLU
+           4    1   17   11 # CD2R6A-TOLU CD2R6A-TOLU
+           5    1   20   14 # CD2R6A-TOLU CD2R6A-TOLU
+           6    1   20   17 # CD2R6A-TOLU CD2R6A-TOLU
+           7    2    6    1 # CD2R6A-TOLU CD33A-TOLU
+           8    3    8   10 # CD2R6A-TOLU HDR6A-TOLU
+           9    3   11   13 # CD2R6A-TOLU HDR6A-TOLU
+          10    3   14   16 # CD2R6A-TOLU HDR6A-TOLU
+          11    3   17   19 # CD2R6A-TOLU HDR6A-TOLU
+          12    3   20   22 # CD2R6A-TOLU HDR6A-TOLU
+          13    4    1    3 # CD33A-TOLU HDA3A-TOLU
+          14    4    1    4 # CD33A-TOLU HDA3A-TOLU
+          15    4    1    5 # CD33A-TOLU HDA3A-TOLU
+          16    5    1    2 # CD33A-TOLU CD33A-DRUD
+          17    6    6    7 # CD2R6A-TOLU CD2R6A-DRUD
+          18    6    8    9 # CD2R6A-TOLU CD2R6A-DRUD
+          19    6   11   12 # CD2R6A-TOLU CD2R6A-DRUD
+          20    6   14   15 # CD2R6A-TOLU CD2R6A-DRUD
+          21    6   17   18 # CD2R6A-TOLU CD2R6A-DRUD
+          22    6   20   21 # CD2R6A-TOLU CD2R6A-DRUD
+
+Angle Coeffs
+
+           1    45.800000 122.300000   0.000000   0.000000 # CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           2    40.000000 120.000000  35.000000   2.416200 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           3    30.000000 120.000000  22.000000   2.152500 # CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+           4    49.300000 107.500000   0.000000   0.000000 # CD2R6A-TOLU CD33A-TOLU HDA3A-TOLU
+           5    35.500000 108.400000   5.400000   1.802000 # HDA3A-TOLU CD33A-TOLU HDA3A-TOLU
+
+Angles
+
+           1    5    3    1    4 # HDA3A-TOLU CD33A-TOLU HDA3A-TOLU
+           2    5    3    1    5 # HDA3A-TOLU CD33A-TOLU HDA3A-TOLU
+           3    4    3    1    6 # HDA3A-TOLU CD33A-TOLU CD2R6A-TOLU
+           4    5    4    1    5 # HDA3A-TOLU CD33A-TOLU HDA3A-TOLU
+           5    4    4    1    6 # HDA3A-TOLU CD33A-TOLU CD2R6A-TOLU
+           6    4    5    1    6 # HDA3A-TOLU CD33A-TOLU CD2R6A-TOLU
+           7    1    1    6    8 # CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           8    1    1    6   11 # CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           9    2    8    6   11 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          10    3    6    8   10 # CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          11    2    6    8   14 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          12    3   10    8   14 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          13    3    6   11   13 # CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          14    2    6   11   17 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          15    3   13   11   17 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          16    3    8   14   16 # CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          17    2    8   14   20 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          18    3   16   14   20 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          19    3   11   17   19 # CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          20    2   11   17   20 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          21    3   19   17   20 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          22    2   14   20   17 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          23    3   14   20   22 # CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          24    3   17   20   22 # CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+
+Dihedral Coeffs
+
+           1     3.100000   2 180.000000 # CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           2     4.200000   2 180.000000 # CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+           3     2.800000   2 180.000000 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           4     4.200000   2 180.000000 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+           5     0.000000   6   0.000000 # CD2R6A-TOLU CD2R6A-TOLU CD33A-TOLU HDA3A-TOLU
+           6     2.400000   2 180.000000 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+
+Dihedrals
+
+           1    2    1    6    8   10 # CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+           2    1    1    6    8   14 # CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           3    2    1    6   11   13 # CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+           4    1    1    6   11   17 # CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           5    5    3    1    6    8 # HDA3A-TOLU CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           6    5    3    1    6   11 # HDA3A-TOLU CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           7    5    4    1    6    8 # HDA3A-TOLU CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           8    5    4    1    6   11 # HDA3A-TOLU CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+           9    5    5    1    6    8 # HDA3A-TOLU CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          10    5    5    1    6   11 # HDA3A-TOLU CD33A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          11    4    6    8   14   16 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          12    3    6    8   14   20 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          13    4    6   11   17   19 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          14    3    6   11   17   20 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          15    4    8    6   11   13 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          16    3    8    6   11   17 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          17    3    8   14   20   17 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          18    4    8   14   20   22 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          19    4   10    8    6   11 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          20    6   10    8   14   16 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          21    4   10    8   14   20 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          22    3   11    6    8   14 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          23    3   11   17   20   14 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          24    4   11   17   20   22 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          25    6   13   11   17   19 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          26    4   13   11   17   20 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          27    4   14   20   17   19 # CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          28    4   16   14   20   17 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU CD2R6A-TOLU
+          29    6   16   14   20   22 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+          30    6   19   17   20   22 # HDR6A-TOLU CD2R6A-TOLU CD2R6A-TOLU HDR6A-TOLU
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+           1   23 B   1.419000   0.000000   0.000000 # LPA1-TOLU (6,8,11)
+
+Anisotropy
+
+
+END
+
+Solvent PHEN
+COMMENT: Phenol
+Masses
+
+           1    11.611000 # CD2R6A-PHEN           C  NONBOND (0.06900000,2.09000000) CHARGE 1.88776649 DRUDE (-1.399300,1.254000)
+           2     0.400000 # CD2R6A-DRUD      DP NONBOND (0.00000000,0.01000000) CHARGE -2.05276649 DRUDE (0.000000,0.000000)
+           3     1.008000 # HDR6A-PHEN            H  NONBOND (0.03000000,1.05000000) CHARGE 0.11880000 DRUDE (0.000000,0.000000)
+           4    15.599400 # OD31C-PHEN            O  NONBOND (0.25000000,1.55000000) CHARGE 1.37585074 DRUDE (-0.628600,0.672000)
+           5     0.400000 # OD31C-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -1.37585074 DRUDE (0.000000,0.000000)
+           6     1.008000 # HDP1A-PHEN            H  NONBOND (0.01000000,0.40000000) CHARGE 0.34760000 DRUDE (0.000000,0.000000)
+           7     0.000000 # LPD-PHEN             LP  NONBOND (0.00000000,0.01000000) CHARGE -0.22440000 DRUDE (0.000000,0.000000)
+           8     0.000000 # LPA2-PHEN            LP  NONBOND (0.00000000,0.01000000) CHARGE 0.00000000 DRUDE (0.000000,0.000000)
+           9    11.611000 # CD2R6A-PHEN           C  NONBOND (0.06900000,2.09000000) CHARGE 1.88776649 DRUDE (-1.359400,1.254000)
+          10    11.611000 # CD2R6A-PHEN           C  NONBOND (0.06900000,2.09000000) CHARGE 1.88776649 DRUDE (-1.344700,1.254000)
+          11    11.611000 # CD2R6A-PHEN           C  NONBOND (0.06900000,2.09000000) CHARGE 1.88776649 DRUDE (-1.090600,1.254000)
+
+Atoms
+
+           1 1    1   1.88776649     0.000000     0.000000     0.000000 # CD2R6A-PHEN
+           2 1    2  -2.05276649     0.000000     0.000000     0.000000 # CD2R6A-DRUD
+           3 1    3   0.11880000     0.711657     0.094110    -0.808933 # HDR6A-PHEN
+           4 1    9   1.77798828     0.252670    -0.867925     1.044787 # CD2R6A-PHEN
+           5 1    2  -2.02328828     0.252670    -0.867925     1.044787 # CD2R6A-DRUD
+           6 1    3   0.15180000     1.162048    -1.453256     1.053822 # HDR6A-PHEN
+           7 1    9   1.77798828    -1.161681     0.747717    -0.011523 # CD2R6A-PHEN
+           8 1    2  -2.02328828    -1.161681     0.747717    -0.011523 # CD2R6A-DRUD
+           9 1    3   0.15180000    -1.359490     1.427147    -0.829391 # HDR6A-PHEN
+          10 1   10   1.91881903    -0.656575    -0.987981     2.078047 # CD2R6A-PHEN
+          11 1    2  -2.01231903    -0.656575    -0.987981     2.078047 # CD2R6A-DRUD
+          12 1    3   0.12100000    -0.459168    -1.667305     2.896138 # HDR6A-PHEN
+          13 1   10   1.91881903    -2.070639     0.627333     1.021952 # CD2R6A-PHEN
+          14 1    2  -2.01231903    -2.070639     0.627333     1.021952 # CD2R6A-DRUD
+          15 1    3   0.12100000    -2.980169     1.212485     1.013325 # HDR6A-PHEN
+          16 1   11   2.09164487    -1.817174    -0.240304     2.065565 # CD2R6A-PHEN
+          17 1    2  -1.81224487    -1.817174    -0.240304     2.065565 # CD2R6A-DRUD
+          18 1    4   1.37585074    -2.745634    -0.363084     3.120936 # OD31C-PHEN
+          19 1    5  -1.37585074    -2.745634    -0.363084     3.120936 # OD31C-DRUD
+          20 1    6   0.34760000    -3.480462     0.227525     2.939805 # HDP1A-PHEN
+          21 1    7  -0.22440000    -2.671886    -0.138322     3.378896 # LPD-PHEN
+          22 1    7  -0.22440000    -2.976954    -0.617281     3.054793 # LPD-PHEN
+          23 1    8   0.00000000    -0.935040    -0.123650     1.062851 # LPA2-PHEN
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   305.000000   1.375000 # CD2R6A-PHEN CD2R6A-PHEN
+           2   340.000000   1.080000 # CD2R6A-PHEN HDR6A-PHEN
+           3   334.300000   1.411000 # CD2R6A-PHEN OD31C-PHEN
+           4   545.000000   0.960000 # OD31C-PHEN HDP1A-PHEN
+           5     0.000000   0.000000 # OD31C-PHEN LPD-PHEN
+           6   500.000000   0.000000 # CD2R6A-PHEN CD2R6A-DRUD
+           7   500.000000   0.000000 # OD31C-PHEN OD31C-DRUD
+
+Bonds
+
+           1    1    4    1 # CD2R6A-PHEN CD2R6A-PHEN
+           2    1    7    1 # CD2R6A-PHEN CD2R6A-PHEN
+           3    1   10    4 # CD2R6A-PHEN CD2R6A-PHEN
+           4    1   13    7 # CD2R6A-PHEN CD2R6A-PHEN
+           5    1   16   10 # CD2R6A-PHEN CD2R6A-PHEN
+           6    1   16   13 # CD2R6A-PHEN CD2R6A-PHEN
+           7    2    1    3 # CD2R6A-PHEN HDR6A-PHEN
+           8    2    4    6 # CD2R6A-PHEN HDR6A-PHEN
+           9    2    7    9 # CD2R6A-PHEN HDR6A-PHEN
+          10    2   10   12 # CD2R6A-PHEN HDR6A-PHEN
+          11    2   13   15 # CD2R6A-PHEN HDR6A-PHEN
+          12    3   16   18 # CD2R6A-PHEN OD31C-PHEN
+          13    4   18   20 # OD31C-PHEN HDP1A-PHEN
+          14    5   18   21 # OD31C-PHEN LPD-PHEN
+          15    5   18   22 # OD31C-PHEN LPD-PHEN
+          16    6    1    2 # CD2R6A-PHEN CD2R6A-DRUD
+          17    6    4    5 # CD2R6A-PHEN CD2R6A-DRUD
+          18    6    7    8 # CD2R6A-PHEN CD2R6A-DRUD
+          19    6   10   11 # CD2R6A-PHEN CD2R6A-DRUD
+          20    6   13   14 # CD2R6A-PHEN CD2R6A-DRUD
+          21    6   16   17 # CD2R6A-PHEN CD2R6A-DRUD
+          22    7   18   19 # OD31C-PHEN OD31C-DRUD
+
+Angle Coeffs
+
+           1    40.000000 120.000000  35.000000   2.416200 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           2    30.000000 120.000000  22.000000   2.152500 # CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+           3    45.200000 120.000000   0.000000   0.000000 # CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN
+           4    65.000000 108.000000   0.000000   0.000000 # CD2R6A-PHEN OD31C-PHEN HDP1A-PHEN
+
+Angles
+
+           1    2    3    1    4 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           2    2    3    1    7 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           3    1    4    1    7 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           4    2    1    4    6 # CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+           5    1    1    4   10 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           6    2    6    4   10 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           7    2    1    7    9 # CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+           8    1    1    7   13 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           9    2    9    7   13 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          10    2    4   10   12 # CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+          11    1    4   10   16 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          12    2   12   10   16 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          13    2    7   13   15 # CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+          14    1    7   13   16 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          15    2   15   13   16 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          16    1   10   16   13 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          17    3   10   16   18 # CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN
+          18    3   13   16   18 # CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN
+          19    4   16   18   20 # CD2R6A-PHEN OD31C-PHEN HDP1A-PHEN
+
+Dihedral Coeffs
+
+           1     2.800000   2 180.000000 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           2     3.100000   2 180.000000 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN
+           3     4.200000   2 180.000000 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+           4     0.990000   2 180.000000 # CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN HDP1A-PHEN
+           5     2.400000   2 180.000000 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+           6     4.200000   2 180.000000 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN
+
+Dihedrals
+
+           1    3    1    4   10   12 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+           2    1    1    4   10   16 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           3    3    1    7   13   15 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+           4    1    1    7   13   16 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           5    5    3    1    4    6 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+           6    3    3    1    4   10 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           7    5    3    1    7    9 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+           8    3    3    1    7   13 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+           9    3    4    1    7    9 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+          10    1    4    1    7   13 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          11    1    4   10   16   13 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          12    2    4   10   16   18 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN
+          13    3    6    4    1    7 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          14    5    6    4   10   12 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+          15    3    6    4   10   16 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          16    1    7    1    4   10 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          17    1    7   13   16   10 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          18    2    7   13   16   18 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN
+          19    5    9    7   13   15 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+          20    3    9    7   13   16 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          21    3   10   16   13   15 # CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN HDR6A-PHEN
+          22    4   10   16   18   20 # CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN HDP1A-PHEN
+          23    3   12   10   16   13 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN CD2R6A-PHEN
+          24    6   12   10   16   18 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN
+          25    4   13   16   18   20 # CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN HDP1A-PHEN
+          26    6   15   13   16   18 # HDR6A-PHEN CD2R6A-PHEN CD2R6A-PHEN OD31C-PHEN
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+           1   23 B   1.421000   0.000000   0.000000 # LPA2-PHEN (1,4,7)
+           2   21 R   0.350000 110.900000  91.000000 # LPD-PHEN (18,16,20)
+           3   22 R   0.350000 110.900000 269.000000 # LPD-PHEN (18,16,20)
+
+Anisotropy
+
+           1   18   0.810800   1.216200 # OD31C-PHEN (16,21,22)
+
+END
+
+Solvent MEOH
+COMMENT: Methanol
+Masses
+
+           1    11.611000 # CD33B-MEOH            C  NONBOND (0.11000000,2.04000000) CHARGE 1.59533822 DRUDE (-1.000000,1.300000)
+           2     0.400000 # CD33B-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -1.73533822 DRUDE (0.000000,0.000000)
+           3    15.599400 # OD31A-MEOH            O  NONBOND (0.15000000,1.76500000) CHARGE 1.75946523 DRUDE (-1.028000,1.300000)
+           4     0.400000 # OD31A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -1.75946523 DRUDE (0.000000,0.000000)
+           5     1.008000 # HDP1A-MEOH            H  NONBOND (0.01000000,0.40000000) CHARGE 0.36000000 DRUDE (0.000000,0.000000)
+           6     1.008000 # HDA3B-MEOH            H  NONBOND (0.03500000,1.34000000) CHARGE 0.08000000 DRUDE (0.000000,0.000000)
+           7     0.000000 # LPD-MEOH             LP  NONBOND (0.00000000,0.01000000) CHARGE -0.23000000 DRUDE (0.000000,0.000000)
+
+Atoms
+
+           1 1    1   1.59533822     0.000000     0.000000     0.000000 # CD33B-MEOH
+           2 1    2  -1.73533822     0.000000     0.000000     0.000000 # CD33B-DRUD
+           3 1    3   1.75946523     1.390095    -0.164411    -0.266890 # OD31A-MEOH
+           4 1    4  -1.75946523     1.390095    -0.164411    -0.266890 # OD31A-DRUD
+           5 1    5   0.36000000     1.875044     0.442254     0.317505 # HDP1A-MEOH
+           6 1    6   0.08000000    -0.586159    -0.682191    -0.654236 # HDA3B-MEOH
+           7 1    6   0.08000000    -0.295371     1.051194    -0.203330 # HDA3B-MEOH
+           8 1    6   0.08000000    -0.204958    -0.242251     1.064378 # HDA3B-MEOH
+           9 1    7  -0.23000000     1.489244     0.052369    -0.523164 # LPD-MEOH
+          10 1    7  -0.23000000     1.522036    -0.416750    -0.063379 # LPD-MEOH
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   430.000000   1.425000 # CD33B-MEOH OD31A-MEOH
+           2   536.500000   0.970000 # OD31A-MEOH HDP1A-MEOH
+           3   322.000000   1.111000 # CD33B-MEOH HDA3B-MEOH
+           4     0.000000   0.000000 # OD31A-MEOH LPD-MEOH
+           5   500.000000   0.000000 # CD33B-MEOH CD33B-DRUD
+           6   500.000000   0.000000 # OD31A-MEOH OD31A-DRUD
+
+Bonds
+
+           1    1    1    3 # CD33B-MEOH OD31A-MEOH
+           2    2    3    5 # OD31A-MEOH HDP1A-MEOH
+           3    3    1    6 # CD33B-MEOH HDA3B-MEOH
+           4    3    1    7 # CD33B-MEOH HDA3B-MEOH
+           5    3    1    8 # CD33B-MEOH HDA3B-MEOH
+           6    4    3    9 # OD31A-MEOH LPD-MEOH
+           7    4    3   10 # OD31A-MEOH LPD-MEOH
+           8    5    1    2 # CD33B-MEOH CD33B-DRUD
+           9    6    3    4 # OD31A-MEOH OD31A-DRUD
+
+Angle Coeffs
+
+           1    58.200000 106.000000   0.000000   0.000000 # CD33B-MEOH OD31A-MEOH HDP1A-MEOH
+           2    35.500000 108.400000   5.400000   1.802000 # HDA3B-MEOH CD33B-MEOH HDA3B-MEOH
+           3    61.000000 108.890000   0.000000   0.000000 # HDA3B-MEOH CD33B-MEOH OD31A-MEOH
+
+Angles
+
+           1    3    3    1    6 # OD31A-MEOH CD33B-MEOH HDA3B-MEOH
+           2    3    3    1    7 # OD31A-MEOH CD33B-MEOH HDA3B-MEOH
+           3    3    3    1    8 # OD31A-MEOH CD33B-MEOH HDA3B-MEOH
+           4    2    6    1    7 # HDA3B-MEOH CD33B-MEOH HDA3B-MEOH
+           5    2    6    1    8 # HDA3B-MEOH CD33B-MEOH HDA3B-MEOH
+           6    2    7    1    8 # HDA3B-MEOH CD33B-MEOH HDA3B-MEOH
+           7    1    1    3    5 # CD33B-MEOH OD31A-MEOH HDP1A-MEOH
+
+Dihedral Coeffs
+
+           1     0.179000   3   0.000000 # HDA3B-MEOH CD33B-MEOH OD31A-MEOH HDP1A-MEOH
+
+Dihedrals
+
+           1    1    5    3    1    6 # HDP1A-MEOH OD31A-MEOH CD33B-MEOH HDA3B-MEOH
+           2    1    5    3    1    7 # HDP1A-MEOH OD31A-MEOH CD33B-MEOH HDA3B-MEOH
+           3    1    5    3    1    8 # HDP1A-MEOH OD31A-MEOH CD33B-MEOH HDA3B-MEOH
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+           1    9 R   0.350000 110.000000  91.000000 # LPD-MEOH (3,1,5)
+           2   10 R   0.350000 110.000000 269.000000 # LPD-MEOH (3,1,5)
+
+Anisotropy
+
+           1    3   0.810800   1.216200 # OD31A-MEOH (1,9,10)
+
+END
+
+Solvent ETOH
+COMMENT: Ethanol
+Masses
+
+           1    11.611000 # CD32A-ETOH            C  NONBOND (0.05600000,2.10000000) CHARGE 1.67533822 DRUDE (-1.000000,1.300000)
+           2     0.400000 # CD32A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -1.73533822 DRUDE (0.000000,0.000000)
+           3    15.599400 # OD31A-ETOH            O  NONBOND (0.15000000,1.76500000) CHARGE 1.75946523 DRUDE (-1.028000,1.300000)
+           4     0.400000 # OD31A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -1.75946523 DRUDE (0.000000,0.000000)
+           5     1.008000 # HDP1A-ETOH            H  NONBOND (0.01000000,0.40000000) CHARGE 0.36000000 DRUDE (0.000000,0.000000)
+           6     1.008000 # HDA2A-ETOH            H  NONBOND (0.02100000,1.34000000) CHARGE 0.08000000 DRUDE (0.000000,0.000000)
+           7    11.611000 # CD33A-ETOH            C  NONBOND (0.07800000,2.04000000) CHARGE 1.87327988 DRUDE (-1.400000,1.300000)
+           8     0.400000 # CD33A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -2.05327988 DRUDE (0.000000,0.000000)
+           9     1.008000 # HDA3A-ETOH            H  NONBOND (0.02400000,1.34000000) CHARGE 0.06000000 DRUDE (0.000000,0.000000)
+          10     0.000000 # LPD-ETOH             LP  NONBOND (0.00000000,0.01000000) CHARGE -0.23000000 DRUDE (0.000000,0.000000)
+
+Atoms
+
+           1 1    1   1.67533822     0.000000     0.000000     0.000000 # CD32A-ETOH
+           2 1    2  -1.73533822     0.000000     0.000000     0.000000 # CD32A-DRUD
+           3 1    3   1.75946523     0.659251    -1.145850    -0.532016 # OD31A-ETOH
+           4 1    4  -1.75946523     0.659251    -1.145850    -0.532016 # OD31A-DRUD
+           5 1    5   0.36000000     1.318138    -1.406789     0.130313 # HDP1A-ETOH
+           6 1    6   0.08000000    -0.477990    -0.247957     0.973106 # HDA2A-ETOH
+           7 1    6   0.08000000     0.733881     0.814647     0.186181 # HDA2A-ETOH
+           8 1    7   1.87327988    -1.075360     0.518706    -0.955642 # CD33A-ETOH
+           9 1    8  -2.05327988    -1.075360     0.518706    -0.955642 # CD33A-DRUD
+          10 1    9   0.06000000    -1.845978    -0.258763    -1.143655 # HDA3A-ETOH
+          11 1    9   0.06000000    -0.631415     0.806199    -1.932329 # HDA3A-ETOH
+          12 1    9   0.06000000    -1.583362     1.411290    -0.532695 # HDA3A-ETOH
+          13 1   10  -0.23000000     0.933523    -1.047004    -0.725677 # LPD-ETOH
+          14 1   10  -0.23000000     0.489151    -1.436644    -0.437122 # LPD-ETOH
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   222.500000   1.528000 # CD32A-ETOH CD33A-ETOH
+           2   396.000000   1.425000 # CD32A-ETOH OD31A-ETOH
+           3   309.000000   1.111000 # CD32A-ETOH HDA2A-ETOH
+           4   536.500000   0.970000 # OD31A-ETOH HDP1A-ETOH
+           5   322.000000   1.111000 # CD33A-ETOH HDA3A-ETOH
+           6     0.000000   0.000000 # OD31A-ETOH LPD-ETOH
+           7   500.000000   0.000000 # CD32A-ETOH CD32A-DRUD
+           8   500.000000   0.000000 # OD31A-ETOH OD31A-DRUD
+           9   500.000000   0.000000 # CD33A-ETOH CD33A-DRUD
+
+Bonds
+
+           1    1    1    8 # CD32A-ETOH CD33A-ETOH
+           2    2    1    3 # CD32A-ETOH OD31A-ETOH
+           3    3    1    6 # CD32A-ETOH HDA2A-ETOH
+           4    3    1    7 # CD32A-ETOH HDA2A-ETOH
+           5    4    3    5 # OD31A-ETOH HDP1A-ETOH
+           6    5    8   10 # CD33A-ETOH HDA3A-ETOH
+           7    5    8   11 # CD33A-ETOH HDA3A-ETOH
+           8    5    8   12 # CD33A-ETOH HDA3A-ETOH
+           9    6    3   13 # OD31A-ETOH LPD-ETOH
+          10    6    3   14 # OD31A-ETOH LPD-ETOH
+          11    7    1    2 # CD32A-ETOH CD32A-DRUD
+          12    8    3    4 # OD31A-ETOH OD31A-DRUD
+          13    9    8    9 # CD33A-ETOH CD33A-DRUD
+
+Angle Coeffs
+
+           1    34.600000 111.500000  22.530000   2.179000 # CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+           2    49.000000 106.000000   0.000000   0.000000 # CD32A-ETOH OD31A-ETOH HDP1A-ETOH
+           3    34.600000 110.100000  22.530000   2.179000 # CD33A-ETOH CD32A-ETOH HDA2A-ETOH
+           4    66.000000 112.500000   0.000000   0.000000 # CD33A-ETOH CD32A-ETOH OD31A-ETOH
+           5    35.500000 109.000000   5.400000   1.802000 # HDA2A-ETOH CD32A-ETOH HDA2A-ETOH
+           6    54.000000 111.500000   0.000000   0.000000 # HDA2A-ETOH CD32A-ETOH OD31A-ETOH
+           7    35.500000 108.400000   5.400000   1.802000 # HDA3A-ETOH CD33A-ETOH HDA3A-ETOH
+
+Angles
+
+           1    6    3    1    6 # OD31A-ETOH CD32A-ETOH HDA2A-ETOH
+           2    6    3    1    7 # OD31A-ETOH CD32A-ETOH HDA2A-ETOH
+           3    4    3    1    8 # OD31A-ETOH CD32A-ETOH CD33A-ETOH
+           4    5    6    1    7 # HDA2A-ETOH CD32A-ETOH HDA2A-ETOH
+           5    3    6    1    8 # HDA2A-ETOH CD32A-ETOH CD33A-ETOH
+           6    3    7    1    8 # HDA2A-ETOH CD32A-ETOH CD33A-ETOH
+           7    2    1    3    5 # CD32A-ETOH OD31A-ETOH HDP1A-ETOH
+           8    1    1    8   10 # CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+           9    1    1    8   11 # CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+          10    1    1    8   12 # CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+          11    7   10    8   11 # HDA3A-ETOH CD33A-ETOH HDA3A-ETOH
+          12    7   10    8   12 # HDA3A-ETOH CD33A-ETOH HDA3A-ETOH
+          13    7   11    8   12 # HDA3A-ETOH CD33A-ETOH HDA3A-ETOH
+
+Dihedral Coeffs
+
+           1     1.250000   1   0.000000 # CD33A-ETOH CD32A-ETOH OD31A-ETOH HDP1A-ETOH
+           2     0.350000   2   0.000000 # CD33A-ETOH CD32A-ETOH OD31A-ETOH HDP1A-ETOH
+           3     0.360000   3   0.000000 # CD33A-ETOH CD32A-ETOH OD31A-ETOH HDP1A-ETOH
+           4     0.145000   3   0.000000 # HDA2A-ETOH CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+           5     0.140000   2   0.000000 # HDA2A-ETOH CD32A-ETOH OD31A-ETOH HDP1A-ETOH
+           6     0.130000   3   0.000000 # HDA2A-ETOH CD32A-ETOH OD31A-ETOH HDP1A-ETOH
+           7     0.175000   3   0.000000 # HDA3A-ETOH CD33A-ETOH CD32A-ETOH OD31A-ETOH
+
+Dihedrals
+
+           1    7    3    1    8   10 # OD31A-ETOH CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+           2    7    3    1    8   11 # OD31A-ETOH CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+           3    7    3    1    8   12 # OD31A-ETOH CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+           4    5    5    3    1    6 # HDP1A-ETOH OD31A-ETOH CD32A-ETOH HDA2A-ETOH
+           5    5    5    3    1    7 # HDP1A-ETOH OD31A-ETOH CD32A-ETOH HDA2A-ETOH
+           6    1    5    3    1    8 # HDP1A-ETOH OD31A-ETOH CD32A-ETOH CD33A-ETOH
+           7    4    6    1    8   10 # HDA2A-ETOH CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+           8    4    6    1    8   11 # HDA2A-ETOH CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+           9    4    6    1    8   12 # HDA2A-ETOH CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+          10    4    7    1    8   10 # HDA2A-ETOH CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+          11    4    7    1    8   11 # HDA2A-ETOH CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+          12    4    7    1    8   12 # HDA2A-ETOH CD32A-ETOH CD33A-ETOH HDA3A-ETOH
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+           1   13 R   0.350000 110.000000  91.000000 # LPD-ETOH (3,1,5)
+           2   14 R   0.350000 110.000000 269.000000 # LPD-ETOH (3,1,5)
+
+Anisotropy
+
+           1    3   0.810800   1.216200 # OD31A-ETOH (1,13,14)
+
+END
+
+Solvent PRO2
+COMMENT: 2-Propanol
+Masses
+
+           1    11.611000 # CD31A-PRO2            C  NONBOND (0.02200000,2.20000000) CHARGE 1.73533822 DRUDE (-1.000000,1.300000)
+           2     0.400000 # CD31A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -1.73533822 DRUDE (0.000000,0.000000)
+           3    15.599400 # OD31A-PRO2            O  NONBOND (0.15000000,1.76500000) CHARGE 1.75946523 DRUDE (-1.028000,1.300000)
+           4     0.400000 # OD31A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -1.75946523 DRUDE (0.000000,0.000000)
+           5     1.008000 # HDP1A-PRO2            H  NONBOND (0.01000000,0.40000000) CHARGE 0.36000000 DRUDE (0.000000,0.000000)
+           6     1.008000 # HDA1A-PRO2            H  NONBOND (0.02000000,1.34000000) CHARGE 0.10000000 DRUDE (0.000000,0.000000)
+           7    11.611000 # CD33A-PRO2            C  NONBOND (0.07800000,2.04000000) CHARGE 1.87327988 DRUDE (-1.400000,1.300000)
+           8     0.400000 # CD33A-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -2.05327988 DRUDE (0.000000,0.000000)
+           9     1.008000 # HDA3A-PRO2            H  NONBOND (0.02400000,1.34000000) CHARGE 0.06000000 DRUDE (0.000000,0.000000)
+          10     0.000000 # LPD-PRO2             LP  NONBOND (0.00000000,0.01000000) CHARGE -0.23000000 DRUDE (0.000000,0.000000)
+
+Atoms
+
+           1 1    1   1.73533822     0.000000     0.000000     0.000000 # CD31A-PRO2
+           2 1    2  -1.73533822     0.000000     0.000000     0.000000 # CD31A-DRUD
+           3 1    3   1.75946523    -1.183085    -0.283541     0.770399 # OD31A-PRO2
+           4 1    4  -1.75946523    -1.183085    -0.283541     0.770399 # OD31A-DRUD
+           5 1    5   0.36000000    -1.001343    -1.058695     1.324480 # HDP1A-PRO2
+           6 1    6   0.10000000     0.713877    -0.788289     0.323086 # HDA1A-PRO2
+           7 1    7   1.87327988    -0.250937    -0.130517    -1.511304 # CD33A-PRO2
+           8 1    8  -2.05327988    -0.250937    -0.130517    -1.511304 # CD33A-DRUD
+           9 1    9   0.06000000    -0.978975     0.637723    -1.847607 # HDA3A-PRO2
+          10 1    9   0.06000000     0.697717     0.008651    -2.071678 # HDA3A-PRO2
+          11 1    9   0.06000000    -0.659651    -1.135759    -1.747468 # HDA3A-PRO2
+          12 1    7   1.87327988     0.586023     1.382451     0.330836 # CD33A-PRO2
+          13 1    8  -2.05327988     0.586023     1.382451     0.330836 # CD33A-DRUD
+          14 1    9   0.06000000     0.779951     1.466604     1.421085 # HDA3A-PRO2
+          15 1    9   0.06000000    -0.124567     2.182231     0.032934 # HDA3A-PRO2
+          16 1    9   0.06000000     1.541953     1.534771    -0.213523 # HDA3A-PRO2
+          17 1   10  -0.23000000    -1.393034    -0.499584     0.592223 # LPD-PRO2
+          18 1   10  -0.23000000    -1.175161    -0.105727     1.071762 # LPD-PRO2
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   225.000000   1.538000 # CD33A-PRO2 CD31A-PRO2
+           2   225.000000   1.538000 # CD31A-PRO2 CD33A-PRO2
+           3   350.000000   1.440000 # CD31A-PRO2 OD31A-PRO2
+           4   309.000000   1.111000 # CD31A-PRO2 HDA1A-PRO2
+           5   536.500000   0.970000 # OD31A-PRO2 HDP1A-PRO2
+           6   322.000000   1.111000 # CD33A-PRO2 HDA3A-PRO2
+           7     0.000000   0.000000 # OD31A-PRO2 LPD-PRO2
+           8   500.000000   0.000000 # CD31A-PRO2 CD31A-DRUD
+           9   500.000000   0.000000 # OD31A-PRO2 OD31A-DRUD
+          10   500.000000   0.000000 # CD33A-PRO2 CD33A-DRUD
+
+Bonds
+
+           1    1    7    1 # CD33A-PRO2 CD31A-PRO2
+           2    2    1   12 # CD31A-PRO2 CD33A-PRO2
+           3    3    1    3 # CD31A-PRO2 OD31A-PRO2
+           4    4    1    6 # CD31A-PRO2 HDA1A-PRO2
+           5    5    3    5 # OD31A-PRO2 HDP1A-PRO2
+           6    6    7    9 # CD33A-PRO2 HDA3A-PRO2
+           7    6    7   10 # CD33A-PRO2 HDA3A-PRO2
+           8    6    7   11 # CD33A-PRO2 HDA3A-PRO2
+           9    6   12   14 # CD33A-PRO2 HDA3A-PRO2
+          10    6   12   15 # CD33A-PRO2 HDA3A-PRO2
+          11    6   12   16 # CD33A-PRO2 HDA3A-PRO2
+          12    7    3   17 # OD31A-PRO2 LPD-PRO2
+          13    7    3   18 # OD31A-PRO2 LPD-PRO2
+          14    8    1    2 # CD31A-PRO2 CD31A-DRUD
+          15    9    3    4 # OD31A-PRO2 OD31A-DRUD
+          16   10    7    8 # CD33A-PRO2 CD33A-DRUD
+          17   10   12   13 # CD33A-PRO2 CD33A-DRUD
+
+Angle Coeffs
+
+           1    55.000000 112.000000   8.000000   2.561000 # CD33A-PRO2 CD31A-PRO2 CD33A-PRO2
+           2    34.500000 110.100000  22.530000   2.179000 # CD33A-PRO2 CD31A-PRO2 HDA1A-PRO2
+           3    66.000000 113.100000   0.000000   0.000000 # CD33A-PRO2 CD31A-PRO2 OD31A-PRO2
+           4    33.430000 110.100000  22.530000   2.179000 # CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           5    59.000000 108.000000   0.000000   0.000000 # CD31A-PRO2 OD31A-PRO2 HDP1A-PRO2
+           6    35.500000 108.400000   5.400000   1.802000 # HDA3A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           7    47.000000 104.000000   0.000000   0.000000 # HDA1A-PRO2 CD31A-PRO2 OD31A-PRO2
+
+Angles
+
+           1    7    3    1    6 # OD31A-PRO2 CD31A-PRO2 HDA1A-PRO2
+           2    3    3    1    7 # OD31A-PRO2 CD31A-PRO2 CD33A-PRO2
+           3    3    3    1   12 # OD31A-PRO2 CD31A-PRO2 CD33A-PRO2
+           4    2    6    1    7 # HDA1A-PRO2 CD31A-PRO2 CD33A-PRO2
+           5    2    6    1   12 # HDA1A-PRO2 CD31A-PRO2 CD33A-PRO2
+           6    1    7    1   12 # CD33A-PRO2 CD31A-PRO2 CD33A-PRO2
+           7    5    1    3    5 # CD31A-PRO2 OD31A-PRO2 HDP1A-PRO2
+           8    4    1    7    9 # CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           9    4    1    7   10 # CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          10    4    1    7   11 # CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          11    6    9    7   10 # HDA3A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          12    6    9    7   11 # HDA3A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          13    6   10    7   11 # HDA3A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          14    4    1   12   14 # CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          15    4    1   12   15 # CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          16    4    1   12   16 # CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          17    6   14   12   15 # HDA3A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          18    6   14   12   16 # HDA3A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          19    6   15   12   16 # HDA3A-PRO2 CD33A-PRO2 HDA3A-PRO2
+
+Dihedral Coeffs
+
+           1     0.150000   3   0.000000 # CD33A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           2     1.660000   1   0.000000 # CD33A-PRO2 CD31A-PRO2 OD31A-PRO2 HDP1A-PRO2
+           3     0.120000   2   0.000000 # CD33A-PRO2 CD31A-PRO2 OD31A-PRO2 HDP1A-PRO2
+           4     0.340000   3   0.000000 # CD33A-PRO2 CD31A-PRO2 OD31A-PRO2 HDP1A-PRO2
+           5     0.200000   3   0.000000 # HDA3A-PRO2 CD33A-PRO2 CD31A-PRO2 HDA1A-PRO2
+           6     0.075000   3   0.000000 # HDA3A-PRO2 CD33A-PRO2 CD31A-PRO2 OD31A-PRO2
+           7     0.200000   3   0.000000 # HDA1A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           8     0.060000   1   0.000000 # HDA1A-PRO2 CD31A-PRO2 OD31A-PRO2 HDP1A-PRO2
+           9     0.060000   2   0.000000 # HDA1A-PRO2 CD31A-PRO2 OD31A-PRO2 HDP1A-PRO2
+          10     0.000000   3   0.000000 # HDA1A-PRO2 CD31A-PRO2 OD31A-PRO2 HDP1A-PRO2
+
+Dihedrals
+
+           1    6    3    1    7    9 # OD31A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           2    6    3    1    7   10 # OD31A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           3    6    3    1    7   11 # OD31A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           4    6    3    1   12   14 # OD31A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           5    6    3    1   12   15 # OD31A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           6    6    3    1   12   16 # OD31A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+           7    8    5    3    1    6 # HDP1A-PRO2 OD31A-PRO2 CD31A-PRO2 HDA1A-PRO2
+           8    2    5    3    1    7 # HDP1A-PRO2 OD31A-PRO2 CD31A-PRO2 CD33A-PRO2
+           9    2    5    3    1   12 # HDP1A-PRO2 OD31A-PRO2 CD31A-PRO2 CD33A-PRO2
+          10    5    6    1    7    9 # HDA1A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          11    5    6    1    7   10 # HDA1A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          12    5    6    1    7   11 # HDA1A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          13    5    6    1   12   14 # HDA1A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          14    5    6    1   12   15 # HDA1A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          15    5    6    1   12   16 # HDA1A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          16    1    7    1   12   14 # CD33A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          17    1    7    1   12   15 # CD33A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          18    1    7    1   12   16 # CD33A-PRO2 CD31A-PRO2 CD33A-PRO2 HDA3A-PRO2
+          19    1    9    7    1   12 # HDA3A-PRO2 CD33A-PRO2 CD31A-PRO2 CD33A-PRO2
+          20    1   10    7    1   12 # HDA3A-PRO2 CD33A-PRO2 CD31A-PRO2 CD33A-PRO2
+          21    1   11    7    1   12 # HDA3A-PRO2 CD33A-PRO2 CD31A-PRO2 CD33A-PRO2
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+           1   17 R   0.350000 110.000000  91.000000 # LPD-PRO2 (3,1,5)
+           2   18 R   0.350000 110.000000 269.000000 # LPD-PRO2 (3,1,5)
+
+Anisotropy
+
+           1    3   0.810800   1.216200 # OD31A-PRO2 (1,17,18)
+
+END
+
+Solvent ACO
+COMMENT: Acetone
+Masses
+
+           1    15.599400 # OD2C1D-ACO           O  NONBOND (0.20000000,1.85000000) CHARGE 1.38609971 DRUDE (-0.638000,1.426000)
+           2     0.400000 # OD2C1D-DRUD      DP NONBOND (0.00000000,0.01000000) CHARGE -1.38609971 DRUDE (0.000000,0.000000)
+           3     0.000000 # LPD-ACO             LP  NONBOND (0.00000000,0.01000000) CHARGE -0.22800000 DRUDE (0.000000,0.000000)
+           4    11.611000 # CD2O1D-ACO           C  NONBOND (0.13500000,1.75000000) CHARGE 2.35017653 DRUDE (-1.154000,1.235000)
+           5     0.400000 # CD2O1D-DRUD      DP NONBOND (0.00000000,0.01000000) CHARGE -1.86417653 DRUDE (0.000000,0.000000)
+           6    11.611000 # CD33C-ACO            C  NONBOND (0.07800000,1.94000000) CHARGE 1.77225583 DRUDE (-1.293000,1.181000)
+           7     0.400000 # CD33C-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -1.97325583 DRUDE (0.000000,0.000000)
+           8     1.008000 # HDA3A-ACO            H  NONBOND (0.02400000,1.34000000) CHARGE 0.06200000 DRUDE (0.000000,0.000000)
+
+Atoms
+
+           1 1    1   1.38609971     0.000000     0.000000     0.000000 # OD2C1D-ACO
+           2 1    2  -1.38609971     0.000000     0.000000     0.000000 # OD2C1D-DRUD
+           3 1    3  -0.22800000    -0.242127     0.044319     0.171494 # LPD-ACO
+           4 1    3  -0.22800000     0.245463    -0.034726    -0.168944 # LPD-ACO
+           5 1    4   2.35017653    -0.387998    -1.115790    -0.296637 # CD2O1D-ACO
+           6 1    5  -1.86417653    -0.387998    -1.115790    -0.296637 # CD2O1D-DRUD
+           7 1    6   1.77225583    -1.674191    -1.671399     0.233466 # CD33C-ACO
+           8 1    7  -1.97325583    -1.674191    -1.671399     0.233466 # CD33C-DRUD
+           9 1    8   0.06200000    -2.357895    -1.912006    -0.608294 # HDA3A-ACO
+          10 1    8   0.06200000    -1.475562    -2.597060     0.814500 # HDA3A-ACO
+          11 1    8   0.06200000    -2.163799    -0.926175     0.895906 # HDA3A-ACO
+          12 1    6   1.77225583     0.395135    -2.006865    -1.211346 # CD33C-ACO
+          13 1    7  -1.97325583     0.395135    -2.006865    -1.211346 # CD33C-DRUD
+          14 1    8   0.06200000     1.323101    -1.491451    -1.538653 # HDA3A-ACO
+          15 1    8   0.06200000    -0.213286    -2.259668    -2.105671 # HDA3A-ACO
+          16 1    8   0.06200000     0.669052    -2.944736    -0.682886 # HDA3A-ACO
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   250.000000   1.498000 # CD2O1D-ACO CD33C-ACO
+           2   322.000000   1.111000 # CD33C-ACO HDA3A-ACO
+           3     0.000000   0.000000 # OD2C1D-ACO LPD-ACO
+           4   750.000000   1.218000 # OD2C1D-ACO CD2O1D-ACO
+           5   500.000000   0.000000 # OD2C1D-ACO OD2C1D-DRUD
+           6   500.000000   0.000000 # CD2O1D-ACO CD2O1D-DRUD
+           7   500.000000   0.000000 # CD33C-ACO CD33C-DRUD
+
+Bonds
+
+           1    1    5    7 # CD2O1D-ACO CD33C-ACO
+           2    1    5   12 # CD2O1D-ACO CD33C-ACO
+           3    2    7    9 # CD33C-ACO HDA3A-ACO
+           4    2    7   10 # CD33C-ACO HDA3A-ACO
+           5    2    7   11 # CD33C-ACO HDA3A-ACO
+           6    2   12   14 # CD33C-ACO HDA3A-ACO
+           7    2   12   15 # CD33C-ACO HDA3A-ACO
+           8    2   12   16 # CD33C-ACO HDA3A-ACO
+           9    3    1    3 # OD2C1D-ACO LPD-ACO
+          10    3    1    4 # OD2C1D-ACO LPD-ACO
+          11    4    1    5 # OD2C1D-ACO CD2O1D-ACO
+          12    5    1    2 # OD2C1D-ACO OD2C1D-DRUD
+          13    6    5    6 # CD2O1D-ACO CD2O1D-DRUD
+          14    7    7    8 # CD33C-ACO CD33C-DRUD
+          15    7   12   13 # CD33C-ACO CD33C-DRUD
+
+Angle Coeffs
+
+           1    38.700000 109.300000   0.000000   0.000000 # CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           2    44.500000 116.380000   0.000000   0.000000 # CD33C-ACO CD2O1D-ACO CD33C-ACO
+           3    63.600000 121.810000   0.000000   0.000000 # CD33C-ACO CD2O1D-ACO OD2C1D-ACO
+           4    35.500000 108.400000   5.400000   1.802000 # HDA3A-ACO CD33C-ACO HDA3A-ACO
+
+Angles
+
+           1    3    1    5    7 # OD2C1D-ACO CD2O1D-ACO CD33C-ACO
+           2    3    1    5   12 # OD2C1D-ACO CD2O1D-ACO CD33C-ACO
+           3    2    7    5   12 # CD33C-ACO CD2O1D-ACO CD33C-ACO
+           4    1    5    7    9 # CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           5    1    5    7   10 # CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           6    1    5    7   11 # CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           7    4    9    7   10 # HDA3A-ACO CD33C-ACO HDA3A-ACO
+           8    4    9    7   11 # HDA3A-ACO CD33C-ACO HDA3A-ACO
+           9    4   10    7   11 # HDA3A-ACO CD33C-ACO HDA3A-ACO
+          10    1    5   12   14 # CD2O1D-ACO CD33C-ACO HDA3A-ACO
+          11    1    5   12   15 # CD2O1D-ACO CD33C-ACO HDA3A-ACO
+          12    1    5   12   16 # CD2O1D-ACO CD33C-ACO HDA3A-ACO
+          13    4   14   12   15 # HDA3A-ACO CD33C-ACO HDA3A-ACO
+          14    4   14   12   16 # HDA3A-ACO CD33C-ACO HDA3A-ACO
+          15    4   15   12   16 # HDA3A-ACO CD33C-ACO HDA3A-ACO
+
+Dihedral Coeffs
+
+           1     0.200000   3   0.000000 # CD33C-ACO CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           2     0.085000   3   0.000000 # HDA3A-ACO CD33C-ACO CD2O1D-ACO OD2C1D-ACO
+
+Dihedrals
+
+           1    2    1    5    7    9 # OD2C1D-ACO CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           2    2    1    5    7   10 # OD2C1D-ACO CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           3    2    1    5    7   11 # OD2C1D-ACO CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           4    2    1    5   12   14 # OD2C1D-ACO CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           5    2    1    5   12   15 # OD2C1D-ACO CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           6    2    1    5   12   16 # OD2C1D-ACO CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           7    1    7    5   12   14 # CD33C-ACO CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           8    1    7    5   12   15 # CD33C-ACO CD2O1D-ACO CD33C-ACO HDA3A-ACO
+           9    1    7    5   12   16 # CD33C-ACO CD2O1D-ACO CD33C-ACO HDA3A-ACO
+          10    1    9    7    5   12 # HDA3A-ACO CD33C-ACO CD2O1D-ACO CD33C-ACO
+          11    1   10    7    5   12 # HDA3A-ACO CD33C-ACO CD2O1D-ACO CD33C-ACO
+          12    1   11    7    5   12 # HDA3A-ACO CD33C-ACO CD2O1D-ACO CD33C-ACO
+
+Improper Coeffs
+
+           1    98.000000   0   0.000000 # CD2O1D-ACO CD33C-ACO CD33C-ACO OD2C1D-ACO
+
+Impropers
+
+           1    1    5    7   12    1 # CD2O1D-ACO CD33C-ACO CD33C-ACO OD2C1D-ACO
+
+Lone Pairs
+
+           1    3 R   0.300000  91.000000   0.000000 # LPD-ACO (1,5,7)
+           2    4 R   0.300000  91.000000 180.000000 # LPD-ACO (1,5,7)
+
+Anisotropy
+
+           1    1   0.866500   1.072460 # OD2C1D-ACO (5,3,4)
+
+END
+
+Solvent MGLY
+COMMENT: Glycerol
+Masses
+
+           1    11.611000 # CD32F-MGLY            C  NONBOND (0.12000000,2.15000000) CHARGE 2.16908231 DRUDE (-1.650000,0.700000)
+           2     0.400000 # CD32F-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -2.22908231 DRUDE (0.000000,0.000000)
+           3     1.008000 # HDA2A-MGLY            H  NONBOND (0.02100000,1.34000000) CHARGE 0.07000000 DRUDE (0.000000,0.000000)
+           4    15.599400 # OD31E-MGLY            O  NONBOND (0.20000000,1.70000000) CHARGE 1.73533822 DRUDE (-1.000000,1.000000)
+           5     0.400000 # OD31E-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -1.73533822 DRUDE (0.000000,0.000000)
+           6     1.008000 # HDP1A-MGLY            H  NONBOND (0.01000000,0.40000000) CHARGE 0.32000000 DRUDE (0.000000,0.000000)
+           7     0.000000 # LPD-MGLY             LP  NONBOND (0.00000000,0.01000000) CHARGE -0.20000000 DRUDE (0.000000,0.000000)
+           8    11.611000 # CD31G-MGLY            C  NONBOND (0.12000000,2.15000000) CHARGE 2.23908231 DRUDE (-1.650000,0.700000)
+           9     0.400000 # CD31G-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -2.22908231 DRUDE (0.000000,0.000000)
+          10     1.008000 # HDA1A-MGLY            H  NONBOND (0.02000000,1.34000000) CHARGE 0.07000000 DRUDE (0.000000,0.000000)
+
+Atoms
+
+           1 1    1   2.16908231     0.000000     0.000000     0.000000 # CD32F-MGLY
+           2 1    2  -2.22908231     0.000000     0.000000     0.000000 # CD32F-DRUD
+           3 1    3   0.07000000    -0.252638    -0.893917    -0.556358 # HDA2A-MGLY
+           4 1    3   0.07000000    -0.920698     0.513140     0.246431 # HDA2A-MGLY
+           5 1    4   1.73533822     0.687434    -0.367290     1.192961 # OD31E-MGLY
+           6 1    5  -1.73533822     0.687434    -0.367290     1.192961 # OD31E-DRUD
+           7 1    6   0.32000000     0.094687    -0.941990     1.702148 # HDP1A-MGLY
+           8 1    7  -0.20000000     0.625485    -0.131625     1.444207 # LPD-MGLY
+           9 1    7  -0.20000000     0.873952    -0.658462     1.138827 # LPD-MGLY
+          10 1    8   2.23908231     0.878412     0.897605    -0.859611 # CD31G-MGLY
+          11 1    9  -2.22908231     0.878412     0.897605    -0.859611 # CD31G-DRUD
+          12 1   10   0.07000000     0.384607     1.062407    -1.811475 # HDA1A-MGLY
+          13 1    4   1.73533822     2.134397     0.252216    -1.085163 # OD31E-MGLY
+          14 1    5  -1.73533822     2.134397     0.252216    -1.085163 # OD31E-DRUD
+          15 1    6   0.32000000     1.989707    -0.474920    -1.710653 # HDP1A-MGLY
+          16 1    7  -0.20000000     2.182330    -0.002093    -0.849516 # LPD-MGLY
+          17 1    7  -0.20000000     2.301821     0.405837    -1.351377 # LPD-MGLY
+          18 1    1   2.16908231     1.122074     2.248160    -0.201061 # CD32F-MGLY
+          19 1    2  -2.22908231     1.122074     2.248160    -0.201061 # CD32F-DRUD
+          20 1    3   0.07000000     1.641345     2.893880    -0.898323 # HDA2A-MGLY
+          21 1    3   0.07000000     0.178692     2.715501     0.049908 # HDA2A-MGLY
+          22 1    4   1.73533822     1.916741     2.089792     0.971136 # OD31E-MGLY
+          23 1    5  -1.73533822     1.916741     2.089792     0.971136 # OD31E-DRUD
+          24 1    6   0.32000000     1.367917     1.641125     1.633247 # HDP1A-MGLY
+          25 1    7  -0.20000000     1.882976     2.370478     1.177473 # LPD-MGLY
+          26 1    7  -0.20000000     2.092816     1.787661     0.956475 # LPD-MGLY
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   222.500000   1.510000 # CD32F-MGLY CD31G-MGLY
+           2   222.500000   1.510000 # CD31G-MGLY CD32F-MGLY
+           3   320.000000   1.425000 # CD32F-MGLY OD31E-MGLY
+           4   309.000000   1.080000 # CD32F-MGLY HDA2A-MGLY
+           5   536.500000   0.970000 # OD31E-MGLY HDP1A-MGLY
+           6   350.000000   1.430000 # CD31G-MGLY OD31E-MGLY
+           7   309.000000   1.080000 # CD31G-MGLY HDA1A-MGLY
+           8     0.000000   0.000000 # OD31E-MGLY LPD-MGLY
+           9   500.000000   0.000000 # CD32F-MGLY CD32F-DRUD
+          10   500.000000   0.000000 # OD31E-MGLY OD31E-DRUD
+          11   500.000000   0.000000 # CD31G-MGLY CD31G-DRUD
+
+Bonds
+
+           1    1    1   10 # CD32F-MGLY CD31G-MGLY
+           2    2   10   18 # CD31G-MGLY CD32F-MGLY
+           3    3    1    5 # CD32F-MGLY OD31E-MGLY
+           4    4    1    3 # CD32F-MGLY HDA2A-MGLY
+           5    4    1    4 # CD32F-MGLY HDA2A-MGLY
+           6    5    5    7 # OD31E-MGLY HDP1A-MGLY
+           7    6   10   13 # CD31G-MGLY OD31E-MGLY
+           8    7   10   12 # CD31G-MGLY HDA1A-MGLY
+           9    5   13   15 # OD31E-MGLY HDP1A-MGLY
+          10    3   18   22 # CD32F-MGLY OD31E-MGLY
+          11    4   18   20 # CD32F-MGLY HDA2A-MGLY
+          12    4   18   21 # CD32F-MGLY HDA2A-MGLY
+          13    5   22   24 # OD31E-MGLY HDP1A-MGLY
+          14    8    5    8 # OD31E-MGLY LPD-MGLY
+          15    8    5    9 # OD31E-MGLY LPD-MGLY
+          16    8   13   16 # OD31E-MGLY LPD-MGLY
+          17    8   13   17 # OD31E-MGLY LPD-MGLY
+          18    8   22   25 # OD31E-MGLY LPD-MGLY
+          19    8   22   26 # OD31E-MGLY LPD-MGLY
+          20    9    1    2 # CD32F-MGLY CD32F-DRUD
+          21   10    5    6 # OD31E-MGLY OD31E-DRUD
+          22   11   10   11 # CD31G-MGLY CD31G-DRUD
+          23   10   13   14 # OD31E-MGLY OD31E-DRUD
+          24    9   18   19 # CD32F-MGLY CD32F-DRUD
+          25   10   22   23 # OD31E-MGLY OD31E-DRUD
+
+Angle Coeffs
+
+           1    58.350000 113.500000  11.160000   2.561000 # CD32F-MGLY CD31G-MGLY CD32F-MGLY
+           2    34.500000 110.100000  22.530000   2.179000 # CD32F-MGLY CD31G-MGLY HDA1A-MGLY
+           3    59.300000 111.000000   0.000000   0.000000 # CD32F-MGLY CD31G-MGLY OD31E-MGLY
+           4    49.000000 107.300000   0.000000   0.000000 # CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+           5    26.500000 110.100000  22.530000   2.179000 # CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+           6    66.000000 111.000000   0.000000   0.000000 # CD31G-MGLY CD32F-MGLY OD31E-MGLY
+           7    59.000000 108.000000   0.000000   0.000000 # CD31G-MGLY OD31E-MGLY HDP1A-MGLY
+           8    35.500000 109.000000   5.400000   1.802000 # HDA2A-MGLY CD32F-MGLY HDA2A-MGLY
+           9    54.000000 110.500000   0.000000   0.000000 # HDA2A-MGLY CD32F-MGLY OD31E-MGLY
+          10    47.000000 110.500000   0.000000   0.000000 # HDA1A-MGLY CD31G-MGLY OD31E-MGLY
+
+Angles
+
+           1    8    3    1    4 # HDA2A-MGLY CD32F-MGLY HDA2A-MGLY
+           2    9    3    1    5 # HDA2A-MGLY CD32F-MGLY OD31E-MGLY
+           3    5    3    1   10 # HDA2A-MGLY CD32F-MGLY CD31G-MGLY
+           4    9    4    1    5 # HDA2A-MGLY CD32F-MGLY OD31E-MGLY
+           5    5    4    1   10 # HDA2A-MGLY CD32F-MGLY CD31G-MGLY
+           6    6    5    1   10 # OD31E-MGLY CD32F-MGLY CD31G-MGLY
+           7    4    1    5    7 # CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+           8    2    1   10   12 # CD32F-MGLY CD31G-MGLY HDA1A-MGLY
+           9    3    1   10   13 # CD32F-MGLY CD31G-MGLY OD31E-MGLY
+          10    1    1   10   18 # CD32F-MGLY CD31G-MGLY CD32F-MGLY
+          11   10   12   10   13 # HDA1A-MGLY CD31G-MGLY OD31E-MGLY
+          12    2   12   10   18 # HDA1A-MGLY CD31G-MGLY CD32F-MGLY
+          13    3   13   10   18 # OD31E-MGLY CD31G-MGLY CD32F-MGLY
+          14    7   10   13   15 # CD31G-MGLY OD31E-MGLY HDP1A-MGLY
+          15    5   10   18   20 # CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+          16    5   10   18   21 # CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+          17    6   10   18   22 # CD31G-MGLY CD32F-MGLY OD31E-MGLY
+          18    8   20   18   21 # HDA2A-MGLY CD32F-MGLY HDA2A-MGLY
+          19    9   20   18   22 # HDA2A-MGLY CD32F-MGLY OD31E-MGLY
+          20    9   21   18   22 # HDA2A-MGLY CD32F-MGLY OD31E-MGLY
+          21    4   18   22   24 # CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+
+Dihedral Coeffs
+
+           1     0.200000   3   0.000000 # CD32F-MGLY CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+           2     0.310000   1   0.000000 # CD32F-MGLY CD31G-MGLY CD32F-MGLY OD31E-MGLY
+           3     0.137000   2   0.000000 # CD32F-MGLY CD31G-MGLY CD32F-MGLY OD31E-MGLY
+           4     0.113000   3   0.000000 # CD32F-MGLY CD31G-MGLY CD32F-MGLY OD31E-MGLY
+           5     0.575000   1   0.000000 # CD32F-MGLY CD31G-MGLY OD31E-MGLY HDP1A-MGLY
+           6     0.478000   2   0.000000 # CD32F-MGLY CD31G-MGLY OD31E-MGLY HDP1A-MGLY
+           7     0.248000   3   0.000000 # CD32F-MGLY CD31G-MGLY OD31E-MGLY HDP1A-MGLY
+           8     0.575000   1   0.000000 # CD31G-MGLY CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+           9     0.478000   2   0.000000 # CD31G-MGLY CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+          10     0.248000   3   0.000000 # CD31G-MGLY CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+          11     0.200000   3   0.000000 # HDA2A-MGLY CD32F-MGLY CD31G-MGLY HDA1A-MGLY
+          12     0.200000   3   0.000000 # HDA2A-MGLY CD32F-MGLY CD31G-MGLY OD31E-MGLY
+          13     0.200000   3   0.000000 # HDA2A-MGLY CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+          14     0.200000   3   0.000000 # HDA1A-MGLY CD31G-MGLY CD32F-MGLY OD31E-MGLY
+          15     0.200000   3   0.000000 # HDA1A-MGLY CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+          16     0.200000   3   0.000000 # HDA1A-MGLY CD31G-MGLY OD31E-MGLY HDP1A-MGLY
+          17     1.305000   1 180.000000 # OD31E-MGLY CD32F-MGLY CD31G-MGLY OD31E-MGLY
+          18     0.376000   2 180.000000 # OD31E-MGLY CD32F-MGLY CD31G-MGLY OD31E-MGLY
+          19     0.413000   3 180.000000 # OD31E-MGLY CD32F-MGLY CD31G-MGLY OD31E-MGLY
+          20     1.305000   1 180.000000 # OD31E-MGLY CD31G-MGLY CD32F-MGLY OD31E-MGLY
+          21     0.376000   2 180.000000 # OD31E-MGLY CD31G-MGLY CD32F-MGLY OD31E-MGLY
+          22     0.413000   3 180.000000 # OD31E-MGLY CD31G-MGLY CD32F-MGLY OD31E-MGLY
+
+Dihedrals
+
+           1    5    1   10   13   15 # CD32F-MGLY CD31G-MGLY OD31E-MGLY HDP1A-MGLY
+           2    1    1   10   18   20 # CD32F-MGLY CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+           3    1    1   10   18   21 # CD32F-MGLY CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+           4    2    1   10   18   22 # CD32F-MGLY CD31G-MGLY CD32F-MGLY OD31E-MGLY
+           5   13    3    1    5    7 # HDA2A-MGLY CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+           6   11    3    1   10   12 # HDA2A-MGLY CD32F-MGLY CD31G-MGLY HDA1A-MGLY
+           7   12    3    1   10   13 # HDA2A-MGLY CD32F-MGLY CD31G-MGLY OD31E-MGLY
+           8    1    3    1   10   18 # HDA2A-MGLY CD32F-MGLY CD31G-MGLY CD32F-MGLY
+           9   13    4    1    5    7 # HDA2A-MGLY CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+          10   11    4    1   10   12 # HDA2A-MGLY CD32F-MGLY CD31G-MGLY HDA1A-MGLY
+          11   12    4    1   10   13 # HDA2A-MGLY CD32F-MGLY CD31G-MGLY OD31E-MGLY
+          12    1    4    1   10   18 # HDA2A-MGLY CD32F-MGLY CD31G-MGLY CD32F-MGLY
+          13   14    5    1   10   12 # OD31E-MGLY CD32F-MGLY CD31G-MGLY HDA1A-MGLY
+          14   17    5    1   10   13 # OD31E-MGLY CD32F-MGLY CD31G-MGLY OD31E-MGLY
+          15    2    5    1   10   18 # OD31E-MGLY CD32F-MGLY CD31G-MGLY CD32F-MGLY
+          16    8    7    5    1   10 # HDP1A-MGLY OD31E-MGLY CD32F-MGLY CD31G-MGLY
+          17    8   10   18   22   24 # CD31G-MGLY CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+          18   16   12   10   13   15 # HDA1A-MGLY CD31G-MGLY OD31E-MGLY HDP1A-MGLY
+          19   11   12   10   18   20 # HDA1A-MGLY CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+          20   11   12   10   18   21 # HDA1A-MGLY CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+          21   14   12   10   18   22 # HDA1A-MGLY CD31G-MGLY CD32F-MGLY OD31E-MGLY
+          22   12   13   10   18   20 # OD31E-MGLY CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+          23   12   13   10   18   21 # OD31E-MGLY CD31G-MGLY CD32F-MGLY HDA2A-MGLY
+          24   17   13   10   18   22 # OD31E-MGLY CD31G-MGLY CD32F-MGLY OD31E-MGLY
+          25    5   15   13   10   18 # HDP1A-MGLY OD31E-MGLY CD31G-MGLY CD32F-MGLY
+          26   13   20   18   22   24 # HDA2A-MGLY CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+          27   13   21   18   22   24 # HDA2A-MGLY CD32F-MGLY OD31E-MGLY HDP1A-MGLY
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+           1    8 R   0.350000 110.000000  91.000000 # LPD-MGLY (5,1,7)
+           2    9 R   0.350000 110.000000 269.000000 # LPD-MGLY (5,1,7)
+           3   16 R   0.350000 110.000000  91.000000 # LPD-MGLY (13,10,15)
+           4   17 R   0.350000 110.000000 269.000000 # LPD-MGLY (13,10,15)
+           5   25 R   0.350000 110.000000  91.000000 # LPD-MGLY (22,18,24)
+           6   26 R   0.350000 110.000000 269.000000 # LPD-MGLY (22,18,24)
+
+Anisotropy
+
+           1    5   0.810800   1.216200 # OD31E-MGLY (1,8,9)
+           2   13   0.810800   1.216200 # OD31E-MGLY (10,16,17)
+           3   22   0.810800   1.216200 # OD31E-MGLY (18,25,26)
+
+END
+
+Solvent EGLY
+COMMENT: Ethylene glycol
+Masses
+
+           1    11.611000 # CD32F-EGLY            C  NONBOND (0.12000000,2.15000000) CHARGE 2.16908231 DRUDE (-1.650000,0.700000)
+           2     0.400000 # CD32F-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -2.22908231 DRUDE (0.000000,0.000000)
+           3     1.008000 # HDA2A-EGLY            H  NONBOND (0.02100000,1.34000000) CHARGE 0.07000000 DRUDE (0.000000,0.000000)
+           4    15.599400 # OD31E-EGLY            O  NONBOND (0.20000000,1.70000000) CHARGE 1.73533822 DRUDE (-1.000000,1.000000)
+           5     0.400000 # OD31E-DRUD       DP NONBOND (0.00000000,0.01000000) CHARGE -1.73533822 DRUDE (0.000000,0.000000)
+           6     1.008000 # HDP1A-EGLY            H  NONBOND (0.01000000,0.40000000) CHARGE 0.32000000 DRUDE (0.000000,0.000000)
+           7     0.000000 # LPD-EGLY             LP  NONBOND (0.00000000,0.01000000) CHARGE -0.20000000 DRUDE (0.000000,0.000000)
+
+Atoms
+
+           1 1    1   2.16908231     0.000000     0.000000     0.000000 # CD32F-EGLY
+           2 1    2  -2.22908231     0.000000     0.000000     0.000000 # CD32F-DRUD
+           3 1    3   0.07000000     0.288102     1.037363    -0.116554 # HDA2A-EGLY
+           4 1    3   0.07000000    -0.564846    -0.290932    -0.876938 # HDA2A-EGLY
+           5 1    4   1.73533822    -0.813618    -0.142339     1.161202 # OD31E-EGLY
+           6 1    5  -1.73533822    -0.813618    -0.142339     1.161202 # OD31E-DRUD
+           7 1    6   0.32000000    -1.590567     0.425697     1.040431 # HDP1A-EGLY
+           8 1    7  -0.20000000    -0.718097     0.091294     1.403671 # LPD-EGLY
+           9 1    7  -0.20000000    -1.038246    -0.407286     1.118237 # LPD-EGLY
+          10 1    1   2.16908231     1.238443    -0.863564     0.119253 # CD32F-EGLY
+          11 1    2  -2.22908231     1.238443    -0.863564     0.119253 # CD32F-DRUD
+          12 1    3   0.07000000     1.806358    -0.577734     0.995645 # HDA2A-EGLY
+          13 1    3   0.07000000     0.944774    -1.899750     0.234171 # HDA2A-EGLY
+          14 1    4   1.73533822     2.049280    -0.725631    -1.044423 # OD31E-EGLY
+          15 1    5  -1.73533822     2.049280    -0.725631    -1.044423 # OD31E-DRUD
+          16 1    6   0.32000000     2.451700     0.156385    -1.012705 # HDP1A-EGLY
+          17 1    7  -0.20000000     1.859078    -0.596244    -1.308207 # LPD-EGLY
+          18 1    7  -0.20000000     2.372758    -0.842432    -0.979462 # LPD-EGLY
+
+PairIJ Coeffs
+
+
+Bond Coeffs
+
+           1   222.500000   1.500000 # CD32F-EGLY CD32F-EGLY
+           2   320.000000   1.425000 # CD32F-EGLY OD31E-EGLY
+           3   309.000000   1.080000 # CD32F-EGLY HDA2A-EGLY
+           4   536.500000   0.970000 # OD31E-EGLY HDP1A-EGLY
+           5     0.000000   0.000000 # OD31E-EGLY LPD-EGLY
+           6   500.000000   0.000000 # CD32F-EGLY CD32F-DRUD
+           7   500.000000   0.000000 # OD31E-EGLY OD31E-DRUD
+
+Bonds
+
+           1    1    1   10 # CD32F-EGLY CD32F-EGLY
+           2    2    1    5 # CD32F-EGLY OD31E-EGLY
+           3    2   10   14 # CD32F-EGLY OD31E-EGLY
+           4    3    1    3 # CD32F-EGLY HDA2A-EGLY
+           5    3    1    4 # CD32F-EGLY HDA2A-EGLY
+           6    4    5    7 # OD31E-EGLY HDP1A-EGLY
+           7    3   10   12 # CD32F-EGLY HDA2A-EGLY
+           8    3   10   13 # CD32F-EGLY HDA2A-EGLY
+           9    4   14   16 # OD31E-EGLY HDP1A-EGLY
+          10    5    5    8 # OD31E-EGLY LPD-EGLY
+          11    5    5    9 # OD31E-EGLY LPD-EGLY
+          12    5   14   17 # OD31E-EGLY LPD-EGLY
+          13    5   14   18 # OD31E-EGLY LPD-EGLY
+          14    6    1    2 # CD32F-EGLY CD32F-DRUD
+          15    7    5    6 # OD31E-EGLY OD31E-DRUD
+          16    6   10   11 # CD32F-EGLY CD32F-DRUD
+          17    7   14   15 # OD31E-EGLY OD31E-DRUD
+
+Angle Coeffs
+
+           1    26.500000 110.100000  22.530000   2.179000 # CD32F-EGLY CD32F-EGLY HDA2A-EGLY
+           2    66.000000 111.000000   0.000000   0.000000 # CD32F-EGLY CD32F-EGLY OD31E-EGLY
+           3    49.000000 107.300000   0.000000   0.000000 # CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+           4    35.500000 109.000000   5.400000   1.802000 # HDA2A-EGLY CD32F-EGLY HDA2A-EGLY
+           5    54.000000 110.500000   0.000000   0.000000 # HDA2A-EGLY CD32F-EGLY OD31E-EGLY
+
+Angles
+
+           1    4    3    1    4 # HDA2A-EGLY CD32F-EGLY HDA2A-EGLY
+           2    5    3    1    5 # HDA2A-EGLY CD32F-EGLY OD31E-EGLY
+           3    1    3    1   10 # HDA2A-EGLY CD32F-EGLY CD32F-EGLY
+           4    5    4    1    5 # HDA2A-EGLY CD32F-EGLY OD31E-EGLY
+           5    1    4    1   10 # HDA2A-EGLY CD32F-EGLY CD32F-EGLY
+           6    2    5    1   10 # OD31E-EGLY CD32F-EGLY CD32F-EGLY
+           7    3    1    5    7 # CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+           8    1    1   10   12 # CD32F-EGLY CD32F-EGLY HDA2A-EGLY
+           9    1    1   10   13 # CD32F-EGLY CD32F-EGLY HDA2A-EGLY
+          10    2    1   10   14 # CD32F-EGLY CD32F-EGLY OD31E-EGLY
+          11    4   12   10   13 # HDA2A-EGLY CD32F-EGLY HDA2A-EGLY
+          12    5   12   10   14 # HDA2A-EGLY CD32F-EGLY OD31E-EGLY
+          13    5   13   10   14 # HDA2A-EGLY CD32F-EGLY OD31E-EGLY
+          14    3   10   14   16 # CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+
+Dihedral Coeffs
+
+           1     0.708000   1   0.000000 # CD32F-EGLY CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+           2     0.343000   2   0.000000 # CD32F-EGLY CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+           3     0.100000   3   0.000000 # CD32F-EGLY CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+           4     0.200000   3   0.000000 # HDA2A-EGLY CD32F-EGLY CD32F-EGLY HDA2A-EGLY
+           5     0.200000   3   0.000000 # HDA2A-EGLY CD32F-EGLY CD32F-EGLY OD31E-EGLY
+           6     0.200000   3   0.000000 # HDA2A-EGLY CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+           7     0.050000   1 180.000000 # OD31E-EGLY CD32F-EGLY CD32F-EGLY OD31E-EGLY
+           8     0.953000   2   0.000000 # OD31E-EGLY CD32F-EGLY CD32F-EGLY OD31E-EGLY
+           9     0.050000   3   0.000000 # OD31E-EGLY CD32F-EGLY CD32F-EGLY OD31E-EGLY
+
+Dihedrals
+
+           1    1    1   10   14   16 # CD32F-EGLY CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+           2    6    3    1    5    7 # HDA2A-EGLY CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+           3    4    3    1   10   12 # HDA2A-EGLY CD32F-EGLY CD32F-EGLY HDA2A-EGLY
+           4    4    3    1   10   13 # HDA2A-EGLY CD32F-EGLY CD32F-EGLY HDA2A-EGLY
+           5    5    3    1   10   14 # HDA2A-EGLY CD32F-EGLY CD32F-EGLY OD31E-EGLY
+           6    6    4    1    5    7 # HDA2A-EGLY CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+           7    4    4    1   10   12 # HDA2A-EGLY CD32F-EGLY CD32F-EGLY HDA2A-EGLY
+           8    4    4    1   10   13 # HDA2A-EGLY CD32F-EGLY CD32F-EGLY HDA2A-EGLY
+           9    5    4    1   10   14 # HDA2A-EGLY CD32F-EGLY CD32F-EGLY OD31E-EGLY
+          10    5    5    1   10   12 # OD31E-EGLY CD32F-EGLY CD32F-EGLY HDA2A-EGLY
+          11    5    5    1   10   13 # OD31E-EGLY CD32F-EGLY CD32F-EGLY HDA2A-EGLY
+          12    7    5    1   10   14 # OD31E-EGLY CD32F-EGLY CD32F-EGLY OD31E-EGLY
+          13    1    7    5    1   10 # HDP1A-EGLY OD31E-EGLY CD32F-EGLY CD32F-EGLY
+          14    6   12   10   14   16 # HDA2A-EGLY CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+          15    6   13   10   14   16 # HDA2A-EGLY CD32F-EGLY OD31E-EGLY HDP1A-EGLY
+
+Improper Coeffs
+
+
+Impropers
+
+
+Lone Pairs
+
+           1    8 R   0.350000 110.000000  91.000000 # LPD-EGLY (5,1,7)
+           2    9 R   0.350000 110.000000 269.000000 # LPD-EGLY (5,1,7)
+           3   17 R   0.350000 110.000000  91.000000 # LPD-EGLY (14,10,16)
+           4   18 R   0.350000 110.000000 269.000000 # LPD-EGLY (14,10,16)
+
+Anisotropy
+
+           1    5   0.810800   1.216200 # OD31E-EGLY (1,8,9)
+           2   14   0.810800   1.216200 # OD31E-EGLY (10,17,18)
+
+END

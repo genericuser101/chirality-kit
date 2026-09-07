@@ -1,0 +1,63 @@
+{
+    "metadata": {
+        "made-by": "chirality-kit",
+        "version": "0.6.1",
+        "creator": "Stef @ Warwick University",
+        "filename": "chirality_kit.py"
+    },
+
+    "settings": {
+        "system_name": "auto",
+        "verbose": false,
+        "output_types": [".xyz"],
+        "bonds": true,
+        "angles": true,
+        "dihedrals": true,
+        "impropers": true,
+        "lone-pairs": true,
+        "anisotropy": true
+    },
+
+    "system": {
+        "force-field": "placeholder-s8-camrp",
+        "size": [[-10.0, 10.0], [-10.0, 10.0], [-10.0, 10.0]],
+        "nanotube": false,
+        "functionalisation": false,
+        "solvation": true
+    },
+
+    "solvation": {
+        "groups": [
+
+            {
+                "type": "CAM",
+                "placement": "packed",
+                "priority": 100,
+                "concentration": 158.3,
+                "molecules_per_unit": 1,
+                "min_distance": 1.8
+            },
+
+            {
+                "type": "S8",
+                "placement": "packed",
+                "priority": 50,
+                "min_distance": 2.5,
+                "count": 36,
+                "molecules_per_unit": 1
+            }
+
+        ],
+        "bridson_params": {
+            "k"              : 30,
+            "r_floor"        : 1.0,
+            "repeats"        : 2,
+            "bracket_steps"  : 10,
+            "bin_steps"      : 10,
+            "final_repeats"  : 10,
+            "tol_frac"       : 0.05,
+            "injection_limit": 1024
+        }
+
+    }
+}
