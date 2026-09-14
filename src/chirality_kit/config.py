@@ -189,7 +189,7 @@ class Config:
         self.bulk_priority = None
 
         # Current release version; archived inputs don't store this yet.
-        self.version = "0.6.1"
+        self.version = "0.6.2"
 
         self.force_field = "CHARMM36m"
         self.drude_polarisable = False  # whether to use Drude polarisable model

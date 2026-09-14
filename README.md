@@ -5,6 +5,60 @@ solvated channels, electrolyte boxes, and molecular packing workflows. The
 repository contains both the original standalone script and an equivalent
 split package.
 
+---
+
+## Structure Validation
+
+The tables below are a manually maintained snapshot of automatic structure
+tests. Every case is an unsolvated, unfunctionalised, open-ended nanotube built
+with `periodic: false`, two translational repeats, and no end caps. The tests run
+against both the standalone and split implementations. Counts and finite-tube
+coordination must match exactly; generated diameters must be within 0.5% of the
+published value, every C-C bond must be within 2% of the experimental graphite
+spacing, chiral angles must be within 0.01 degrees, and axial lengths must be
+within 2% of the value derived from the published graphite spacing.[^1][^4]
+
+These are the as-generated coordinates, before energy minimisation; users can
+subsequently relax them with their chosen potential, which may reduce the
+initial bond-length deviations. Only carbon-core coordinates and core-core
+bonds enter the literature geometry comparisons. Drude particles are tested
+separately as force-field bookkeeping invariants.
+
+### Carbon Nanotubes
+
+These structures use the additive CHARMM36m aromatic-carbon type `CG2R61`.[^5]
+Lengths are in angstroms.
+
+| Family | `(n,m)` | C cores | C-C bonds | Diameter: generated / published | Chiral angle: generated / published | C-C spacing: min / median / max | Axial length: generated / literature-derived | Result |
+|---|---:|---:|---:|---:|---:|---:|---:|:---:|
+| Armchair | `(8,8)` | 64 / 64 | 80 / 80 | 11.000790 / 10.996[^2] | 30.000 / 30.000[^4] | 1.435888 / 1.439737 / 1.439748[^1] | 4.988306 / 4.925952[^1][^4] | Pass |
+| Zigzag | `(10,0)` | 80 / 80 | 110 / 110 | 7.939136 / 7.958[^2] | 0.000 / 0.000[^4] | 1.435564 / 1.435565 / 1.440000[^1] | 8.640000 / 8.532000[^1][^4] | Pass |
+| Chiral | `(9,4)` | 1064 / 1064 | 1583 / 1583 | 9.155858 / 9.156[^3] | 17.480 / 17.480[^3] | 1.434606 / 1.438762 / 1.439961[^1] | 99.641341 / 98.395824[^1][^4] | Pass |
+
+### Carbon Nanotubes — Drude-Particle
+
+These structures use the CHARMM Drude aromatic-carbon core `CD2R6A` and particle
+`CD2R6A-DRUD`.[^6] The table compares Drude **core-core** geometry only, as it
+does for the additive model. Each core additionally has exactly one coincident
+Drude particle and one zero-length core-particle bond; the tested core/particle
+masses are 11.611/0.400 u, charges are +2.709/-2.709 e, and every complete tube
+is neutral.
+
+| Family | `(n,m)` | C cores / Drudes | Core-core / core-Drude bonds | Core diameter: generated / published | Core chiral angle: generated / published | Core-core spacing: min / median / max | Core axial length: generated / literature-derived | Result |
+|---|---:|---:|---:|---:|---:|---:|---:|:---:|
+| Armchair | `(8,8)` | 64 / 64 | 80 / 64 | 11.000790 / 10.996[^2] | 30.000 / 30.000[^4] | 1.435888 / 1.439737 / 1.439748[^1] | 4.988306 / 4.925952[^1][^4] | Pass |
+| Zigzag | `(10,0)` | 80 / 80 | 110 / 80 | 7.939136 / 7.958[^2] | 0.000 / 0.000[^4] | 1.435564 / 1.435565 / 1.440000[^1] | 8.640000 / 8.532000[^1][^4] | Pass |
+| Chiral | `(9,4)` | 1064 / 1064 | 1583 / 1064 | 9.155858 / 9.156[^3] | 17.480 / 17.480[^3] | 1.434606 / 1.438762 / 1.439961[^1] | 99.641341 / 98.395824[^1][^4] | Pass |
+
+[^1]: P. Trucano and R. Chen, “Structure of graphite by neutron diffraction,” *Nature* **258**, 136–137 (1975), experimental C-C spacing 1.422 ± 0.001 Å. [doi:10.1038/258136a0](https://doi.org/10.1038/258136a0)
+[^2]: D. Sánchez-Portal *et al.*, “Ab initio structural, elastic, and vibrational properties of carbon nanotubes,” *Physical Review B* **59**, 12678–12688 (1999), DFT radii 5.498 Å for `(8,8)` and 3.979 Å for `(10,0)`. [doi:10.1103/PhysRevB.59.12678](https://doi.org/10.1103/PhysRevB.59.12678)
+[^3]: N. Pierce *et al.*, “Intrinsic Chirality Origination in Carbon Nanotubes,” *ACS Nano* **11**, 9941–9949 (2017), `(9,4)` diameter 9.156 Å and chiral angle 17.48°. [doi:10.1021/acsnano.7b03957](https://doi.org/10.1021/acsnano.7b03957)
+[^4]: M. S. Dresselhaus, G. Dresselhaus, and R. Saito, “Physics of carbon nanotubes,” *Carbon* **33**, 883–891 (1995), nanotube geometry, chiral-angle, and translational-period relations. [doi:10.1016/0008-6223(95)00017-8](https://doi.org/10.1016/0008-6223(95)00017-8)
+[^5]: K. Vanommeslaeghe *et al.*, “CHARMM general force field: A force field for drug-like molecules compatible with the CHARMM all-atom additive biological force fields,” *Journal of Computational Chemistry* **31**, 671–690 (2010). [doi:10.1002/jcc.21367](https://doi.org/10.1002/jcc.21367)
+[^6]: P. E. M. Lopes *et al.*, “Polarizable Empirical Force Field for Aromatic Compounds Based on the Classical Drude Oscillator,” *The Journal of Physical Chemistry B* **111**, 2873–2885 (2007). [doi:10.1021/jp0663614](https://doi.org/10.1021/jp0663614)
+
+---
+
 ## Roadmap
 
 These features are planned, but are not implemented yet. I simply have not had
